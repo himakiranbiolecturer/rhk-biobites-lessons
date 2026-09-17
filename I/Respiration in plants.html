@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Interactive NCERT-aligned Class 11 Respiration in Plants page for NEET aspirants.">
+<title>Respiration in Plants | RHK-BiOBiTES</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d5d72'/%3E%3Cpath d='M18 36c0-16 17-25 30-16-1 18-12 30-30 28' fill='%23a9ead8'/%3E%3Cpath d='M13 46c10-10 18-16 30-22' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='48' cy='14' r='5' fill='%23ffd477'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#eef9fb;--paper:#fffefa;--ink:#173740;--muted:#5d747a;--navy:#0d5d72;--teal:#0d8474;--mint:#d8f4e9;--sky:#dceffd;--gold:#ffd477;--rose:#ffe5df;--line:#c8dfe3;--shadow:0 12px 30px rgba(16,70,82,.11);--rad:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:linear-gradient(135deg,#f2fcff,#f2fbf5 56%,#fffaf0);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+body.dark{--bg:#10272c;--paper:#17343a;--ink:#f0fdff;--muted:#b8d0d4;--navy:#75d6eb;--teal:#6ee0c9;--mint:#244c43;--sky:#1d4050;--gold:#715a22;--rose:#49302e;--line:#345a62;--shadow:0 12px 30px rgba(0,0,0,.28);background:#10272c}
+button,input{font:inherit}button{cursor:pointer}.progress{position:fixed;left:0;top:0;height:4px;width:0;background:linear-gradient(90deg,#ffd477,#1ab39a);z-index:60}
+header{background:linear-gradient(120deg,#0a4b62,#0b7280 55%,#159b84);color:white;padding:22px 4vw 24px;position:relative;overflow:hidden}header:after{content:"";position:absolute;right:-100px;top:-130px;width:320px;height:320px;border:46px solid rgba(255,255,255,.08);border-radius:50%}
+.top,.hero{max-width:1180px;margin:auto;position:relative;z-index:1}.top{display:flex;justify-content:space-between;gap:18px;align-items:center}.brand{font-weight:900;letter-spacing:.08em}.tools{display:flex;gap:8px}.icon{border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.13);color:white;padding:8px 12px;border-radius:999px}.hero{display:grid;grid-template-columns:1.35fr .7fr;gap:28px;align-items:center;margin-top:28px}.eyebrow{font-size:.8rem;letter-spacing:.13em;font-weight:900;color:#c8fff1}.hero h1{font-size:clamp(2.3rem,5vw,4.8rem);line-height:.96;margin:.3rem 0 1rem}.hero p{font-size:1.08rem;color:#e8fbff;max-width:720px}.equation{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.35);border-radius:24px;padding:22px;text-align:center;box-shadow:var(--shadow)}.equation .big{font-size:3rem}.equation strong{display:block;font-size:1.12rem;margin:8px 0}.equation small{color:#e8fbff}
+nav{position:sticky;top:0;z-index:40;background:rgba(255,254,250,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap}.dark nav{background:rgba(23,52,58,.94)}nav div{max-width:1180px;margin:auto;display:flex}nav a{padding:13px 14px;text-decoration:none;color:var(--ink);font-weight:750;font-size:.9rem}nav a:hover{background:var(--mint);color:var(--navy)}
+main{max-width:1180px;margin:auto;padding:28px 20px 70px}section{margin:36px 0 58px;scroll-margin-top:65px}.head{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}.num{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--navy);color:white;font-weight:900;flex:none}.head h2{font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.15;margin:0}.head p{margin:5px 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card,.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--rad);box-shadow:var(--shadow)}.card{padding:20px}.card h3{color:var(--navy);margin:.25rem 0 .45rem;line-height:1.25}.card p{margin:.45rem 0}.tag{display:inline-block;border-radius:999px;background:var(--mint);padding:3px 9px;font-size:.76rem;font-weight:850}.note{border-left:5px solid var(--teal);background:linear-gradient(90deg,var(--mint),var(--paper) 34%)}.trap{border-left:5px solid #e49c24;background:linear-gradient(90deg,var(--gold),var(--paper) 30%)}.mini{font-size:.9rem;color:var(--muted)}
+.path-shell{padding:22px}.tabs,.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:17px}.tab,.filter{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 13px;font-weight:800}.tab.active,.filter.active{background:var(--navy);border-color:var(--navy);color:white}.path-grid{display:grid;grid-template-columns:.85fr 1.6fr;gap:18px}.stage-list{display:grid;gap:8px}.stage{padding:13px;text-align:left;border:2px solid var(--line);border-radius:13px;background:var(--bg);color:var(--ink);font-weight:800}.stage.active{border-color:var(--teal);background:var(--mint)}.readout{padding:19px;border-radius:16px;background:var(--sky);min-height:220px}.readout h3{margin:0;color:var(--navy)}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.chip{background:var(--paper);border:1px solid var(--line);padding:5px 9px;border-radius:999px;font-weight:750;font-size:.88rem}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.compare article{padding:20px}.steps{display:grid;gap:9px}.step{background:var(--bg);border-left:4px solid var(--teal);padding:12px 14px;border-radius:12px}
+.table-wrap{overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px}table{width:100%;min-width:720px;border-collapse:collapse}th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--navy);color:white}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg),transparent 18%)}tr:last-child td{border:0}
+.atp-panel{padding:22px;display:grid;grid-template-columns:.85fr 1.5fr;gap:22px}.atp-control input{width:100%;accent-color:var(--teal)}.glucose-count{font-size:2.2rem;font-weight:900;color:var(--navy)}.bars{display:grid;gap:10px}.bar-row{display:grid;grid-template-columns:130px 1fr 52px;gap:10px;align-items:center}.bar-bg{height:18px;border-radius:999px;background:var(--line);overflow:hidden}.bar{height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal),#58c9de);transition:.3s}.bar-num{font-weight:900;text-align:right}.assumption{margin-top:15px;background:var(--rose);padding:12px 15px;border-radius:13px}
+.rq{padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:center}.rq-inputs{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rq label{font-weight:800}.rq input{width:100%;padding:11px;border:1px solid var(--line);border-radius:11px;background:var(--paper);color:var(--ink)}.rq-result{text-align:center;background:var(--mint);padding:22px;border-radius:18px}.rq-result strong{display:block;font-size:3rem;color:var(--navy);line-height:1}
+.search{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);margin-bottom:15px}.glossary{grid-template-columns:repeat(4,1fr)}.term{padding:16px}.term strong{display:block;color:var(--navy)}
+.quiz{padding:22px}.quiz-top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.score{font-size:1.1rem;font-weight:900;color:var(--navy)}.qbox{padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--bg)}.qmeta{display:flex;justify-content:space-between;color:var(--muted);font-size:.88rem;font-weight:800}.qtext{font-size:1.15rem;font-weight:800;line-height:1.45;margin:15px 0}.options{display:grid;gap:10px}.option{width:100%;text-align:left;padding:13px 15px;border:2px solid var(--line);border-radius:13px;background:var(--paper);color:var(--ink)}.option:hover{border-color:var(--teal)}.option.correct{background:#ddf7e9;border-color:#1a9b61;color:#123b28}.option.wrong{background:#ffe5df;border-color:#d44f42;color:#5a1812}.feedback{display:none;margin-top:14px;padding:14px;border-radius:13px;background:var(--sky)}.feedback.show{display:block}.quiz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:15px}.quiz-nav button,.primary{border:0;background:var(--navy);color:white;padding:10px 16px;border-radius:12px;font-weight:800}.quiz-nav button:disabled{opacity:.45}.result{display:none;text-align:center;padding:24px}.result.show{display:block}.ring{width:125px;height:125px;margin:10px auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--teal) var(--pct),var(--line) 0);position:relative}.ring:after{content:"";position:absolute;inset:13px;background:var(--paper);border-radius:50%}.ring strong{z-index:1;font-size:1.35rem}
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:8px 0}summary{cursor:pointer;font-weight:800;color:var(--navy)}.back{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border:0;border-radius:50%;background:var(--navy);color:white;box-shadow:var(--shadow);display:none}footer{text-align:center;background:#083d4c;color:#e9fbff;padding:30px 20px}footer a{color:#baf8e9}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.glossary{grid-template-columns:repeat(3,1fr)}.path-grid,.atp-panel{grid-template-columns:1fr}}
+@media(max-width:620px){header{padding-inline:20px}.hero h1{font-size:2.45rem}.grid,.compare,.glossary,.rq{grid-template-columns:1fr}main{padding-inline:14px}.qbox,.quiz,.path-shell{padding:15px}.bar-row{grid-template-columns:100px 1fr 42px}.tools .lbl{display:none}}
+@media print{nav,.tools,.progress,.back,.quiz-nav,.filters{display:none!important}body{background:white;color:#111}.card,.panel{box-shadow:none;break-inside:avoid}header{background:#0b6775!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header id="top">
+<div class="top"><div class="brand">RHK‑BiOBiTES · NEET BIOLOGY</div><div class="tools"><button class="icon" id="theme">◐ <span class="lbl">Theme</span></button><button class="icon" onclick="print()">⎙ <span class="lbl">Print</span></button></div></div>
+<div class="hero"><div><div class="eyebrow">Class 11 · Chapter 12 · Plant Physiology</div><h1>Respiration in Plants</h1><p>Track how cells release usable energy from food—through glycolysis, fermentation, the TCA cycle and oxidative phosphorylation.</p></div><div class="equation"><div class="big">🌿 ⚡ ATP</div><strong>C₆H₁₂O₆ + 6O₂ ⟶ 6CO₂ + 6H₂O + energy</strong><small>Step-wise oxidation conserves part of the released energy in ATP.</small></div></div>
+</header>
+<nav><div><a href="#map">Chapter map</a><a href="#gas">Gas exchange</a><a href="#pathway">Pathways</a><a href="#glycolysis">Glycolysis</a><a href="#aerobic">Aerobic</a><a href="#atp">ATP balance</a><a href="#amphibolic">Amphibolic</a><a href="#rq">RQ</a><a href="#traps">NEET traps</a><a href="#glossary">Glossary</a><a href="#quiz">Practice</a></div></nav>
+<main>
+<section id="map"><div class="head"><span class="num">01</span><div><h2>Chapter map</h2><p>Respiration is cellular oxidation; breathing or gas exchange only supplies and removes gases.</p></div></div>
+<div class="grid">
+<article class="card note"><span class="tag">CORE IDEA</span><h3>Controlled release</h3><p>Cells oxidise substrates through enzyme-controlled steps instead of one explosive reaction. Energy is captured mainly in ATP and reduced coenzymes.</p></article>
+<article class="card"><span class="tag">WHERE?</span><h3>Cytosol + mitochondrion</h3><p>Glycolysis occurs in cytoplasm. Pyruvate oxidation and TCA occur in the matrix; ETS and ATP synthase lie on the inner mitochondrial membrane.</p></article>
+<article class="card trap"><span class="tag">NCERT ALERT</span><h3>Plants respire continuously</h3><p>Photosynthesis is restricted to green cells in light, but respiration occurs in all living plant cells, during day and night.</p></article>
+</div></section>
+
+<section id="gas"><div class="head"><span class="num">02</span><div><h2>How plants exchange gases</h2><p>Plants need no specialised respiratory organs because diffusion distances and respiratory demand are generally low.</p></div></div>
+<div class="grid">
+<article class="card"><h3>Leaves</h3><p>Stomata and interconnected air spaces permit diffusion. Each leaf largely manages its own exchange.</p></article>
+<article class="card"><h3>Woody stems</h3><p>Lenticels connect living layers beneath the bark with outside air; central supporting tissues are often dead.</p></article>
+<article class="card"><h3>Roots</h3><p>O₂ diffuses from air spaces in soil into living root cells. Waterlogging can restrict oxygen availability.</p></article>
+</div></section>
+
+<section id="pathway"><div class="head"><span class="num">03</span><div><h2>Respiratory pathway navigator</h2><p>Choose a pathway and then a stage to inspect location, carbon flow and energy carriers.</p></div></div>
+<div class="panel path-shell"><div class="tabs"><button class="tab active" data-path="aerobic">Aerobic route</button><button class="tab" data-path="alcohol">Alcoholic fermentation</button><button class="tab" data-path="lactic">Lactic fermentation</button></div><div class="path-grid"><div class="stage-list" id="stageList"></div><div class="readout" id="readout"></div></div></div>
+</section>
+
+<section id="glycolysis"><div class="head"><span class="num">04</span><div><h2>Glycolysis · EMP pathway</h2><p>Ten cytosolic reactions partially oxidise one glucose into two pyruvate molecules.</p></div></div>
+<div class="grid">
+<article class="card"><span class="tag">INVESTMENT</span><h3>2 ATP used</h3><p>ATP phosphorylates glucose to glucose-6-phosphate and fructose-6-phosphate to fructose-1,6-bisphosphate.</p></article>
+<article class="card"><span class="tag">CLEAVAGE</span><h3>Two 3-C units</h3><p>Fructose-1,6-bisphosphate splits into DHAP and PGAL; DHAP is converted so two PGAL molecules continue.</p></article>
+<article class="card"><span class="tag">PAYOFF</span><h3>4 ATP + 2 NADH</h3><p>Substrate-level phosphorylation occurs twice per triose. Net outcome: 2 ATP, 2 NADH and 2 pyruvate.</p></article>
+</div>
+<div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Glycolytic event</th><th>Per glucose</th><th>NEET significance</th></tr></thead><tbody>
+<tr><td>ATP consumed</td><td>2</td><td>Preparatory phosphorylation</td></tr><tr><td>ATP directly formed</td><td>4</td><td>Substrate-level phosphorylation</td></tr><tr><td>Net ATP</td><td>2</td><td>Available even without O₂</td></tr><tr><td>NADH + H⁺</td><td>2</td><td>Must be reoxidised to regenerate NAD⁺</td></tr><tr><td>Pyruvate</td><td>2 × 3-C</td><td>Fate depends on oxygen and cell type</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="fermentation"><div class="head"><span class="num">05</span><div><h2>Fermentation versus aerobic respiration</h2><p>Fermentation regenerates NAD⁺ but adds no ATP beyond glycolysis.</p></div></div>
+<div class="compare">
+<article class="panel"><span class="tag">ANAEROBIC</span><h3>Fermentation</h3><div class="steps"><div class="step">Partial oxidation in cytoplasm</div><div class="step">Net 2 ATP per glucose</div><div class="step">Alcoholic: pyruvate → acetaldehyde + CO₂ → ethanol</div><div class="step">Lactic: pyruvate → lactate; no CO₂ release</div><div class="step">NADH reoxidised to NAD⁺</div></div></article>
+<article class="panel"><span class="tag">AEROBIC</span><h3>Complete oxidation</h3><div class="steps"><div class="step">Glycolysis in cytosol; later stages in mitochondria</div><div class="step">Pyruvate carbon completely oxidised to CO₂</div><div class="step">O₂ is terminal electron acceptor and becomes water</div><div class="step">Large theoretical ATP yield</div><div class="step">NADH/FADH₂ rapidly reoxidised by ETS</div></div></article>
+</div></section>
+
+<section id="aerobic"><div class="head"><span class="num">06</span><div><h2>Aerobic respiration inside mitochondria</h2><p>Matrix reactions remove carbon and hydrogen; the inner membrane converts electron energy into ATP.</p></div></div>
+<div class="grid">
+<article class="card"><span class="tag">LINK REACTION</span><h3>Pyruvate → acetyl-CoA</h3><p>Each pyruvate undergoes oxidative decarboxylation by pyruvate dehydrogenase: CO₂ and NADH form while the 2-C acetyl group joins CoA.</p></article>
+<article class="card"><span class="tag">TCA CYCLE</span><h3>Acetyl group fully oxidised</h3><p>Acetyl-CoA + OAA forms citrate. Per turn: 2 CO₂, 3 NADH, 1 FADH₂ and 1 GTP/ATP; OAA is regenerated.</p></article>
+<article class="card"><span class="tag">ETS</span><h3>Electrons reach O₂</h3><p>NADH donates at complex I and FADH₂ at complex II. Electrons pass via ubiquinone, complex III, cytochrome c and complex IV.</p></article>
+<article class="card"><h3>Proton gradient</h3><p>Electron transfer drives H⁺ from matrix to intermembrane space. Their return through F₀ powers ATP formation at F₁.</p></article>
+<article class="card"><h3>Oxidative phosphorylation</h3><p>Redox energy, rather than light, establishes the gradient. O₂ accepts terminal electrons and hydrogen to form water.</p></article>
+<article class="card trap"><h3>Substrate-level exceptions</h3><p>Direct ATP/GTP formation occurs in glycolysis and at succinyl-CoA → succinate, independent of the proton gradient.</p></article>
+</div>
+<div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Complex/carrier</th><th>Key role</th><th>Receives electrons from</th></tr></thead><tbody>
+<tr><td>Complex I</td><td>NADH dehydrogenase; transfers to Q</td><td>NADH</td></tr><tr><td>Complex II</td><td>Succinate dehydrogenase; transfers to Q</td><td>FADH₂</td></tr><tr><td>Ubiquinone (Q)</td><td>Lipid-soluble mobile carrier</td><td>I and II</td></tr><tr><td>Complex III</td><td>Passes electrons to cytochrome c</td><td>QH₂</td></tr><tr><td>Cytochrome c</td><td>Mobile protein carrier</td><td>Complex III</td></tr><tr><td>Complex IV</td><td>Reduces O₂ to H₂O</td><td>Cytochrome c</td></tr><tr><td>Complex V</td><td>ATP synthase</td><td>H⁺ gradient, not electrons directly</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="atp"><div class="head"><span class="num">07</span><div><h2>NCERT theoretical ATP balance</h2><p>Move the slider. The visual uses NCERT's classical convention: 3 ATP per NADH and 2 per FADH₂.</p></div></div>
+<div class="panel atp-panel"><div class="atp-control"><label for="glucose"><b>Glucose molecules</b></label><input id="glucose" type="range" min="1" max="10" value="1"><div class="glucose-count"><span id="gCount">1</span> glucose</div><p class="mini">The total is a theoretical maximum, not a fixed yield in living cells.</p></div><div><div class="bars" id="bars"></div><div class="assumption"><b>Why theoretical?</b> It assumes an orderly sequence, complete transfer of glycolytic NADH, no withdrawal of intermediates, and glucose as the only entering substrate.</div></div></div>
+</section>
+
+<section id="amphibolic"><div class="head"><span class="num">08</span><div><h2>Why respiration is amphibolic</h2><p>Its intermediates participate in both breakdown and biosynthesis.</p></div></div>
+<div class="grid">
+<article class="card"><h3>Fats enter</h3><p>Glycerol can enter after conversion to PGAL; fatty acids are degraded to acetyl-CoA.</p></article>
+<article class="card"><h3>Proteins enter</h3><p>After deamination, amino-acid carbon skeletons can enter as pyruvate, acetyl-CoA or TCA intermediates.</p></article>
+<article class="card note"><h3>Intermediates leave</h3><p>Acetyl-CoA and TCA intermediates may be withdrawn for synthesis of fatty acids, amino acids and other molecules—making the pathway both catabolic and anabolic.</p></article>
+</div></section>
+
+<section id="rq"><div class="head"><span class="num">09</span><div><h2>Respiratory quotient calculator</h2><p>RQ = volume of CO₂ evolved ÷ volume of O₂ consumed.</p></div></div>
+<div class="panel rq"><div class="rq-inputs"><label>CO₂ evolved<input id="co2" type="number" min="0" step="0.1" value="6"></label><label>O₂ consumed<input id="o2" type="number" min="0.1" step="0.1" value="6"></label></div><div class="rq-result"><span>Respiratory quotient</span><strong id="rqValue">1.00</strong><div id="rqMeaning">Typical of carbohydrate oxidation</div></div></div>
+<div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Substrate/process</th><th>Typical RQ</th><th>Reason</th></tr></thead><tbody><tr><td>Carbohydrate</td><td>1</td><td>Equal CO₂ released and O₂ consumed</td></tr><tr><td>Fat</td><td>&lt; 1 (tripalmitin ≈ 0.7)</td><td>More oxygen is required for oxidation</td></tr><tr><td>Organic acids</td><td>&gt; 1</td><td>Substrate is already oxygen-rich</td></tr><tr><td>Anaerobic respiration</td><td>Infinite/undefined</td><td>CO₂ may evolve while O₂ consumption is zero</td></tr></tbody></table></div>
+</section>
+
+<section id="traps"><div class="head"><span class="num">10</span><div><h2>High-yield NEET traps</h2><p>Corrections to statements that are almost—but not quite—right.</p></div></div>
+<div class="grid">
+<article class="card trap"><h3>Glycolysis is universal</h3><p>It occurs in the cytoplasm of aerobic and anaerobic organisms; oxygen is not directly used.</p></article>
+<article class="card trap"><h3>Fermentation ATP</h3><p>Fermentation itself mainly regenerates NAD⁺. Its net 2 ATP come from glycolysis.</p></article>
+<article class="card trap"><h3>O₂ acts last</h3><p>It is vital but serves directly only as the terminal acceptor in the ETS.</p></article>
+<article class="card trap"><h3>CO₂ is not from glycolysis</h3><p>It is released during pyruvate oxidation, TCA decarboxylations and alcoholic fermentation—not glycolysis or lactic fermentation.</p></article>
+<article class="card trap"><h3>Complex II difference</h3><p>FADH₂ enters through complex II and yields fewer ATP under the NCERT convention because it bypasses complex I.</p></article>
+<article class="card trap"><h3>38 ATP is conditional</h3><p>NCERT explicitly treats the balance sheet as a theoretical exercise based on simplifying assumptions.</p></article>
+<article class="card trap"><h3>F₀ versus F₁</h3><p>F₀ forms the proton channel; F₁ contains the catalytic sites for ATP synthesis.</p></article>
+<article class="card trap"><h3>TCA starts and ends with OAA</h3><p>OAA accepts acetyl-CoA to form citrate and is regenerated at the end.</p></article>
+<article class="card trap"><h3>RQ depends on substrate</h3><p>RQ is not an efficiency score. It reports the CO₂/O₂ gas ratio.</p></article>
+</div></section>
+
+<section id="glossary"><div class="head"><span class="num">11</span><div><h2>Rapid glossary</h2><p>Search essential terms before the practice set.</p></div></div><input class="search" id="termSearch" placeholder="Search: EMP, oxidative phosphorylation, RQ…" aria-label="Search glossary"><div class="grid glossary" id="glossaryGrid"></div></section>
+
+<section id="quiz"><div class="head"><span class="num">12</span><div><h2>NEET practice studio</h2><p>36 questions · MCQ, statement, assertion–reason, match and true/false · instant explanations.</p></div></div>
+<div class="panel quiz"><div class="quiz-top"><div><b id="quizTitle">All question models</b><div class="mini" id="best">Best score: —</div></div><div class="score" id="score">Score 0 / 0</div></div><div class="filters" id="filters"></div><div id="questionArea"></div><div class="result" id="result"><div class="ring" id="ring"><strong id="pct">0%</strong></div><h3 id="resultText"></h3><p id="resultNote"></p><button class="primary" id="restart">Try again</button></div></div>
+</section>
+
+<section><div class="head"><span class="num">13</span><div><h2>Last-minute revision</h2><p>Open a checkpoint for a rapid recall.</p></div></div>
+<details><summary>What happens per glucose before ETS?</summary><p>Glycolysis: 2 pyruvate, net 2 ATP and 2 NADH. Link reaction: 2 acetyl-CoA, 2 CO₂ and 2 NADH. Two TCA turns: 4 CO₂, 6 NADH, 2 FADH₂ and 2 GTP/ATP.</p></details>
+<details><summary>Where do respiratory events occur?</summary><p>Cytosol—glycolysis and fermentation; mitochondrial matrix—pyruvate oxidation and TCA cycle; inner mitochondrial membrane—ETS and ATP synthase; intermembrane space—proton accumulation.</p></details>
+<details><summary>Which events make ATP directly?</summary><p>Substrate-level phosphorylation occurs twice in glycolysis and during succinyl-CoA to succinate. Most aerobic ATP comes through oxidative phosphorylation.</p></details>
+</section>
+</main>
+<button class="back" id="back" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<footer><b>RHK‑BiOBiTES</b><br>Class 11 and NEET preparation · Works offline in a modern browser.<br>Scope aligned to <a href="https://ncert.nic.in/textbook/pdf/kebo112.pdf" target="_blank" rel="noopener">NCERT Biology Chapter 12 (Reprint 2026–27)</a>.</footer>
+<script>
+const pathways={
+aerobic:[
+["Glycolysis","Cytosol","Glucose (6C) becomes 2 pyruvate (3C). Oxygen is not directly used.","Net 2 ATP","2 NADH","0 CO₂"],
+["Link reaction","Mitochondrial matrix","Two pyruvate undergo oxidative decarboxylation to 2 acetyl-CoA.","0 ATP","2 NADH","2 CO₂"],
+["TCA cycle","Mitochondrial matrix","Two acetyl groups are fully oxidised; OAA is regenerated.","2 GTP/ATP","6 NADH + 2 FADH₂","4 CO₂"],
+["ETS","Inner mitochondrial membrane","Electrons pass through carriers to oxygen. Redox energy builds a proton gradient.","Indirect ATP","NAD⁺ + FAD regenerated","O₂ → H₂O"],
+["ATP synthase","Inner mitochondrial membrane","H⁺ returns to the matrix through F₀; F₁ catalyses ATP formation.","Most ATP","Chemiosmosis","No CO₂"]
+],
+alcohol:[
+["Glycolysis","Cytosol","Glucose becomes two pyruvate molecules.","Net 2 ATP","2 NADH","0 CO₂"],
+["Decarboxylation","Cytosol","Pyruvate decarboxylase converts pyruvate to acetaldehyde.","No extra ATP","—","2 CO₂"],
+["Reduction","Cytosol","Alcohol dehydrogenase reduces acetaldehyde to ethanol.","No extra ATP","NADH → NAD⁺","No extra CO₂"],
+["Purpose","Cytosol","Regeneration of NAD⁺ allows glycolysis to continue without oxygen.","Total 2 ATP","NAD⁺ restored","Incomplete oxidation"]
+],
+lactic:[
+["Glycolysis","Cytosol","Glucose becomes two pyruvate molecules.","Net 2 ATP","2 NADH","0 CO₂"],
+["Reduction","Cytosol","Lactate dehydrogenase reduces pyruvate directly to lactate.","No extra ATP","NADH → NAD⁺","0 CO₂"],
+["Purpose","Cytosol","NAD⁺ regeneration maintains glycolysis when oxygen supply is inadequate.","Total 2 ATP","NAD⁺ restored","Incomplete oxidation"]
+]};
+let currentPath="aerobic";
+function drawPath(name){currentPath=name;const list=document.getElementById("stageList");list.innerHTML=pathways[name].map((x,i)=>'<button class="stage" data-i="'+i+'">'+(i+1)+'. '+x[0]+'</button>').join("");list.querySelectorAll(".stage").forEach(b=>b.onclick=()=>showStage(+b.dataset.i));showStage(0)}
+function showStage(i){document.querySelectorAll(".stage").forEach((b,j)=>b.classList.toggle("active",i===j));const x=pathways[currentPath][i];document.getElementById("readout").innerHTML='<span class="tag">'+x[1]+'</span><h3>'+x[0]+'</h3><p>'+x[2]+'</p><div class="chips"><span class="chip">'+x[3]+'</span><span class="chip">'+x[4]+'</span><span class="chip">'+x[5]+'</span></div>'}
+document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{document.querySelectorAll(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");drawPath(b.dataset.path)});drawPath("aerobic");
+
+const atpParts=[["Glycolysis (SLP)",2],["Glycolytic NADH",6],["Link NADH",6],["TCA (SLP)",2],["TCA NADH",18],["TCA FADH₂",4]];
+function drawATP(n){document.getElementById("gCount").textContent=n;document.getElementById("bars").innerHTML=atpParts.map(([name,val])=>'<div class="bar-row"><b>'+name+'</b><div class="bar-bg"><div class="bar" style="width:'+(val/38*100)+'%"></div></div><span class="bar-num">'+(val*n)+'</span></div>').join("")+'<div class="bar-row"><b>Total</b><div class="bar-bg"><div class="bar" style="width:100%;background:linear-gradient(90deg,#f2b83b,#ef8750)"></div></div><span class="bar-num">'+(38*n)+'</span></div>'}
+document.getElementById("glucose").oninput=e=>drawATP(+e.target.value);drawATP(1);
+
+function calcRQ(){const c=+document.getElementById("co2").value,o=+document.getElementById("o2").value,v=o>0?c/o:Infinity;document.getElementById("rqValue").textContent=isFinite(v)?v.toFixed(2):"∞";let m;if(!isFinite(v))m="No oxygen consumed: anaerobic/undefined ratio";else if(v>.95&&v<1.05)m="Typical of carbohydrate oxidation";else if(v<1)m="Compatible with a reduced substrate such as fat";else m="Compatible with an oxygen-rich substrate such as an organic acid";document.getElementById("rqMeaning").textContent=m}
+document.getElementById("co2").oninput=calcRQ;document.getElementById("o2").oninput=calcRQ;
+
+const glossary=[
+["Respiratory substrate","Organic molecule oxidised to release energy."],
+["Glycolysis","Cytosolic conversion of glucose to two pyruvate molecules."],
+["EMP pathway","Another name for glycolysis, after Embden, Meyerhof and Parnas."],
+["Substrate-level phosphorylation","Direct transfer of phosphate from a substrate to ADP/GDP."],
+["Pyruvate","Three-carbon end product of glycolysis and metabolic branch point."],
+["Fermentation","Anaerobic pathway that regenerates NAD⁺ by reducing an organic molecule."],
+["Acetyl-CoA","Two-carbon acetyl group linked to CoA; enters the TCA cycle."],
+["Oxidative decarboxylation","Removal of CO₂ coupled with oxidation, as in pyruvate to acetyl-CoA."],
+["TCA cycle","Cyclic matrix pathway that oxidises acetyl-CoA and regenerates OAA."],
+["Oxaloacetate","Four-carbon acceptor regenerated in the TCA cycle."],
+["NADH","Reduced electron carrier that donates to complex I."],
+["FADH₂","Reduced electron carrier that donates through complex II."],
+["ETS","Inner-membrane chain carrying electrons to oxygen."],
+["Ubiquinone","Lipid-soluble mobile carrier receiving electrons from complexes I and II."],
+["Cytochrome c","Mobile protein carrier between complexes III and IV."],
+["Oxidative phosphorylation","ATP formation driven by a redox-generated proton gradient."],
+["Chemiosmosis","Use of H⁺ movement down its gradient to power ATP synthase."],
+["F₀","Membrane proton channel of ATP synthase."],
+["F₁","Catalytic headpiece of ATP synthase."],
+["Amphibolic pathway","Pathway serving both catabolic and anabolic functions."],
+["Deamination","Removal of the amino group before an amino-acid carbon skeleton enters respiration."],
+["Respiratory quotient","Volume CO₂ evolved divided by volume O₂ consumed."],
+["Facultative anaerobe","Organism able to shift between aerobic and anaerobic metabolism."],
+["Lenticel","Opening in woody tissue that permits gas exchange."]
+];
+const gg=document.getElementById("glossaryGrid");
+function drawGlossary(q=""){q=q.toLowerCase();gg.innerHTML=glossary.filter(x=>(x[0]+" "+x[1]).toLowerCase().includes(q)).map(x=>'<article class="card term"><strong>'+x[0]+'</strong><span>'+x[1]+'</span></article>').join("")||"<p>No matching term.</p>"}
+drawGlossary();document.getElementById("termSearch").oninput=e=>drawGlossary(e.target.value);
+
+const AR=["Both A and R are true, and R correctly explains A","Both A and R are true, but R does not correctly explain A","A is true, but R is false","A is false, but R is true"];
+const questions=[
+{t:"MCQ",q:"Glycolysis occurs in the:",o:["Mitochondrial matrix","Cytoplasm","Inner mitochondrial membrane","Chloroplast stroma"],a:1,e:"Glycolysis is a universal cytosolic pathway."},
+{t:"MCQ",q:"The net direct ATP gain from glycolysis per glucose is:",o:["1","2","4","6"],a:1,e:"Four ATP form and two are invested, leaving a net gain of two."},
+{t:"MCQ",q:"Which step of glycolysis produces NADH?",o:["Glucose → glucose-6-phosphate","Fructose-6-phosphate → fructose-1,6-bisphosphate","PGAL → 1,3-bisphosphoglycerate","PEP → pyruvate"],a:2,e:"Oxidation of PGAL reduces NAD⁺ to NADH + H⁺."},
+{t:"MCQ",q:"Alcoholic fermentation converts pyruvate first into:",o:["Lactate","Acetaldehyde","Acetyl-CoA","Oxaloacetate"],a:1,e:"Pyruvate decarboxylase releases CO₂ and forms acetaldehyde."},
+{t:"MCQ",q:"The enzyme complex catalysing pyruvate to acetyl-CoA is:",o:["Citrate synthase","Pyruvate dehydrogenase","Succinate dehydrogenase","Lactate dehydrogenase"],a:1,e:"Pyruvate dehydrogenase performs oxidative decarboxylation in the matrix."},
+{t:"MCQ",q:"Per turn of the TCA cycle, one acetyl-CoA produces:",o:["3 NADH, 1 FADH₂, 1 GTP and 2 CO₂","2 NADH, 2 FADH₂, 2 ATP and 1 CO₂","1 NADH, 3 FADH₂ and 2 CO₂","4 NADH, no FADH₂ and 1 ATP"],a:0,e:"This is the standard yield per acetyl group."},
+{t:"MCQ",q:"Which respiratory complex receives electrons from both complex I and complex II?",o:["Cytochrome c","Ubiquinone","Complex IV","ATP synthase"],a:1,e:"Ubiquinone is the common lipid-soluble carrier."},
+{t:"MCQ",q:"The terminal electron acceptor in aerobic respiration is:",o:["NAD⁺","Pyruvate","O₂","CO₂"],a:2,e:"Oxygen accepts electrons/hydrogen at complex IV and forms water."},
+{t:"MCQ",q:"The F₀ part of mitochondrial ATP synthase:",o:["Contains catalytic ATP-forming sites","Forms the proton channel","Reduces oxygen","Oxidises succinate"],a:1,e:"F₀ is integral and conducts H⁺; F₁ is catalytic."},
+{t:"MCQ",q:"A respiratory substrate with RQ less than 1 is most likely:",o:["Glucose","An organic acid","A fat","A carbohydrate"],a:2,e:"Fats are relatively reduced and require proportionally more oxygen."},
+{t:"MCQ",q:"Fatty acids generally enter the respiratory pathway as:",o:["PGAL","Acetyl-CoA","Glucose-6-phosphate","Oxaloacetate only"],a:1,e:"Beta oxidation yields acetyl-CoA."},
+{t:"MCQ",q:"Why is the respiratory pathway described as amphibolic?",o:["It occurs only without oxygen","It uses both light and oxygen","Its intermediates participate in breakdown and synthesis","It produces both ethanol and lactate"],a:2,e:"It supports catabolism and supplies/receives intermediates for anabolism."},
+
+{t:"Statement",q:"I. Glycolysis directly uses oxygen. II. Glycolysis is present in aerobic as well as anaerobic organisms.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:1,e:"Glycolysis does not directly require O₂ and is widespread."},
+{t:"Statement",q:"I. Alcoholic fermentation releases CO₂. II. Lactic acid fermentation releases CO₂.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:0,e:"Alcoholic fermentation decarboxylates pyruvate; lactic fermentation does not."},
+{t:"Statement",q:"I. The TCA cycle occurs in the mitochondrial matrix. II. The ETS occurs on the inner mitochondrial membrane.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"The locations separate carbon oxidation from membrane electron transport."},
+{t:"Statement",q:"I. Complex II receives reducing equivalents from FADH₂. II. FADH₂ enters the chain after complex I.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"Succinate dehydrogenase is complex II, so FADH₂ bypasses complex I."},
+{t:"Statement",q:"I. Fermentation yields a net two ATP per glucose. II. Those ATP are formed during reduction of pyruvate.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:0,e:"The ATP come from glycolysis, not the terminal fermentation reaction."},
+{t:"Statement",q:"I. The classical NCERT balance gives 38 ATP per glucose. II. NCERT treats this as a theoretical calculation based on assumptions.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"Both statements reflect the chapter's balance-sheet discussion."},
+{t:"Statement",q:"I. Carbohydrate typically has RQ = 1. II. Tripalmitin has an RQ around 0.7.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"Equal CO₂/O₂ gives 1 for glucose; fat uses proportionally more O₂."},
+
+{t:"Assertion–Reason",q:"Assertion (A): Plant cells respire during both day and night. Reason (R): Cellular energy requirements continue regardless of light availability.",o:AR,a:0,e:"Continuous ATP demand explains continuous respiration."},
+{t:"Assertion–Reason",q:"Assertion (A): Glycolysis can continue during fermentation. Reason (R): Fermentation reoxidises NADH to NAD⁺.",o:AR,a:0,e:"Regenerated NAD⁺ is required for the PGAL oxidation step."},
+{t:"Assertion–Reason",q:"Assertion (A): Oxygen is essential for aerobic respiration but acts directly only at its terminal stage. Reason (R): Oxygen is the final electron acceptor in the ETS.",o:AR,a:0,e:"Electron removal by oxygen permits the chain to keep operating."},
+{t:"Assertion–Reason",q:"Assertion (A): FADH₂ yields fewer ATP than NADH in the NCERT convention. Reason (R): FADH₂ donates electrons through complex II and bypasses complex I.",o:AR,a:0,e:"Later entry means fewer energy-conserving steps."},
+{t:"Assertion–Reason",q:"Assertion (A): The TCA cycle can operate continuously only if OAA is regenerated. Reason (R): OAA accepts the acetyl group to form citrate.",o:AR,a:0,e:"OAA is the recurring acceptor required to begin each turn."},
+{t:"Assertion–Reason",q:"Assertion (A): Respiration is exclusively catabolic. Reason (R): Respiratory intermediates may be withdrawn for biosynthesis.",o:AR,a:3,e:"A is false; R is true and explains why respiration is amphibolic."},
+{t:"Assertion–Reason",q:"Assertion (A): F₁ forms the proton channel in ATP synthase. Reason (R): F₁ contains catalytic sites for ATP synthesis.",o:AR,a:3,e:"F₀ is the channel; F₁ is the catalytic headpiece."},
+
+{t:"Match",q:"Match: A. Glycolysis; B. Link reaction; C. TCA cycle; D. ETS with 1. inner membrane; 2. cytosol; 3. matrix, acetyl-CoA oxidation; 4. matrix, pyruvate oxidation.",o:["A-2, B-4, C-3, D-1","A-1, B-2, C-4, D-3","A-2, B-3, C-4, D-1","A-3, B-4, C-1, D-2"],a:0,e:"These locations are central to pathway organisation."},
+{t:"Match",q:"Match: A. Complex I; B. Complex II; C. Complex IV; D. Complex V with 1. ATP synthase; 2. NADH dehydrogenase; 3. succinate dehydrogenase; 4. cytochrome c oxidase.",o:["A-2, B-3, C-4, D-1","A-3, B-2, C-1, D-4","A-2, B-4, C-3, D-1","A-1, B-3, C-4, D-2"],a:0,e:"I accepts NADH, II is succinate dehydrogenase, IV reduces O₂, V makes ATP."},
+{t:"Match",q:"Match: A. Alcoholic fermentation; B. Lactic fermentation; C. Glycolysis; D. TCA cycle with 1. 2 pyruvate; 2. lactate; 3. citrate and OAA; 4. ethanol + CO₂.",o:["A-4, B-2, C-1, D-3","A-2, B-4, C-3, D-1","A-4, B-1, C-2, D-3","A-3, B-2, C-1, D-4"],a:0,e:"The products/intermediates distinguish the pathways."},
+{t:"Match",q:"Match substrate entry: A. Glycerol; B. Fatty acids; C. Amino acids; D. Glucose with 1. glycolysis start; 2. PGAL; 3. acetyl-CoA; 4. several sites after deamination.",o:["A-2, B-3, C-4, D-1","A-3, B-2, C-1, D-4","A-2, B-4, C-3, D-1","A-1, B-3, C-4, D-2"],a:0,e:"These entry points explain the integrated, amphibolic network."},
+{t:"Match",q:"Match: A. Carbohydrate; B. Fat; C. Organic acid; D. anaerobic CO₂ evolution with 1. RQ > 1; 2. RQ = 1; 3. RQ < 1; 4. RQ infinite/undefined.",o:["A-2, B-3, C-1, D-4","A-1, B-2, C-3, D-4","A-2, B-1, C-4, D-3","A-3, B-2, C-1, D-4"],a:0,e:"RQ reflects the substrate's oxygen content and whether O₂ is consumed."},
+
+{t:"True/False",q:"Glycolysis produces carbon dioxide.",o:["True","False"],a:1,e:"No carbon is lost during glycolysis; two 3-C pyruvate form from one 6-C glucose."},
+{t:"True/False",q:"Succinate dehydrogenase participates in both the TCA cycle and the ETS.",o:["True","False"],a:0,e:"It catalyses succinate oxidation and functions as complex II."},
+{t:"True/False",q:"Oxygen is converted to carbon dioxide during aerobic respiration.",o:["True","False"],a:1,e:"Oxygen is reduced to water; CO₂ comes from substrate decarboxylation."},
+{t:"True/False",q:"For each ATP in the NCERT chemiosmotic description, four protons pass through F₀.",o:["True","False"],a:0,e:"The chapter states 4 H⁺ per ATP through the F₀ channel."},
+{t:"True/False",q:"An RQ value of 0.7 is characteristic of complete glucose oxidation.",o:["True","False"],a:1,e:"Glucose has RQ 1; about 0.7 is typical of fats such as tripalmitin."}
+];
+
+const types=["All","MCQ","Statement","Assertion–Reason","Match","True/False"];
+let filter="All",pool=[],idx=0,responses=[],locked=false,correct=0,answered=0;
+const area=document.getElementById("questionArea"),result=document.getElementById("result");
+document.getElementById("filters").innerHTML=types.map((x,i)=>'<button class="filter '+(i?"":"active")+'" data-type="'+x+'">'+x+'</button>').join("");
+document.querySelectorAll(".filter").forEach(b=>b.onclick=()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));b.classList.add("active");filter=b.dataset.type;startQuiz()});
+function startQuiz(){pool=filter==="All"?questions:questions.filter(x=>x.t===filter);idx=0;responses=Array(pool.length).fill(null);result.classList.remove("show");area.style.display="block";document.getElementById("quizTitle").textContent=filter==="All"?"All question models":filter+" practice";try{const v=localStorage.getItem("rhkRespBest_"+filter);document.getElementById("best").textContent=v?"Best "+filter+" score: "+v+"%":"Best score: —"}catch(e){}render();updateScore()}
+function render(){const q=pool[idx];locked=responses[idx]!==null;area.innerHTML='<div class="qbox"><div class="qmeta"><span>'+q.t+'</span><span>Question '+(idx+1)+' of '+pool.length+'</span></div><div class="qtext">'+q.q+'</div><div class="options">'+q.o.map((x,i)=>'<button class="option" data-a="'+i+'"><b>'+(i+1)+'.</b> '+x+'</button>').join("")+'</div><div class="feedback" id="feedback"></div></div><div class="quiz-nav"><button id="prev" '+(idx===0?"disabled":"")+'>← Previous</button><button id="next">'+(idx===pool.length-1?"Finish":"Next →")+'</button></div>';area.querySelectorAll(".option").forEach(b=>b.onclick=()=>answer(+b.dataset.a));if(locked)showAnswer(responses[idx]);document.getElementById("prev").onclick=()=>{if(idx){idx--;render()}};document.getElementById("next").onclick=()=>{if(idx===pool.length-1)finish();else{idx++;render()}}}
+function answer(a){if(locked)return;responses[idx]=a;locked=true;showAnswer(a);updateScore()}
+function showAnswer(a){const q=pool[idx],opts=[...area.querySelectorAll(".option")];opts[q.a].classList.add("correct");if(a!==q.a)opts[a].classList.add("wrong");opts.forEach(x=>x.disabled=true);const f=document.getElementById("feedback");f.innerHTML="<b>"+(a===q.a?"Correct!":"Not quite.")+"</b> "+q.e;f.classList.add("show")}
+function updateScore(){answered=responses.filter(x=>x!==null).length;correct=responses.reduce((n,x,i)=>n+(x===pool[i].a?1:0),0);document.getElementById("score").textContent="Score "+correct+" / "+answered}
+function finish(){updateScore();area.style.display="none";result.classList.add("show");const p=Math.round(correct/pool.length*100);document.getElementById("ring").style.setProperty("--pct",p+"%");document.getElementById("pct").textContent=p+"%";document.getElementById("resultText").textContent=p>=85?"Excellent NEET readiness":p>=65?"Strong—revise the traps":"Revisit the pathway cards";document.getElementById("resultNote").textContent=correct+" correct out of "+pool.length+". Unanswered items count as incorrect.";try{const k="rhkRespBest_"+filter,b=Math.max(p,+(localStorage.getItem(k)||0));localStorage.setItem(k,b);document.getElementById("best").textContent="Best "+filter+" score: "+b+"%"}catch(e){}}
+document.getElementById("restart").onclick=startQuiz;startQuiz();
+
+const theme=document.getElementById("theme");theme.onclick=()=>{document.body.classList.toggle("dark");try{localStorage.setItem("rhkRespTheme",document.body.classList.contains("dark")?"dark":"light")}catch(e){}};try{if(localStorage.getItem("rhkRespTheme")==="dark")document.body.classList.add("dark")}catch(e){}
+const progress=document.getElementById("progress"),back=document.getElementById("back");addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h?scrollY/h*100:0)+"%";back.style.display=scrollY>700?"block":"none"},{passive:true});
+</script>
+</body>
+</html>

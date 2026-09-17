@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive NCERT-aligned Animal Kingdom learning page for Class 11 CBSE and NEET aspirants.">
+  <meta name="color-scheme" content="dark light">
+  <title>Animal Kingdom | Class XI • NEET</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2309131f'/%3E%3Cpath d='M14 45 27 15l9 20 6-13 8 23' fill='none' stroke='%236ee7c8' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='49' cy='15' r='5' fill='%23f8c86a'/%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#07111c;--surface:#0e1b29;--surface-2:#142536;--ink:#edf7f5;--muted:#99b2b7;--line:#234154;--accent:#67e8c5;--accent-2:#f8c86a;--accent-3:#82aaff;--danger:#ff8d8d;--ok:#76e39e;--shadow:0 18px 55px rgba(0,0,0,.28);--radius:20px;--max:1240px}
+    html[data-theme="light"]{--bg:#eef5f4;--surface:#fff;--surface-2:#f3f8f7;--ink:#10252c;--muted:#536f74;--line:#cfe0de;--accent:#087b68;--accent-2:#9a5c00;--accent-3:#365fbe;--danger:#a52d35;--ok:#17733b;--shadow:0 18px 50px rgba(21,57,64,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 86% 4%,rgba(103,232,197,.10),transparent 28%),var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.62}
+    button,input,select{font:inherit}button{color:inherit}a{color:var(--accent)}:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px}.skip{position:fixed;left:12px;top:-80px;z-index:99;background:var(--accent);color:#041311;padding:10px 14px;border-radius:10px}.skip:focus{top:12px}
+    .topbar{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.topbar-inner{max-width:var(--max);margin:auto;display:flex;gap:18px;align-items:center;justify-content:space-between;padding:13px 22px}.brand{display:flex;gap:11px;align-items:center;min-width:0}.brand-mark{width:38px;height:38px;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;background:var(--surface);color:var(--accent);font-weight:900}.brand-text{line-height:1.15}.brand-text strong{display:block;font-size:.96rem;letter-spacing:.04em}.brand-text span{font-size:.78rem;color:var(--muted)}.top-actions{display:flex;gap:8px}.icon-btn,.btn,.filter-btn,.nav-link{border:1px solid var(--line);background:var(--surface);border-radius:12px;cursor:pointer;transition:.18s ease}.icon-btn{width:42px;height:42px;display:grid;place-items:center}.icon-btn:hover,.btn:hover,.filter-btn:hover,.nav-link:hover{transform:translateY(-1px);border-color:var(--accent)}
+    .progress-track{height:3px;background:transparent}.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .1s linear}
+    .layout{max-width:var(--max);margin:auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:34px;padding:28px 22px 80px}.side{position:sticky;top:88px;height:fit-content}.side-label{font-size:.74rem;color:var(--muted);letter-spacing:.16em;text-transform:uppercase;margin:0 0 11px 12px}.side-nav{display:grid;gap:6px}.nav-link{text-decoration:none;color:var(--muted);padding:10px 12px;background:transparent;border-color:transparent;font-size:.91rem}.nav-link.active{color:var(--ink);background:var(--surface);border-color:var(--line)}.side-card{margin-top:20px;padding:16px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,var(--surface),transparent)}.side-card strong{display:block;font-size:1.35rem;color:var(--accent-2)}.side-card span{font-size:.78rem;color:var(--muted)}
+    main{min-width:0}.hero{min-height:390px;border:1px solid var(--line);border-radius:30px;padding:clamp(26px,5vw,58px);display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center;background:linear-gradient(145deg,color-mix(in srgb,var(--surface) 88%,transparent),color-mix(in srgb,var(--accent) 5%,var(--surface)));box-shadow:var(--shadow);overflow:hidden;position:relative}.hero:after{content:"ANIMALIA";position:absolute;right:-18px;bottom:-48px;font-size:clamp(4rem,10vw,8rem);font-weight:1000;color:color-mix(in srgb,var(--accent) 7%,transparent);letter-spacing:-.06em;pointer-events:none}.kicker,.eyebrow{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:800}.hero h1{font-size:clamp(3rem,7vw,6.3rem);line-height:.9;letter-spacing:-.07em;margin:15px 0 20px;max-width:720px}.hero h1 span{display:block;color:var(--accent)}.hero p{max-width:680px;color:var(--muted);font-size:1.03rem}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.btn{padding:11px 16px;font-weight:750}.btn.primary{background:var(--accent);color:#042019;border-color:transparent}.btn.secondary{background:transparent}.hero-orbit{position:relative;aspect-ratio:1;min-width:250px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,rgba(103,232,197,.12),transparent 66%)}.hero-orbit:before,.hero-orbit:after{content:"";position:absolute;border:1px solid var(--line);border-radius:50%;inset:17%}.hero-orbit:after{inset:32%;border-style:dashed}.orbit-core{width:88px;height:88px;border-radius:28px;display:grid;place-items:center;background:var(--accent);color:#052019;font-size:2rem;font-weight:1000;transform:rotate(8deg)}.orbit-label{position:absolute;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:.72rem;color:var(--muted)}.ol1{top:8%;left:16%}.ol2{right:-2%;top:42%}.ol3{bottom:10%;left:12%}
+    section{scroll-margin-top:86px;margin-top:70px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:22px}.section-head h2{font-size:clamp(1.9rem,4vw,3.3rem);line-height:1;margin:.35rem 0 0;letter-spacing:-.045em}.section-head p{max-width:480px;margin:0;color:var(--muted);font-size:.92rem}.count{color:var(--accent-2);font-variant-numeric:tabular-nums}.grid{display:grid;gap:14px}.concept-grid{grid-template-columns:repeat(3,1fr)}.concept{padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);min-height:190px}.concept-no{font-size:.72rem;color:var(--accent);font-weight:900;letter-spacing:.12em}.concept h3{margin:11px 0 7px;font-size:1.05rem}.concept p{margin:0;color:var(--muted);font-size:.88rem}.concept .mini{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}.chip{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:4px 9px;font-size:.72rem;color:var(--muted);background:var(--surface-2)}
+    .decision{margin-top:16px;border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:linear-gradient(110deg,var(--surface),color-mix(in srgb,var(--accent-3) 5%,var(--surface)))}.decision h3{margin:0 0 16px}.decision-row{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.step{min-height:112px;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--surface-2);position:relative}.step b{display:block;color:var(--accent-2);font-size:.75rem;margin-bottom:8px}.step span{font-size:.82rem}.step:not(:last-child):after{content:"›";position:absolute;right:-9px;top:39%;z-index:2;color:var(--accent);font-size:1.5rem;font-weight:900}
+    .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}.search{min-width:min(360px,100%);flex:1;position:relative}.search input{width:100%;height:46px;border:1px solid var(--line);border-radius:13px;padding:0 14px 0 42px;background:var(--surface);color:var(--ink)}.search:before{content:"⌕";position:absolute;left:15px;top:8px;color:var(--muted);font-size:1.3rem}.filter-btn{padding:9px 13px;color:var(--muted)}.filter-btn.active{background:var(--accent);color:#042019;border-color:transparent}.phyla-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.taxon{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);overflow:hidden}.taxon summary{list-style:none;cursor:pointer;padding:20px;display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:center}.taxon summary::-webkit-details-marker{display:none}.taxon-index{width:48px;height:48px;border-radius:15px;background:var(--surface-2);display:grid;place-items:center;color:var(--accent);font-weight:900}.taxon h3{margin:0;font-size:1.05rem}.taxon .signature{color:var(--muted);font-size:.8rem;margin-top:3px}.taxon .chev{color:var(--accent);font-size:1.4rem;transition:transform .2s}.taxon[open] .chev{transform:rotate(90deg)}.taxon-body{padding:0 20px 20px;border-top:1px solid var(--line)}.feature-list{padding-left:18px;margin:16px 0;color:var(--muted);font-size:.87rem}.feature-list li+li{margin-top:6px}.examples{padding:12px 14px;border-radius:13px;background:var(--surface-2);font-size:.82rem}.examples b{color:var(--accent-2)}.no-results{display:none;padding:28px;text-align:center;border:1px dashed var(--line);border-radius:var(--radius);color:var(--muted)}
+    .compare-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}table{width:100%;border-collapse:collapse;min-width:850px}th,td{text-align:left;padding:13px 14px;border-bottom:1px solid var(--line);font-size:.82rem;vertical-align:top}th{position:sticky;top:0;background:var(--surface-2);color:var(--accent);letter-spacing:.04em}td:first-child{font-weight:800;color:var(--ink)}tr:hover td{background:color-mix(in srgb,var(--accent) 3%,transparent)}.table-note{font-size:.78rem;color:var(--muted);margin-top:10px}
+    .trap-grid{grid-template-columns:repeat(3,1fr)}.trap{border-left:3px solid var(--accent-2);background:var(--surface);border-radius:0 15px 15px 0;padding:17px}.trap strong{display:block;font-size:.92rem}.trap span{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}.trap em{color:var(--accent);font-style:normal}
+    .quiz-shell{border:1px solid var(--line);border-radius:26px;background:var(--surface);overflow:hidden;box-shadow:var(--shadow)}.quiz-top{padding:20px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line);background:var(--surface-2)}.scoreboard{display:flex;gap:16px;font-size:.84rem;color:var(--muted)}.scoreboard b{color:var(--ink)}.quiz-meter{height:5px;background:var(--line)}.quiz-meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .3s}.quiz-content{padding:clamp(20px,4vw,42px)}.q-meta{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.q-type{padding:5px 9px;border-radius:999px;background:color-mix(in srgb,var(--accent-3) 15%,var(--surface));color:var(--accent-3);font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.q-level{padding:5px 9px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:.72rem}.q-text{font-size:1.15rem;font-weight:750;line-height:1.5;margin:0 0 22px;white-space:pre-line}.options{display:grid;gap:10px}.option{position:relative}.option input{position:absolute;opacity:0;pointer-events:none}.option label{display:flex;gap:12px;align-items:flex-start;padding:13px 15px;border:1px solid var(--line);border-radius:14px;cursor:pointer;background:var(--surface-2);transition:.15s}.option label:hover{border-color:var(--accent)}.option-key{width:25px;height:25px;flex:0 0 25px;border-radius:8px;border:1px solid var(--line);display:grid;place-items:center;font-size:.76rem;font-weight:900}.option input:checked+label{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}.option input:checked+label .option-key{background:var(--accent);color:#042019;border-color:transparent}.option.correct label{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 9%,var(--surface-2))}.option.wrong label{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 8%,var(--surface-2))}.feedback{display:none;margin-top:18px;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--surface-2)}.feedback.show{display:block}.feedback strong{display:block;margin-bottom:5px}.feedback.correct strong{color:var(--ok)}.feedback.wrong strong{color:var(--danger)}.feedback p{margin:0;color:var(--muted);font-size:.88rem}.quiz-actions{display:flex;justify-content:space-between;gap:10px;margin-top:24px}.quiz-actions .right{display:flex;gap:9px}.result{display:none;text-align:center;padding:44px 20px}.result.show{display:block}.result-ring{width:138px;height:138px;border-radius:50%;margin:0 auto 20px;display:grid;place-items:center;background:conic-gradient(var(--accent) var(--pct),var(--line) 0);position:relative}.result-ring:after{content:"";position:absolute;inset:12px;border-radius:50%;background:var(--surface)}.result-ring b{position:relative;z-index:1;font-size:2rem}.result h3{font-size:1.7rem;margin:0}.result p{color:var(--muted)}
+    .glossary-grid{grid-template-columns:repeat(3,1fr)}.term{border:1px solid var(--line);border-radius:15px;padding:16px;background:var(--surface)}.term b{color:var(--accent)}.term p{margin:5px 0 0;color:var(--muted);font-size:.82rem}.source-note{margin-top:70px;border-top:1px solid var(--line);padding-top:24px;color:var(--muted);font-size:.8rem}.source-note strong{color:var(--ink)}
+    .toast{position:fixed;right:18px;bottom:18px;z-index:99;padding:12px 15px;border-radius:12px;background:var(--ink);color:var(--bg);font-weight:800;transform:translateY(100px);opacity:0;transition:.25s}.toast.show{transform:none;opacity:1}.back-top{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);cursor:pointer;opacity:0;pointer-events:none;transition:.2s}.back-top.show{opacity:1;pointer-events:auto}.back-top.toast-shift{bottom:78px}
+    @media(max-width:980px){.layout{grid-template-columns:1fr}.side{position:static;overflow:auto}.side-label,.side-card{display:none}.side-nav{display:flex;width:max-content}.nav-link{white-space:nowrap;border-color:var(--line);background:var(--surface)}.hero{grid-template-columns:1fr}.hero-orbit{display:none}.concept-grid,.trap-grid,.glossary-grid{grid-template-columns:repeat(2,1fr)}.decision-row{grid-template-columns:repeat(3,1fr)}.step:nth-child(3):after{display:none}}
+    @media(max-width:660px){.topbar-inner{padding:10px 14px}.brand-text span{display:none}.layout{padding:18px 14px 60px;gap:10px}.hero{min-height:auto;border-radius:22px;padding:26px 20px}.hero h1{font-size:3.2rem}.hero-actions .btn{flex:1}.section-head{display:block}.section-head p{margin-top:10px}.concept-grid,.phyla-grid,.trap-grid,.glossary-grid{grid-template-columns:1fr}.decision-row{grid-template-columns:1fr 1fr}.step:nth-child(3):after{display:block}.step:nth-child(2n):after{display:none}.quiz-top{align-items:flex-start}.scoreboard{display:grid;gap:2px}.quiz-actions{align-items:stretch}.quiz-actions,.quiz-actions .right{flex-direction:column}.quiz-actions .btn{width:100%}.top-actions .print-btn{display:none}}
+    @media print{.topbar,.side,.hero-actions,.toolbar,.quiz-shell,.back-top,.toast{display:none!important}.layout{display:block;max-width:none;padding:0}.hero{min-height:auto;box-shadow:none}.hero-orbit{display:none}section{break-inside:avoid;margin-top:34px}.taxon{break-inside:avoid}.taxon .taxon-body{display:block}.source-note{margin-top:30px}body{background:#fff;color:#111}*{--surface:#fff;--surface-2:#f5f5f5;--ink:#111;--muted:#444;--line:#bbb;--accent:#006b5c;--accent-2:#7b4a00}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to learning content</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><div class="brand-mark" aria-hidden="true">AK</div><div class="brand-text"><strong>RHK-BiOBiTES</strong><span>Class XI • NCERT-aligned NEET Learning</span></div></div>
+      <div class="top-actions">
+        <button class="icon-btn print-btn" id="printBtn" aria-label="Print study notes" title="Print study notes">⎙</button>
+        <button class="icon-btn" id="themeBtn" aria-label="Switch colour theme" title="Switch colour theme">☼</button>
+      </div>
+    </div>
+    <div class="progress-track"><div class="progress-bar" id="readingProgress"></div></div>
+  </header>
+
+  <div class="layout">
+    <aside class="side" aria-label="Page sections">
+      <p class="side-label">Study map</p>
+      <nav class="side-nav">
+        <a class="nav-link active" href="#overview">01 · Foundations</a>
+        <a class="nav-link" href="#explorer">02 · Animal groups</a>
+        <a class="nav-link" href="#compare">03 · Compare</a>
+        <a class="nav-link" href="#traps">04 · NEET traps</a>
+        <a class="nav-link" href="#practice">05 · Practice</a>
+        <a class="nav-link" href="#glossary">06 · Glossary</a>
+      </nav>
+      <div class="side-card"><strong>31</strong><span>mixed-model practice questions</span></div>
+    </aside>
+
+    <main id="main">
+      <section class="hero" id="overview">
+        <div>
+          <div class="kicker">Chapter 4 • Diversity in the Living World</div>
+          <h1>Animal <span>Kingdom</span></h1>
+          <p>Build the classification logic first, then master each phylum and vertebrate class through NCERT-focused feature cards, comparisons and mixed-model NEET practice.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#explorer">Explore groups</a>
+            <a class="btn secondary" href="#practice">Start practice</a>
+          </div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><div class="orbit-core">A</div><span class="orbit-label ol1">body plan</span><span class="orbit-label ol2">symmetry</span><span class="orbit-label ol3">notochord</span></div>
+      </section>
+
+      <section aria-labelledby="foundationTitle">
+        <div class="section-head"><div><div class="eyebrow">Classification toolkit</div><h2 id="foundationTitle">Six questions unlock the chapter</h2></div><p>Use these fundamental features to place an unfamiliar animal before recalling examples.</p></div>
+        <div class="grid concept-grid" id="conceptGrid"></div>
+        <div class="decision">
+          <h3>A NEET-friendly identification sequence</h3>
+          <div class="decision-row">
+            <div class="step"><b>01 • Organisation</b><span>Cellular → tissue → organ → organ-system</span></div>
+            <div class="step"><b>02 • Symmetry</b><span>Asymmetrical, radial or bilateral</span></div>
+            <div class="step"><b>03 • Germ layers</b><span>Diploblastic or triploblastic</span></div>
+            <div class="step"><b>04 • Body cavity</b><span>Acoelomate, pseudocoelomate or coelomate</span></div>
+            <div class="step"><b>05 • Segmentation</b><span>Absent or metameric</span></div>
+            <div class="step"><b>06 • Notochord</b><span>Absent = non-chordate; present = chordate</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explorer" aria-labelledby="explorerTitle">
+        <div class="section-head"><div><div class="eyebrow">NCERT core explorer</div><h2 id="explorerTitle">Animal groups, organised</h2></div><p>Search any feature or example. Open a card to reveal the high-yield NCERT summary.</p></div>
+        <div class="toolbar">
+          <div class="search"><input id="taxonSearch" type="search" placeholder="Search: choanocytes, radula, Petromyzon…" aria-label="Search animal groups"></div>
+          <button class="filter-btn active" data-group="all">All</button>
+          <button class="filter-btn" data-group="nonchordate">Non-chordates</button>
+          <button class="filter-btn" data-group="chordate">Chordates</button>
+        </div>
+        <div class="grid phyla-grid" id="taxonGrid"></div>
+        <div class="no-results" id="noResults">No group matches that search. Try a structure, example or broader feature.</div>
+      </section>
+
+      <section id="compare" aria-labelledby="compareTitle">
+        <div class="section-head"><div><div class="eyebrow">One-glance revision</div><h2 id="compareTitle">Compare before you memorise</h2></div><p>The most frequently confused groups placed side by side.</p></div>
+        <div class="toolbar" id="compareFilters">
+          <button class="filter-btn active" data-table="phyla">Major phyla</button>
+          <button class="filter-btn" data-table="fishes">Fish classes</button>
+          <button class="filter-btn" data-table="tetrapods">Tetrapods</button>
+          <button class="filter-btn" data-table="chordates">Chordate test</button>
+        </div>
+        <div class="compare-wrap" id="compareTable"></div>
+        <p class="table-note">Tip: move horizontally on mobile to view every column.</p>
+      </section>
+
+      <section id="traps" aria-labelledby="trapsTitle">
+        <div class="section-head"><div><div class="eyebrow">Exam precision</div><h2 id="trapsTitle">High-yield NCERT traps</h2></div><p>Small wording changes can reverse an answer. Read the qualifiers.</p></div>
+        <div class="grid trap-grid" id="trapGrid"></div>
+      </section>
+
+      <section id="practice" aria-labelledby="practiceTitle">
+        <div class="section-head"><div><div class="eyebrow">Active recall</div><h2 id="practiceTitle">Mixed-model NEET practice</h2></div><p>31 original questions: standard MCQ, statement, assertion–reason, match and true/false.</p></div>
+        <div class="toolbar" id="quizFilters">
+          <button class="filter-btn active" data-qfilter="all">All models</button>
+          <button class="filter-btn" data-qfilter="mcq">MCQ</button>
+          <button class="filter-btn" data-qfilter="statement">Statements</button>
+          <button class="filter-btn" data-qfilter="assertion">Assertion–Reason</button>
+          <button class="filter-btn" data-qfilter="match">Match</button>
+          <button class="filter-btn" data-qfilter="tf">True / False</button>
+        </div>
+        <div class="quiz-shell">
+          <div id="quizPanel">
+            <div class="quiz-top"><div><strong id="qCounter">Question 1</strong><div class="count" id="qSection">Mixed practice</div></div><div class="scoreboard"><span>Score <b id="score">0</b></span><span>Answered <b id="answered">0</b></span><span>Best <b id="best">0%</b></span></div></div>
+            <div class="quiz-meter"><span id="quizMeter"></span></div>
+            <div class="quiz-content">
+              <div class="q-meta"><span class="q-type" id="qType"></span><span class="q-level" id="qLevel"></span></div>
+              <p class="q-text" id="qText"></p>
+              <div class="options" id="options"></div>
+              <div class="feedback" id="feedback" role="status" aria-live="polite"></div>
+              <div class="quiz-actions"><button class="btn secondary" id="restartBtn">Restart set</button><div class="right"><button class="btn secondary" id="prevBtn">Previous</button><button class="btn primary" id="checkBtn">Check answer</button><button class="btn primary" id="nextBtn" hidden>Next question</button></div></div>
+            </div>
+          </div>
+          <div class="result" id="resultPanel"><div class="result-ring" id="resultRing"><b id="finalPercent">0%</b></div><h3 id="resultTitle">Set complete</h3><p id="resultText"></p><button class="btn primary" id="againBtn">Try again</button></div>
+        </div>
+      </section>
+
+      <section id="glossary" aria-labelledby="glossaryTitle">
+        <div class="section-head"><div><div class="eyebrow">Rapid revision</div><h2 id="glossaryTitle">Chapter glossary</h2></div><p>Essential terms students should be able to define in one clear sentence.</p></div>
+        <div class="grid glossary-grid" id="glossaryGrid"></div>
+      </section>
+
+      <div class="source-note"><strong>Content note:</strong> Original learning summary aligned to NCERT Class XI Biology, Chapter 4, Reprint 2026–27. It is designed for revision and should be used with the textbook. <a href="https://ncert.nic.in/textbook/pdf/kebo104.pdf" target="_blank" rel="noopener">Open the official NCERT chapter ↗</a></div>
+    </main>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script>
+  (() => {
+    'use strict';
+    const concepts = [
+      {n:'01',t:'Level of organisation',d:'Cells may work independently, form tissues, form organs, or coordinate as complete organ systems.',c:['Cellular: Porifera','Tissue: Cnidaria, Ctenophora','Organ: Platyhelminthes','Organ-system: Aschelminthes onward']},
+      {n:'02',t:'Symmetry',d:'Asymmetry has no equal plane; radial symmetry has many planes through the central axis; bilateral symmetry has only one.',c:['Mostly asymmetrical: sponges','Radial: cnidarians, ctenophores','Bilateral: annelids onward']},
+      {n:'03',t:'Germ layers',d:'Diploblastic animals develop ectoderm and endoderm with mesoglea between them. Triploblastic animals also develop mesoderm.',c:['Diploblastic: Cnidaria, Ctenophora','Triploblastic: Platyhelminthes onward']},
+      {n:'04',t:'Coelom',d:'A true coelom is a body cavity lined by mesoderm. A pseudocoelom is not fully mesoderm-lined; acoelomates lack a body cavity.',c:['Acoelomate: Platyhelminthes','Pseudocoelomate: Aschelminthes','Coelomate: Annelida onward']},
+      {n:'05',t:'Segmentation',d:'Metamerism is serial repetition of body segments with repetition of at least some internal organs.',c:['First clear occurrence: Annelida','Also present: Arthropoda','Classic example: earthworm']},
+      {n:'06',t:'Notochord',d:'A mesoderm-derived, dorsal, rod-like structure formed during embryonic development separates chordates from non-chordates.',c:['Urochordata: larval tail','Cephalochordata: head to tail, persistent','Vertebrata: embryonic; replaced in adult']}
+    ];
+
+    const taxa = [
+      {name:'Porifera',group:'nonchordate',tag:'Canal system • choanocytes',features:['Generally marine and mostly asymmetrical; cellular level of organisation.','Water flows through ostia → spongocoel → osculum for feeding, gas exchange and waste removal.','Choanocytes line canals; digestion is intracellular.','Skeleton consists of spicules or spongin fibres; hermaphroditic, internal fertilisation and indirect development.'],examples:'Sycon (Scypha), Spongilla — freshwater sponge, Euspongia — bath sponge'},
+      {name:'Cnidaria (Coelenterata)',group:'nonchordate',tag:'Cnidoblasts • polyp and medusa',features:['Aquatic, mostly marine; radial, diploblastic and tissue-level animals.','Cnidocytes with nematocysts aid anchorage, defence and prey capture.','Gastrovascular cavity has one opening; digestion is extracellular and intracellular.','Polyp is sessile; medusa is free-swimming. Obelia shows metagenesis.'],examples:'Hydra, Aurelia, Obelia, Physalia, Adamsia, Pennatula, Gorgonia, Meandrina'},
+      {name:'Ctenophora',group:'nonchordate',tag:'Comb plates • bioluminescence',features:['Exclusively marine, radially symmetrical, diploblastic and tissue-level.','Eight external rows of ciliated comb plates propel the animal.','Digestion is extracellular and intracellular; bioluminescence is well marked.','Hermaphroditic; only sexual reproduction, external fertilisation and indirect development.'],examples:'Pleurobrachia, Ctenoplana'},
+      {name:'Platyhelminthes',group:'nonchordate',tag:'Flatworms • flame cells',features:['Dorsoventrally flattened; mostly endoparasitic.','Bilateral, triploblastic, acoelomate; organ-level organisation.','Flame cells perform osmoregulation and excretion; parasitic forms may possess hooks and suckers.','Hermaphroditic; internal fertilisation, often several larval stages. Planaria regenerates strongly.'],examples:'Taenia — tapeworm, Fasciola — liver fluke, Planaria'},
+      {name:'Aschelminthes',group:'nonchordate',tag:'Roundworms • pseudocoelom',features:['Circular in cross-section; free-living or parasitic.','Bilateral, triploblastic, pseudocoelomate; organ-system level.','Complete gut with muscular pharynx; excretory tube opens by an excretory pore.','Dioecious with sexual dimorphism; internal fertilisation; direct or indirect development.'],examples:'Ascaris, Wuchereria, Ancylostoma'},
+      {name:'Annelida',group:'nonchordate',tag:'Metamerism • nephridia',features:['Aquatic or terrestrial; bilateral, triploblastic and true coelomate.','Metameric segmentation; circular and longitudinal muscles aid movement.','Closed circulation; nephridia serve excretion and osmoregulation; double ventral nerve cord.','Nereis is dioecious; earthworm and leech are monoecious.'],examples:'Nereis — parapodia for swimming, Pheretima, Hirudinaria'},
+      {name:'Arthropoda',group:'nonchordate',tag:'Jointed appendages • chitin',features:['Largest animal phylum; organ-system level, bilateral, triploblastic, segmented and coelomate.','Chitinous exoskeleton and jointed appendages; body commonly differentiated into head, thorax and abdomen.','Respiration by gills, book gills, book lungs or tracheae; open circulation.','Mostly dioecious; usually internal fertilisation and oviparity; development direct or indirect.'],examples:'Apis, Bombyx, Laccifer; Anopheles/Culex/Aedes; Locusta; Limulus — living fossil'},
+      {name:'Mollusca',group:'nonchordate',tag:'Mantle • muscular foot • radula',features:['Second-largest animal phylum; marine, freshwater or terrestrial.','Bilateral, triploblastic, coelomate and unsegmented; body has head, muscular foot and visceral hump.','Mantle covers the visceral hump; mantle cavity contains feather-like gills.','Radula is a rasping feeding organ; usually dioecious, oviparous and indirectly developing.'],examples:'Pila, Pinctada, Sepia, Loligo, Octopus, Aplysia, Dentalium, Chaetopleura'},
+      {name:'Echinodermata',group:'nonchordate',tag:'Water vascular system • ossicles',features:['Exclusively marine; calcareous ossicle endoskeleton and organ-system level.','Adults are radial but larvae bilateral; triploblastic and coelomate.','Water vascular system supports locomotion, food handling and respiration.','No excretory system; dioecious, usually external fertilisation and indirect development.'],examples:'Asterias, Echinus, Antedon, Cucumaria, Ophiura'},
+      {name:'Hemichordata',group:'nonchordate',tag:'Proboscis–collar–trunk • stomochord',features:['Small group of worm-like marine animals; organ-system level.','Bilateral, triploblastic and coelomate; body has proboscis, collar and trunk.','Open circulation; gill respiration; proboscis gland is excretory.','Stomochord resembles but is not a true notochord; dioecious with external fertilisation and indirect development.'],examples:'Balanoglossus, Saccoglossus'},
+      {name:'Protochordates',group:'chordate',tag:'Urochordata + Cephalochordata',features:['Exclusively marine and possess the fundamental chordate characters at least at some life stage.','In Urochordata, the notochord occurs only in the larval tail.','In Cephalochordata, the notochord runs from head to tail and persists throughout life.','They show why every chordate is not necessarily a vertebrate.'],examples:'Urochordata: Ascidia, Salpa, Doliolum; Cephalochordata: Branchiostoma (Amphioxus)'},
+      {name:'Cyclostomata',group:'chordate',tag:'Jawless • circular sucking mouth',features:['Living forms are ectoparasites on fishes; body has 6–15 pairs of gill slits.','Mouth is circular and jawless; scales and paired fins are absent.','Cranium and vertebral column are cartilaginous; circulation is closed.','Marine adults migrate to freshwater to spawn; larvae later return to the ocean.'],examples:'Petromyzon — lamprey, Myxine — hagfish'},
+      {name:'Chondrichthyes',group:'chordate',tag:'Cartilage • placoid scales',features:['Marine fishes with streamlined bodies, cartilaginous endoskeleton and persistent notochord.','Ventral mouth; separate gill slits without operculum; air bladder absent.','Placoid scales; teeth are modified, backwardly directed placoid scales.','Two-chambered heart; poikilothermic; internal fertilisation, male claspers, many viviparous.'],examples:'Scoliodon, Pristis, Carcharodon, Trygon; Torpedo has electric organs'},
+      {name:'Osteichthyes',group:'chordate',tag:'Bone • operculum • air bladder',features:['Marine and freshwater fishes with bony endoskeleton and mostly terminal mouth.','Four pairs of gills covered by an operculum; cycloid or ctenoid scales.','Air bladder regulates buoyancy; heart is two-chambered; poikilothermic.','Usually external fertilisation; mostly oviparous; development is direct.'],examples:'Exocoetus, Hippocampus; Labeo, Catla, Clarias; Betta, Pterophyllum'},
+      {name:'Amphibia',group:'chordate',tag:'Moist skin • dual habitat',features:['Live in aquatic and terrestrial habitats; usually two pairs of limbs; head and trunk distinct.','Scaleless moist skin; eyelids and tympanum present; cloaca receives digestive, urinary and reproductive tracts.','Respire by gills, lungs and skin; three-chambered heart; poikilothermic.','External fertilisation, oviparous and indirect development.'],examples:'Bufo, Rana, Hyla, Salamandra, Ichthyophis'},
+      {name:'Reptilia',group:'chordate',tag:'Dry cornified skin • scales or scutes',features:['Mostly terrestrial; dry cornified skin with epidermal scales or scutes.','External ear openings absent; tympanum represents ear; limbs, when present, are two pairs.','Usually three-chambered heart, but crocodiles have four chambers; poikilothermic.','Internal fertilisation; oviparous and direct development.'],examples:'Chelone, Testudo, Chameleon, Calotes, Crocodilus, Alligator, Hemidactylus, Naja, Bungarus, Vipera'},
+      {name:'Aves',group:'chordate',tag:'Feathers • pneumatic bones',features:['Feathers and beak; forelimbs become wings; hind limbs adapt for walking, swimming or perching.','Dry skin, with oil gland at tail base as the notable gland; fully ossified skeleton with pneumatic long bones.','Crop and gizzard in digestive tract; four-chambered heart; homoiothermic.','Lungs with air sacs; internal fertilisation, oviparous and direct development.'],examples:'Corvus, Columba, Psittacula, Struthio, Pavo, Aptenodytes, Neophron'},
+      {name:'Mammalia',group:'chordate',tag:'Mammary glands • hair • pinnae',features:['Mammary glands nourish young; skin bears hair and external ears or pinnae are present.','Two limb pairs may be adapted for running, climbing, burrowing, swimming or flying; teeth are differentiated.','Lungs and a four-chambered heart; homoiothermic.','Internal fertilisation; mostly viviparous with direct development.'],examples:'Oviparous: Ornithorhynchus; viviparous: Macropus, Pteropus, Camelus, Macaca, Delphinus, Balaenoptera'}
+    ];
+
+    const compareData = {
+      phyla:{headers:['Group','Organisation','Symmetry / layers','Body cavity','Diagnostic feature'],rows:[['Porifera','Cellular','Mostly asymmetrical','—','Canal system; choanocytes'],['Cnidaria','Tissue','Radial; diploblastic','—','Cnidocytes; polyp/medusa'],['Ctenophora','Tissue','Radial; diploblastic','—','Eight comb rows; bioluminescence'],['Platyhelminthes','Organ','Bilateral; triploblastic','Acoelomate','Flame cells; flattened body'],['Aschelminthes','Organ-system','Bilateral; triploblastic','Pseudocoelomate','Round body; complete gut'],['Annelida','Organ-system','Bilateral; triploblastic','Coelomate','Metamerism; nephridia'],['Arthropoda','Organ-system','Bilateral; triploblastic','Coelomate','Jointed appendages; chitin'],['Mollusca','Organ-system','Bilateral; triploblastic','Coelomate','Mantle, foot, visceral hump'],['Echinodermata','Organ-system','Adult radial; larva bilateral','Coelomate','Water vascular system'],['Hemichordata','Organ-system','Bilateral; triploblastic','Coelomate','Proboscis, collar, trunk']]},
+      fishes:{headers:['Feature','Cyclostomata','Chondrichthyes','Osteichthyes'],rows:[['Jaws','Absent','Present','Present'],['Endoskeleton','Cartilaginous','Cartilaginous','Bony'],['Mouth','Circular, sucking','Ventral','Mostly terminal'],['Gill openings','6–15 pairs','Separate; no operculum','4 pairs; operculum'],['Scales','Absent','Placoid','Cycloid / ctenoid'],['Air bladder','Absent','Absent','Present'],['Fertilisation','—','Internal','Usually external'],['Examples','Petromyzon, Myxine','Scoliodon, Trygon','Labeo, Catla']]},
+      tetrapods:{headers:['Feature','Amphibia','Reptilia','Aves','Mammalia'],rows:[['Body covering','Moist, scaleless skin','Dry scales / scutes','Feathers','Hair'],['Respiration','Gills, lungs, skin','Lungs','Lungs + air sacs','Lungs'],['Heart','3 chambers','Usually 3; crocodile 4','4 chambers','4 chambers'],['Temperature','Poikilothermic','Poikilothermic','Homoiothermic','Homoiothermic'],['Fertilisation','External','Internal','Internal','Internal'],['Development','Indirect','Direct','Direct','Direct'],['Reproduction','Oviparous','Oviparous','Oviparous','Mostly viviparous']]},
+      chordates:{headers:['Character','Chordates','Non-chordates'],rows:[['Notochord','Present at least during development','Absent'],['Central nervous system','Dorsal, hollow, single','Ventral, solid, double'],['Pharyngeal gill slits','Present at some stage','Absent'],['Heart','Ventral','Dorsal, if present'],['Post-anal tail','Present at some stage','Absent']]}
+    };
+
+    const traps = [
+      ['Radial — but not always','Adult echinoderms are radial; their larvae are <em>bilateral</em>.'],
+      ['Stomochord ≠ notochord','Hemichordates have a stomochord and belong to <em>non-chordata</em>.'],
+      ['“Mostly” matters','Poriferans are <em>mostly</em> asymmetrical and marine; Spongilla is freshwater.'],
+      ['First segmentation','Clear metameric segmentation is first observed in <em>Annelida</em>, not Arthropoda.'],
+      ['Two digestion modes','Cnidarians and ctenophores show both <em>extracellular and intracellular</em> digestion.'],
+      ['Crocodile exception','Reptiles usually have three heart chambers; <em>crocodiles have four</em>.'],
+      ['Operculum clue','Absent in Chondrichthyes; present over four gill pairs in <em>Osteichthyes</em>.'],
+      ['Notochord timing','Urochordata: larval tail; Cephalochordata: lifelong; Vertebrata: <em>embryonic</em>.'],
+      ['Air bladder clue','Present in Osteichthyes and absent in <em>Chondrichthyes</em>.'],
+      ['Aves skin gland','Bird skin is dry and nearly glandless, except the <em>oil gland at tail base</em>.'],
+      ['Development precision','Amphibian development is indirect; reptile, bird and mammal development is <em>direct</em>.'],
+      ['Every vertebrate…','Every vertebrate is a chordate, but <em>not every chordate is a vertebrate</em>.']
+    ];
+
+    const glossary = [
+      ['Metamerism','Serial repetition of body segments with repetition of at least some organs.'],['Mesoglea','Undifferentiated layer between ectoderm and endoderm in diploblastic animals.'],['Coelom','Body cavity completely lined by mesoderm.'],['Pseudocoelom','Body cavity not completely lined by mesoderm.'],['Cnidocyte','Specialised stinging cell containing a nematocyst.'],['Choanocyte','Flagellated collar cell lining sponge canals and spongocoel.'],['Metagenesis','Alternation between polyp and medusa phases in certain cnidarians.'],['Radula','File-like rasping feeding organ of most molluscs.'],['Parapodia','Paired lateral appendages used for swimming in Nereis.'],['Nephridium','Annelid organ of excretion and osmoregulation.'],['Water vascular system','Hydraulic echinoderm system used in locomotion, food capture and respiration.'],['Stomochord','Rudimentary collar-region support in hemichordates; not a true notochord.'],['Placoid scale','Tooth-like dermal scale of cartilaginous fishes.'],['Operculum','Gill cover over four pairs of gills in bony fishes.'],['Poikilotherm','Animal whose body temperature varies with the surroundings.'],['Homoiotherm','Animal capable of maintaining a relatively constant body temperature.'],['Pneumatic bone','Air-filled, lightweight bone characteristic of birds.'],['Cloaca','Common chamber receiving digestive, urinary and reproductive tracts.']
+    ];
+
+    const AR = ['Both A and R are true, and R is the correct explanation of A','Both A and R are true, but R is not the correct explanation of A','A is true, but R is false','A is false, but R is true'];
+    const questions = [
+      {type:'mcq',level:'NCERT direct',q:'Which sequence correctly traces water movement through a typical sponge?',o:['Osculum → spongocoel → ostia','Ostia → spongocoel → osculum','Spongocoel → ostia → osculum','Ostia → osculum → spongocoel'],a:1,e:'Water enters through ostia, reaches the spongocoel through canals and exits through the osculum.'},
+      {type:'statement',level:'Statement pair',q:'Statement I: Cnidarians possess cnidocytes used in defence and prey capture.\nStatement II: All cnidarians exist only in the medusa form.',o:['Both statements are true','Both statements are false','Statement I is true; Statement II is false','Statement I is false; Statement II is true'],a:2,e:'Cnidocytes are diagnostic. Cnidarians may be polyp, medusa, or alternate between the two.'},
+      {type:'assertion',level:'Concept link',q:'Assertion (A): Ctenophores are commonly called comb jellies.\nReason (R): Their body bears eight external rows of ciliated comb plates used in locomotion.',o:AR,a:0,e:'Both are true, and the comb plates explain the common name.'},
+      {type:'match',level:'Feature matching',q:'Match the group with its feature:\nA. Porifera  B. Platyhelminthes  C. Annelida  D. Mollusca\n1. Radula  2. Choanocytes  3. Flame cells  4. Nephridia',o:['A-2, B-3, C-4, D-1','A-3, B-2, C-1, D-4','A-2, B-4, C-3, D-1','A-1, B-3, C-4, D-2'],a:0,e:'Choanocytes–Porifera, flame cells–Platyhelminthes, nephridia–Annelida, radula–Mollusca.'},
+      {type:'tf',level:'True / False',q:'A pseudocoelom is completely lined by mesoderm.',o:['True','False'],a:1,e:'A pseudocoelom is not completely lined by mesoderm; a true coelom is.'},
+      {type:'mcq',level:'NCERT concept',q:'Which animal is triploblastic, bilaterally symmetrical, organ-level and acoelomate?',o:['Hydra','Taenia','Ascaris','Nereis'],a:1,e:'Taenia is a platyhelminth: bilateral, triploblastic, acoelomate and organ-level.'},
+      {type:'statement',level:'Multiple statements',q:'Consider the following about Aschelminthes:\n1. Body is circular in cross-section.\n2. Alimentary canal is incomplete.\n3. Sexes are usually separate.\n4. They are pseudocoelomate.\nChoose the correct set.',o:['1, 2 and 3 only','1, 3 and 4 only','2 and 4 only','1, 2, 3 and 4'],a:1,e:'Statements 1, 3 and 4 are correct. Their alimentary canal is complete.'},
+      {type:'mcq',level:'Application',q:'A specimen is metamerically segmented, possesses nephridia and has closed circulation. It most likely belongs to:',o:['Annelida','Arthropoda','Mollusca','Hemichordata'],a:0,e:'This combination is diagnostic of Annelida.'},
+      {type:'assertion',level:'Concept link',q:'Assertion (A): Arthropoda is the largest phylum of Animalia.\nReason (R): All arthropods possess an open circulatory system.',o:AR,a:1,e:'Both statements are true, but open circulation alone does not explain the group’s exceptional diversity and size.'},
+      {type:'match',level:'Examples',q:'Match the organism with the description:\nA. Limulus  B. Locusta  C. Apis  D. Aedes\n1. Vector  2. Living fossil  3. Economically useful insect  4. Gregarious pest',o:['A-2, B-4, C-3, D-1','A-4, B-2, C-1, D-3','A-2, B-1, C-4, D-3','A-3, B-4, C-2, D-1'],a:0,e:'Limulus is a living fossil, Locusta a gregarious pest, Apis economically useful and Aedes a vector.'},
+      {type:'tf',level:'True / False',q:'The mantle cavity of molluscs contains feather-like gills with respiratory and excretory roles.',o:['True','False'],a:0,e:'This is an NCERT feature of Mollusca.'},
+      {type:'mcq',level:'NCERT exception',q:'Which combination is correct for Echinodermata?',o:['Freshwater; bilateral adults; flame cells','Marine; radial adults; water vascular system','Marine; bilateral adults; proboscis gland','Terrestrial; radial larvae; nephridia'],a:1,e:'Echinoderms are exclusively marine; adults are radial and possess a water vascular system.'},
+      {type:'assertion',level:'NEET trap',q:'Assertion (A): Hemichordata is placed under non-chordata.\nReason (R): Its stomochord is a true notochord extending into the proboscis.',o:AR,a:2,e:'Hemichordata is non-chordate, but the stomochord is not a true notochord.'},
+      {type:'statement',level:'Statement pair',q:'Statement I: In Urochordata, the notochord occurs only in the larval tail.\nStatement II: In Cephalochordata, it extends from head to tail and persists throughout life.',o:['Both statements are true','Both statements are false','Statement I only is true','Statement II only is true'],a:0,e:'Both statements correctly distinguish the two protochordate groups.'},
+      {type:'mcq',level:'Diagnostic feature',q:'Which feature does NOT form part of the basic chordate plan?',o:['Dorsal hollow nerve cord','Paired pharyngeal gill slits','Ventral solid double nerve cord','Post-anal tail'],a:2,e:'A ventral, solid, double nerve cord is characteristic of non-chordates in the NCERT comparison.'},
+      {type:'match',level:'Chordate groups',q:'Match the group with the example:\nA. Urochordata  B. Cephalochordata  C. Cyclostomata  D. Chondrichthyes\n1. Branchiostoma  2. Petromyzon  3. Ascidia  4. Scoliodon',o:['A-3, B-1, C-2, D-4','A-1, B-3, C-4, D-2','A-3, B-2, C-1, D-4','A-4, B-1, C-2, D-3'],a:0,e:'Ascidia–Urochordata; Branchiostoma–Cephalochordata; Petromyzon–Cyclostomata; Scoliodon–Chondrichthyes.'},
+      {type:'tf',level:'True / False',q:'All chordates are vertebrates because every chordate develops a vertebral column.',o:['True','False'],a:1,e:'All vertebrates are chordates, but protochordates are chordates without an adult vertebral column.'},
+      {type:'statement',level:'Multiple statements',q:'For Cyclostomata, select the correct statements:\n1. Jaws are absent.\n2. Paired fins are absent.\n3. Adults are exclusively freshwater.\n4. They possess 6–15 pairs of gill slits.',o:['1 and 2 only','1, 2 and 4 only','2, 3 and 4 only','1, 2, 3 and 4'],a:1,e:'Cyclostomes are marine but migrate to freshwater to spawn; statements 1, 2 and 4 are correct.'},
+      {type:'mcq',level:'Fish comparison',q:'A fish has a ventral mouth, placoid scales, separate gill slits and no air bladder. Identify its class.',o:['Cyclostomata','Chondrichthyes','Osteichthyes','Amphibia'],a:1,e:'This complete feature set identifies Chondrichthyes.'},
+      {type:'assertion',level:'Physiology',q:'Assertion (A): Many cartilaginous fishes must keep swimming to avoid sinking.\nReason (R): Their air bladder is absent.',o:AR,a:0,e:'Both are true, and the absence of an air bladder explains the need for continuous swimming in the NCERT account.'},
+      {type:'statement',level:'Statement pair',q:'Statement I: Male chondrichthyans possess claspers on pelvic fins.\nStatement II: Fertilisation in chondrichthyans is external.',o:['Both statements are true','Both statements are false','Statement I is true; Statement II is false','Statement I is false; Statement II is true'],a:2,e:'Claspers are present in males, and fertilisation is internal.'},
+      {type:'mcq',level:'NCERT direct',q:'Which feature is correctly associated with Osteichthyes?',o:['Placoid scales and no operculum','Cycloid/ctenoid scales and air bladder','Ventral mouth and persistent notochord','Internal fertilisation and male claspers'],a:1,e:'Bony fishes have cycloid/ctenoid scales, operculum and an air bladder.'},
+      {type:'match',level:'Fish examples',q:'Match the fish with its category:\nA. Exocoetus  B. Labeo  C. Betta  D. Torpedo\n1. Freshwater bony fish  2. Electric cartilaginous fish  3. Marine bony fish  4. Aquarium bony fish',o:['A-3, B-1, C-4, D-2','A-1, B-3, C-2, D-4','A-3, B-4, C-1, D-2','A-2, B-1, C-4, D-3'],a:0,e:'Exocoetus is marine, Labeo freshwater, Betta aquarium and Torpedo an electric cartilaginous fish.'},
+      {type:'tf',level:'True / False',q:'Amphibians have dry, cornified skin with epidermal scales.',o:['True','False'],a:1,e:'Amphibians have moist, scaleless skin. Dry cornified skin characterises reptiles.'},
+      {type:'statement',level:'Multiple statements',q:'Which statements about Amphibia are correct?\n1. Tympanum represents the ear.\n2. Heart is three-chambered.\n3. Fertilisation is internal in NCERT-listed forms.\n4. Development is indirect.',o:['1 and 2 only','1, 2 and 4 only','2, 3 and 4 only','1, 2, 3 and 4'],a:1,e:'Fertilisation is external; statements 1, 2 and 4 are correct.'},
+      {type:'assertion',level:'NEET exception',q:'Assertion (A): Crocodiles have a four-chambered heart.\nReason (R): All reptiles are homoiothermic.',o:AR,a:2,e:'The assertion is true, but reptiles are poikilothermic.'},
+      {type:'mcq',level:'Odd one out',q:'Choose the odd pair.',o:['Aves — pneumatic bones','Mammalia — mammary glands','Reptilia — external fertilisation','Amphibia — moist skin'],a:2,e:'Reptiles have internal fertilisation.'},
+      {type:'match',level:'Tetrapod features',q:'Match the feature with the class:\nA. Oil gland at tail base  B. Mammary glands  C. Cloaca with external fertilisation  D. Epidermal scutes\n1. Amphibia  2. Reptilia  3. Aves  4. Mammalia',o:['A-3, B-4, C-1, D-2','A-4, B-3, C-2, D-1','A-3, B-2, C-1, D-4','A-2, B-4, C-3, D-1'],a:0,e:'Oil gland–Aves, mammary glands–Mammalia, the given cloacal pattern–Amphibia, epidermal scutes–Reptilia.'},
+      {type:'statement',level:'Statement pair',q:'Statement I: Bird endoskeleton is fully ossified and long bones are pneumatic.\nStatement II: Air sacs connected to the lungs supplement respiration.',o:['Both statements are true','Both statements are false','Statement I only is true','Statement II only is true'],a:0,e:'Both are standard NCERT characteristics of Aves.'},
+      {type:'assertion',level:'Concept check',q:'Assertion (A): Ornithorhynchus is an exception to the common reproductive pattern of mammals.\nReason (R): It is an oviparous mammal.',o:AR,a:0,e:'Mammals are commonly viviparous, while Ornithorhynchus lays eggs.'},
+      {type:'mcq',level:'Integrated logic',q:'An animal is marine, coelomate, has adult radial symmetry, bilateral larva and no excretory system. Which additional feature is most likely?',o:['Water vascular system','Malpighian tubules','Comb plates','Flame cells'],a:0,e:'The description identifies Echinodermata, whose distinctive feature is the water vascular system.'}
+    ];
+
+    const $ = (s,root=document) => root.querySelector(s);
+    const $$ = (s,root=document) => [...root.querySelectorAll(s)];
+    const escapeHTML = s => String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+
+    $('#conceptGrid').innerHTML = concepts.map(x=>`<article class="concept"><span class="concept-no">${x.n}</span><h3>${x.t}</h3><p>${x.d}</p><div class="mini">${x.c.map(c=>`<span class="chip">${c}</span>`).join('')}</div></article>`).join('');
+    $('#trapGrid').innerHTML = traps.map(([h,d])=>`<article class="trap"><strong>${h}</strong><span>${d}</span></article>`).join('');
+    $('#glossaryGrid').innerHTML = glossary.map(([t,d])=>`<article class="term"><b>${t}</b><p>${d}</p></article>`).join('');
+
+    let groupFilter='all';
+    function renderTaxa(){
+      const q=$('#taxonSearch').value.trim().toLowerCase();
+      const list=taxa.filter(x=>(groupFilter==='all'||x.group===groupFilter)&&(!q||[x.name,x.tag,x.examples,...x.features].join(' ').toLowerCase().includes(q)));
+      $('#taxonGrid').innerHTML=list.map((x,i)=>`<details class="taxon"><summary><span class="taxon-index">${String(i+1).padStart(2,'0')}</span><span><h3>${x.name}</h3><div class="signature">${x.tag}</div></span><span class="chev" aria-hidden="true">›</span></summary><div class="taxon-body"><ul class="feature-list">${x.features.map(f=>`<li>${f}</li>`).join('')}</ul><div class="examples"><b>NCERT examples:</b> ${x.examples}</div></div></details>`).join('');
+      $('#noResults').style.display=list.length?'none':'block';
+    }
+    renderTaxa();
+    $('#taxonSearch').addEventListener('input',renderTaxa);
+    $$('[data-group]').forEach(b=>b.addEventListener('click',()=>{groupFilter=b.dataset.group;$$('[data-group]').forEach(x=>x.classList.toggle('active',x===b));renderTaxa()}));
+
+    function renderTable(key){
+      const d=compareData[key];
+      $('#compareTable').innerHTML=`<table><thead><tr>${d.headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${d.rows.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+    }
+    renderTable('phyla');
+    $$('[data-table]').forEach(b=>b.addEventListener('click',()=>{$$('[data-table]').forEach(x=>x.classList.toggle('active',x===b));renderTable(b.dataset.table)}));
+
+    let currentSet=[...questions], idx=0, score=0, answered=0, locked=false, responses=[];
+    const typeNames={mcq:'Single best answer',statement:'Statement type',assertion:'Assertion–Reason',match:'Match the following',tf:'True / False'};
+    function getBest(){return Number(localStorage.getItem('ak-neet-best')||0)}
+    function setBest(v){if(v>getBest())localStorage.setItem('ak-neet-best',String(v));$('#best').textContent=Math.max(v,getBest())+'%'}
+    function renderQuestion(){
+      if(idx>=currentSet.length){showResult();return}
+      $('#quizPanel').style.display='block';$('#resultPanel').classList.remove('show');
+      const q=currentSet[idx], saved=responses[idx]; locked=!!saved;
+      $('#qCounter').textContent=`Question ${idx+1} of ${currentSet.length}`;
+      $('#qSection').textContent=typeNames[q.type];$('#qType').textContent=typeNames[q.type];$('#qLevel').textContent=q.level;$('#qText').textContent=q.q;
+      $('#quizMeter').style.width=`${(idx/currentSet.length)*100}%`;
+      $('#score').textContent=score;$('#answered').textContent=answered;$('#best').textContent=getBest()+'%';
+      $('#options').innerHTML=q.o.map((o,i)=>`<div class="option ${saved?(i===q.a?'correct':saved.choice===i&&i!==q.a?'wrong':''):''}"><input type="radio" name="answer" id="opt${i}" value="${i}" ${saved&&saved.choice===i?'checked':''} ${saved?'disabled':''}><label for="opt${i}"><span class="option-key">${String.fromCharCode(65+i)}</span><span>${escapeHTML(o)}</span></label></div>`).join('');
+      const fb=$('#feedback');
+      if(saved){fb.className=`feedback show ${saved.correct?'correct':'wrong'}`;fb.innerHTML=`<strong>${saved.correct?'Correct':'Not quite — correct answer: '+String.fromCharCode(65+q.a)}</strong><p>${q.e}</p>`}else{fb.className='feedback';fb.innerHTML=''}
+      $('#checkBtn').hidden=!!saved;$('#nextBtn').hidden=!saved;$('#nextBtn').textContent=idx===currentSet.length-1?'View result':'Next question';$('#prevBtn').disabled=idx===0;
+    }
+    function checkAnswer(){
+      if(locked)return;const pick=$('input[name="answer"]:checked');if(!pick){showToast('Select an answer first');return}
+      const choice=Number(pick.value),q=currentSet[idx],correct=choice===q.a;responses[idx]={choice,correct};locked=true;answered++;if(correct)score++;
+      $$('.option',$('#options')).forEach((el,i)=>{el.classList.toggle('correct',i===q.a);el.classList.toggle('wrong',i===choice&&i!==q.a);$('input',el).disabled=true});
+      const fb=$('#feedback');fb.className=`feedback show ${correct?'correct':'wrong'}`;fb.innerHTML=`<strong>${correct?'Correct':'Not quite — correct answer: '+String.fromCharCode(65+q.a)}</strong><p>${q.e}</p>`;
+      $('#score').textContent=score;$('#answered').textContent=answered;$('#checkBtn').hidden=true;$('#nextBtn').hidden=false;$('#nextBtn').textContent=idx===currentSet.length-1?'View result':'Next question';
+    }
+    function showResult(){
+      $('#quizPanel').style.display='none';const pct=answered?Math.round(score/answered*100):0;setBest(pct);$('#resultPanel').classList.add('show');$('#resultRing').style.setProperty('--pct',pct+'%');$('#finalPercent').textContent=pct+'%';
+      $('#resultTitle').textContent=pct>=85?'Excellent NCERT command':pct>=65?'Good foundation':pct>=45?'Keep consolidating':'Rebuild the classification logic';
+      $('#resultText').textContent=`You scored ${score} out of ${answered}. Review each explanation and repeat the set for stronger recall.`;
+    }
+    function resetQuiz(){idx=0;score=0;answered=0;locked=false;responses=[];renderQuestion()}
+    $('#checkBtn').addEventListener('click',checkAnswer);$('#nextBtn').addEventListener('click',()=>{idx++;renderQuestion()});$('#prevBtn').addEventListener('click',()=>{if(idx>0){idx--;renderQuestion()}});$('#restartBtn').addEventListener('click',resetQuiz);$('#againBtn').addEventListener('click',resetQuiz);
+    $$('[data-qfilter]').forEach(b=>b.addEventListener('click',()=>{$$('[data-qfilter]').forEach(x=>x.classList.toggle('active',x===b));const f=b.dataset.qfilter;currentSet=f==='all'?[...questions]:questions.filter(q=>q.type===f);resetQuiz()}));
+    renderQuestion();
+
+    const themeBtn=$('#themeBtn');
+    const savedTheme=localStorage.getItem('ak-theme');if(savedTheme)document.documentElement.dataset.theme=savedTheme;
+    function syncTheme(){themeBtn.textContent=document.documentElement.dataset.theme==='dark'?'☼':'☾'}syncTheme();
+    themeBtn.addEventListener('click',()=>{const n=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=n;localStorage.setItem('ak-theme',n);syncTheme()});
+    $('#printBtn').addEventListener('click',()=>window.print());
+    const backTop=$('#backTop');backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+    function showToast(msg){const t=$('#toast');t.textContent=msg;t.classList.add('show');backTop.classList.add('toast-shift');setTimeout(()=>{t.classList.remove('show');backTop.classList.remove('toast-shift')},1800)}
+    const sections=$$('main section[id]'),navs=$$('.nav-link');
+    const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){navs.forEach(n=>n.classList.toggle('active',n.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-25% 0px -65%'});sections.forEach(s=>observer.observe(s));
+    window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;$('#readingProgress').style.width=(max?scrollY/max*100:0)+'%';backTop.classList.toggle('show',scrollY>700)},{passive:true});
+  })();
+  </script>
+</body>
+</html>

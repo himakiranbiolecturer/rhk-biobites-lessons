@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive NCERT-aligned Class 11 chapter on Photosynthesis in Higher Plants for NEET aspirants.">
+  <title>Photosynthesis in Higher Plants | RHK-BiOBiTES</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b6b4f'/%3E%3Cpath d='M49 12C28 13 15 24 15 42c9 3 19 0 26-8 6-7 8-15 8-22Z' fill='%23dff8a6'/%3E%3Cpath d='M17 47c8-12 16-19 27-27' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <style>
+    :root{--bg:#f1fbea;--paper:#fffefa;--ink:#17362c;--muted:#567067;--green:#0b6b4f;--green2:#18845d;--lime:#dff3a1;--yellow:#ffd76b;--blue:#dceffc;--pink:#ffe3e0;--line:#cce2d3;--shadow:0 12px 32px rgba(34,82,61,.11);--radius:20px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#f5ffe9 0,#eefaf3 45%,#eff8ff 100%);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    body.dark{--bg:#10231d;--paper:#173128;--ink:#effff5;--muted:#bad0c6;--green:#7be0af;--green2:#52c98f;--lime:#334927;--yellow:#765f21;--blue:#193c4d;--pink:#4b2f31;--line:#365b4d;--shadow:0 12px 32px rgba(0,0,0,.28);background:#10231d}
+    button,input,select{font:inherit}button{cursor:pointer}.progress{position:fixed;inset:0 auto auto 0;height:4px;background:linear-gradient(90deg,#f3ba35,#21a56d);z-index:50;width:0}
+    header{background:linear-gradient(120deg,#07583f,#0c7d57 60%,#3aa96b);color:white;padding:22px 4vw 20px;position:relative;overflow:hidden}
+    header:after{content:"";position:absolute;width:280px;height:280px;border:42px solid rgba(255,255,255,.08);border-radius:50%;right:-90px;top:-110px}
+    .top{max-width:1180px;margin:auto;display:flex;gap:18px;justify-content:space-between;align-items:center;position:relative;z-index:1}.brand{font-weight:900;letter-spacing:.08em}.tools{display:flex;gap:8px;flex-wrap:wrap}.icon-btn{border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.13);color:#fff;padding:8px 12px;border-radius:999px}
+    .hero{max-width:1180px;margin:28px auto 0;display:grid;grid-template-columns:1.4fr .75fr;gap:28px;align-items:center;position:relative;z-index:1}.eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#dff3a1}.hero h1{font-size:clamp(2.1rem,5vw,4.7rem);line-height:.96;margin:.35rem 0 1rem;max-width:820px}.hero p{font-size:1.08rem;max-width:720px;color:#e8fff5}.equation{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.35);padding:22px;border-radius:24px;text-align:center;box-shadow:var(--shadow)}.sun{font-size:3.2rem;display:block}.equation strong{display:block;font-size:1.16rem;margin:8px 0}.equation small{color:#e8fff5}
+    nav{position:sticky;top:0;z-index:30;background:rgba(255,254,250,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap}.dark nav{background:rgba(23,49,40,.94)}nav .wrap{max-width:1180px;margin:auto;display:flex}nav a{padding:13px 14px;color:var(--ink);text-decoration:none;font-weight:700;font-size:.9rem}nav a:hover{color:var(--green);background:var(--lime)}
+    main{max-width:1180px;margin:auto;padding:30px 20px 70px}section{scroll-margin-top:66px;margin:34px 0 58px}.section-head{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}.num{background:var(--green);color:white;width:42px;height:42px;display:grid;place-items:center;border-radius:13px;font-weight:900;flex:0 0 auto}.section-head h2{margin:0;font-size:clamp(1.55rem,3vw,2.2rem);line-height:1.15}.section-head p{margin:5px 0 0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card,.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.card{padding:20px}.card h3{margin:.2rem 0 .45rem;color:var(--green);line-height:1.25}.card p,.card ul{margin:.4rem 0}.tag{display:inline-block;background:var(--lime);color:var(--ink);border-radius:999px;padding:3px 9px;font-size:.76rem;font-weight:800}.trap{border-left:5px solid #ea9b24;background:linear-gradient(90deg,var(--yellow),var(--paper) 30%)}.note{border-left:5px solid var(--green);background:linear-gradient(90deg,var(--lime),var(--paper) 32%)}.mini{font-size:.9rem;color:var(--muted)}
+    .flow-panel{padding:22px}.flow-controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.flow-btn,.filter-btn{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:8px 13px;font-weight:750}.flow-btn.active,.filter-btn.active{background:var(--green);border-color:var(--green);color:white}.flow-track{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;align-items:center}.node{min-height:98px;padding:12px 8px;border-radius:15px;background:var(--bg);border:2px solid var(--line);display:grid;place-items:center;text-align:center;font-weight:800;transition:.25s}.node.active{background:var(--yellow);border-color:#dc9c12;transform:translateY(-4px)}.arrow{text-align:center;font-size:1.6rem;color:var(--green)}.flow-readout{margin-top:18px;padding:16px;border-radius:15px;background:var(--blue)}.flow-readout h3{margin:0 0 4px}
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pathway{padding:20px}.pathway h3{margin-top:0}.steps{display:grid;gap:9px}.step{padding:12px 14px;background:var(--bg);border-radius:13px;border-left:4px solid var(--green)}.dark .step{background:#10251e}.switcher{display:flex;gap:8px;margin:0 0 16px}.switcher button{flex:1;padding:10px;border-radius:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-weight:800}.switcher button.active{background:var(--green);color:#fff}.compare-highlight{outline:3px solid var(--yellow)}
+    .table-wrap{overflow:auto;border-radius:16px;border:1px solid var(--line);background:var(--paper)}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--green);color:white}tr:last-child td{border:0}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg),transparent 20%)}
+    .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.scientist{text-align:center;padding:18px}.scientist .year{font-weight:900;color:var(--green);font-size:1.1rem}.scientist h3{margin:5px 0}
+    .search{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);margin-bottom:15px}.glossary{grid-template-columns:repeat(4,1fr)}.term{padding:16px}.term strong{display:block;color:var(--green)}
+    .quiz-shell{padding:22px}.quiz-top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.score{font-size:1.1rem;font-weight:900;color:var(--green)}.filters{display:flex;gap:7px;flex-wrap:wrap;margin:17px 0}.qbox{padding:22px;border:1px solid var(--line);border-radius:18px;background:var(--bg)}.qmeta{display:flex;justify-content:space-between;color:var(--muted);font-size:.88rem;font-weight:800}.qtext{font-size:1.16rem;font-weight:800;line-height:1.45;margin:15px 0}.options{display:grid;gap:10px}.option{width:100%;text-align:left;padding:13px 15px;border:2px solid var(--line);border-radius:13px;background:var(--paper);color:var(--ink)}.option:hover{border-color:var(--green)}.option.correct{background:#dff7e8;border-color:#15955d;color:#123a28}.option.wrong{background:#ffe6e2;border-color:#d94f42;color:#5a1912}.feedback{display:none;margin-top:14px;padding:14px;border-radius:13px;background:var(--blue)}.feedback.show{display:block}.quiz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:15px}.quiz-nav button,.primary{border:0;background:var(--green);color:white;padding:10px 16px;border-radius:12px;font-weight:800}.quiz-nav button:disabled{opacity:.45;cursor:not-allowed}.result{display:none;text-align:center;padding:24px}.result.show{display:block}.ring{width:125px;height:125px;margin:10px auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green) var(--pct),var(--line) 0);position:relative}.ring:after{content:"";position:absolute;inset:13px;background:var(--paper);border-radius:50%}.ring strong{z-index:1;font-size:1.35rem}
+    .callout{padding:22px;background:linear-gradient(135deg,var(--blue),var(--paper));border:1px solid var(--line);border-radius:var(--radius)}.callout h3{margin:0;color:var(--green)}details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:8px 0}summary{cursor:pointer;font-weight:800;color:var(--green)}
+    .back{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border:0;border-radius:50%;background:var(--green);color:white;box-shadow:var(--shadow);display:none}footer{text-align:center;padding:30px 20px;background:#083d2e;color:#dff7eb}footer a{color:#e8f99b}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.glossary{grid-template-columns:repeat(3,1fr)}.timeline{grid-template-columns:repeat(2,1fr)}.flow-track{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}}
+    @media(max-width:620px){header{padding-inline:20px}.top{align-items:flex-start}.hero{margin-top:20px}.hero h1{font-size:2.45rem}.grid,.compare,.glossary,.timeline{grid-template-columns:1fr}main{padding-inline:14px}.qbox,.quiz-shell{padding:15px}.flow-panel{padding:14px}.tools .label{display:none}}
+    @media print{nav,.tools,.progress,.back,.quiz-nav,.filters{display:none!important}body{background:white;color:#111}.card,.panel{box-shadow:none;break-inside:avoid}section{break-before:auto}.hero{grid-template-columns:1fr 1fr}header{background:#176548!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+  </style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header id="top">
+  <div class="top"><div class="brand">RHK‑BiOBiTES · NEET BIOLOGY</div><div class="tools"><button class="icon-btn" id="themeBtn" aria-label="Toggle colour theme">◐ <span class="label">Theme</span></button><button class="icon-btn" onclick="window.print()">⎙ <span class="label">Print</span></button></div></div>
+  <div class="hero">
+    <div><div class="eyebrow">Class 11 · Chapter 11 · Plant Physiology</div><h1>Photosynthesis in Higher Plants</h1><p>Follow light energy as it becomes ATP, NADPH and carbohydrate. Compare C₃ and C₄ strategies, catch NCERT traps, then test yourself with NEET-style questions.</p></div>
+    <div class="equation"><span class="sun">☀️ → 🌿</span><strong>6CO₂ + 12H₂O ⟶ C₆H₁₂O₆ + 6H₂O + 6O₂</strong><small>Light · chlorophyll · many enzyme-controlled steps<br>Released oxygen originates from water.</small></div>
+  </div>
+</header>
+<nav aria-label="Chapter navigation"><div class="wrap"><a href="#map">Chapter map</a><a href="#history">Experiments</a><a href="#pigments">Pigments</a><a href="#light">Light reaction</a><a href="#calvin">Calvin cycle</a><a href="#c4">C₃ vs C₄</a><a href="#factors">Factors</a><a href="#traps">NEET traps</a><a href="#glossary">Glossary</a><a href="#quiz">Practice</a></div></nav>
+<main>
+  <section id="map">
+    <div class="section-head"><span class="num">01</span><div><h2>Chapter map</h2><p>Use this route to connect structure, energy conversion and carbon fixation.</p></div></div>
+    <div class="grid">
+      <article class="card note"><span class="tag">WHERE?</span><h3>Division of labour</h3><p><b>Thylakoid membranes:</b> capture light, split water, transport electrons and make ATP/NADPH.</p><p><b>Stroma:</b> uses ATP and NADPH to reduce CO₂ into carbohydrate.</p></article>
+      <article class="card"><span class="tag">TWO PHASES</span><h3>Energy first, carbon next</h3><p>The photochemical phase supplies ATP and NADPH. The biosynthetic phase uses them; it is not a reaction that must occur in darkness.</p></article>
+      <article class="card trap"><span class="tag">NCERT ALERT</span><h3>Oxygen source</h3><p>Photosynthetic O₂ comes from the oxidation of <b>water</b>, not from CO₂. Van Niel's inference was later confirmed with isotopic studies.</p></article>
+    </div>
+  </section>
+  <section id="history">
+    <div class="section-head"><span class="num">02</span><div><h2>Experiments that built the idea</h2><p>Remember each scientist by the question their experiment answered.</p></div></div>
+    <div class="timeline">
+      <article class="card scientist"><div class="year">1770</div><h3>Priestley</h3><p>Green plants restore air altered by a burning candle or breathing animal.</p></article>
+      <article class="card scientist"><div class="year">1779</div><h3>Ingenhousz</h3><p>Sunlight and green parts are required for oxygen evolution.</p></article>
+      <article class="card scientist"><div class="year">1854</div><h3>Julius von Sachs</h3><p>Green parts form glucose, commonly stored as starch; chlorophyll lies in chloroplasts.</p></article>
+      <article class="card scientist"><div class="year">1882</div><h3>Engelmann</h3><p>Aerobic bacteria clustered in blue and red regions, producing an early action spectrum.</p></article>
+      <article class="card scientist"><div class="year">1931</div><h3>Van Niel</h3><p>Generalised photosynthesis using hydrogen donors and inferred that plant oxygen comes from H₂O.</p></article>
+    </div>
+  </section>
+  <section id="pigments">
+    <div class="section-head"><span class="num">03</span><div><h2>Pigments and photosystems</h2><p>Chlorophyll a is the chief pigment; accessory pigments widen usable wavelengths and protect it.</p></div></div>
+    <div class="grid">
+      <article class="card"><span class="tag">PRIMARY</span><h3>Chlorophyll a</h3><p>The reaction-centre pigment. Its absorption peaks broadly match the action spectrum in blue and red regions.</p></article>
+      <article class="card"><span class="tag">ACCESSORY</span><h3>Chlorophyll b</h3><p>Transfers absorbed energy to chlorophyll a and extends the spectral range used.</p></article>
+      <article class="card"><span class="tag">ACCESSORY</span><h3>Carotenoids & xanthophylls</h3><p>Harvest additional wavelengths and help protect chlorophyll a from photo-oxidation.</p></article>
+      <article class="card"><h3>Light-harvesting complex</h3><p>Many pigment molecules are bound to proteins. Most form the antenna; one chlorophyll a molecule forms the reaction centre.</p></article>
+      <article class="card"><h3>Photosystem II</h3><p>Reaction centre <b>P680</b>. It works earlier in the Z scheme, oxidises water indirectly and replaces lost electrons.</p></article>
+      <article class="card"><h3>Photosystem I</h3><p>Reaction centre <b>P700</b>. It re-energises electrons and can support either non-cyclic or cyclic flow.</p></article>
+    </div>
+  </section>
+  <section id="light">
+    <div class="section-head"><span class="num">04</span><div><h2>Electron-flow explorer</h2><p>Select a mode, then tap a component to trace electron movement and products.</p></div></div>
+    <div class="panel flow-panel">
+      <div class="flow-controls"><button class="flow-btn active" data-flow="noncyclic">Non-cyclic flow</button><button class="flow-btn" data-flow="cyclic">Cyclic flow</button></div>
+      <div class="flow-track" id="flowTrack"></div><div class="flow-readout" id="flowReadout" aria-live="polite"></div>
+    </div>
+    <div class="grid" style="margin-top:16px">
+      <article class="card"><h3>Photolysis</h3><p>At the inner side of the thylakoid membrane, water supplies electrons to PS II and releases protons into the lumen plus oxygen.</p><p><b>2H₂O → 4H⁺ + 4e⁻ + O₂</b></p></article>
+      <article class="card"><h3>Proton gradient</h3><p>Water splitting adds H⁺ to the lumen; electron transport moves more H⁺ inward; NADP⁺ reduction consumes H⁺ on the stromal side.</p></article>
+      <article class="card"><h3>ATP synthase</h3><p>H⁺ returns from lumen to stroma through CF₀. The CF₁ head uses this energy to phosphorylate ADP, producing ATP on the stromal side.</p></article>
+    </div>
+    <div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Feature</th><th>Non-cyclic photophosphorylation</th><th>Cyclic photophosphorylation</th></tr></thead><tbody>
+      <tr><td>Photosystems</td><td>PS II and PS I</td><td>PS I only</td></tr><tr><td>Electron path</td><td>Water → PS II → carriers → PS I → NADP⁺</td><td>PS I → carriers → back to PS I</td></tr><tr><td>Products</td><td>ATP, NADPH and O₂</td><td>ATP only</td></tr><tr><td>Typical site</td><td>Granal thylakoids</td><td>Stroma lamellae</td></tr><tr><td>Reason it helps</td><td>Supplies ATP and reducing power</td><td>Meets extra ATP demand</td></tr>
+    </tbody></table></div>
+  </section>
+  <section id="calvin">
+    <div class="section-head"><span class="num">05</span><div><h2>Calvin cycle: CO₂ to carbohydrate</h2><p>The cycle runs in the stroma and occurs in every photosynthetic plant, including C₄ plants.</p></div></div>
+    <div class="grid">
+      <article class="card"><span class="tag">1 · CARBOXYLATION</span><h3>Fix CO₂</h3><p>RuBisCO adds CO₂ to the 5-C acceptor RuBP. The unstable 6-C intermediate gives two molecules of 3-PGA.</p></article>
+      <article class="card"><span class="tag">2 · REDUCTION</span><h3>Make triose phosphate</h3><p>ATP and NADPH convert 3-PGA to triose phosphate. Some carbon exits toward sucrose and starch.</p></article>
+      <article class="card"><span class="tag">3 · REGENERATION</span><h3>Re-form RuBP</h3><p>Most triose phosphate is rearranged, and ATP is used to regenerate RuBP so fixation can continue.</p></article>
+    </div>
+    <div class="callout" style="margin-top:16px"><h3>NEET stoichiometry</h3><p>For <b>1 CO₂</b>: 3 ATP + 2 NADPH. For one net triose phosphate (3 CO₂): 9 ATP + 6 NADPH. For one glucose equivalent (6 CO₂): <b>18 ATP + 12 NADPH</b>.</p></div>
+  </section>
+  <section id="c4">
+    <div class="section-head"><span class="num">06</span><div><h2>C₃ and C₄ strategy comparator</h2><p>C₄ plants spatially concentrate CO₂ around RuBisCO; they do not replace the Calvin cycle.</p></div></div>
+    <div class="switcher"><button class="active" data-compare="both">Show both</button><button data-compare="c3">Focus C₃</button><button data-compare="c4">Focus C₄</button></div>
+    <div class="compare">
+      <article class="panel pathway" id="c3Panel"><span class="tag">C₃ PLANT</span><h3>One main cell type</h3><div class="steps"><div class="step"><b>Mesophyll:</b> RuBisCO fixes CO₂ directly.</div><div class="step"><b>First stable product:</b> 3-PGA, a 3-carbon compound.</div><div class="step"><b>Hot, dry conditions:</b> stomatal closure lowers CO₂ and favours photorespiration.</div><div class="step"><b>Examples:</b> wheat, rice, potato.</div></div></article>
+      <article class="panel pathway" id="c4Panel"><span class="tag">C₄ PLANT</span><h3>Spatial separation</h3><div class="steps"><div class="step"><b>Mesophyll:</b> PEP carboxylase fixes HCO₃⁻; OAA is the first stable product.</div><div class="step"><b>Transport:</b> OAA becomes malate/aspartate and moves to bundle sheath.</div><div class="step"><b>Bundle sheath:</b> C₄ acid releases CO₂; Calvin cycle operates here.</div><div class="step"><b>Return:</b> 3-C compound goes back and PEP is regenerated.</div><div class="step"><b>Examples:</b> maize, sugarcane, sorghum.</div></div></article>
+    </div>
+    <div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>Feature</th><th>C₃</th><th>C₄</th></tr></thead><tbody>
+      <tr><td>Primary CO₂ acceptor</td><td>RuBP (5-C)</td><td>PEP (3-C) in mesophyll</td></tr><tr><td>First stable product</td><td>3-PGA (3-C)</td><td>OAA (4-C)</td></tr><tr><td>Primary carboxylase</td><td>RuBisCO</td><td>PEP carboxylase, then RuBisCO</td></tr><tr><td>Kranz anatomy</td><td>Absent</td><td>Present</td></tr><tr><td>Photorespiration</td><td>Measurable, especially warm/low CO₂</td><td>Negligible</td></tr><tr><td>CO₂ compensation point</td><td>Higher</td><td>Lower</td></tr><tr><td>Optimum temperature</td><td>About 20–25 °C</td><td>About 30–40 °C</td></tr><tr><td>ATP cost per CO₂</td><td>3 ATP</td><td>5 ATP equivalents</td></tr>
+    </tbody></table></div>
+  </section>
+  <section id="photoresp">
+    <div class="section-head"><span class="num">07</span><div><h2>Photorespiration</h2><p>RuBisCO can act as an oxygenase when O₂ competes successfully with CO₂.</p></div></div>
+    <div class="grid">
+      <article class="card"><h3>Starting event</h3><p>RuBP + O₂ forms one 3-PGA and one 2-phosphoglycolate. The latter must be salvaged.</p></article>
+      <article class="card"><h3>Three organelles</h3><p>The recovery pathway links the <b>chloroplast, peroxisome and mitochondrion</b>.</p></article>
+      <article class="card trap"><h3>Why wasteful?</h3><p>CO₂ is released, and there is no accompanying synthesis of ATP or NADPH. It lowers net photosynthetic output.</p></article>
+    </div>
+  </section>
+  <section id="factors">
+    <div class="section-head"><span class="num">08</span><div><h2>Factors affecting photosynthesis</h2><p>Blackman's law: when several factors influence a process, the rate is limited by the factor nearest its minimum.</p></div></div>
+    <div class="grid">
+      <article class="card"><h3>Light</h3><p>Quality, intensity and duration matter. Rate rises with intensity until another factor limits it; excessive light can cause photo-oxidative damage.</p></article>
+      <article class="card"><h3>Carbon dioxide</h3><p>Often the major limiting factor. C₃ plants respond more strongly to CO₂ enrichment than C₄ plants because C₄ leaves already concentrate CO₂.</p></article>
+      <article class="card"><h3>Temperature</h3><p>Carbon reactions are enzyme-driven and strongly temperature sensitive. Tropical C₄ plants generally have a higher optimum than C₃ plants.</p></article>
+      <article class="card"><h3>Water</h3><p>Water stress mainly acts indirectly: stomata close, CO₂ entry falls, leaves may wilt and metabolic activity declines.</p></article>
+      <article class="card"><h3>Internal factors</h3><p>Leaf age, chlorophyll content, leaf orientation, stomatal number and internal CO₂ all influence capacity.</p></article>
+      <article class="card note"><h3>Limiting-factor logic</h3><p>Adding more light cannot raise the rate when CO₂ is limiting. Improving the limiting input changes the curve until another factor becomes limiting.</p></article>
+    </div>
+  </section>
+  <section id="traps">
+    <div class="section-head"><span class="num">09</span><div><h2>High-yield NEET traps</h2><p>Short corrections for statements that often look almost right.</p></div></div>
+    <div class="grid">
+      <article class="card trap"><h3>“Dark” reaction</h3><p>It is light-independent only in the direct sense; it depends on ATP and NADPH made in light.</p></article>
+      <article class="card trap"><h3>PS II comes first</h3><p>The numbers reflect discovery order. Electron flow begins at PS II and then reaches PS I.</p></article>
+      <article class="card trap"><h3>C₄ still uses C₃ cycle</h3><p>Initial fixation is C₄, but sugar synthesis proceeds through the Calvin cycle in bundle sheath cells.</p></article>
+      <article class="card trap"><h3>PEPcase location</h3><p>It is active in C₄ mesophyll. Bundle sheath cells are rich in RuBisCO and lack PEPcase in the NCERT model.</p></article>
+      <article class="card trap"><h3>Cyclic products</h3><p>Cyclic flow forms ATP, but neither NADPH nor oxygen.</p></article>
+      <article class="card trap"><h3>ATP synthesis side</h3><p>CF₁ projects toward the stroma; chloroplast ATP is released on the stromal side.</p></article>
+      <article class="card trap"><h3>Action vs absorption</h3><p>Absorption spectrum measures light absorbed by a pigment; action spectrum measures photosynthetic effectiveness.</p></article>
+      <article class="card trap"><h3>First product vs acceptor</h3><p>C₃: acceptor RuBP, first stable product 3-PGA. C₄: acceptor PEP, first stable product OAA.</p></article>
+      <article class="card trap"><h3>RuBisCO dual activity</h3><p>High CO₂ favours carboxylation; high O₂/low CO₂ favours oxygenation.</p></article>
+    </div>
+  </section>
+  <section id="glossary">
+    <div class="section-head"><span class="num">10</span><div><h2>Rapid glossary</h2><p>Search the vocabulary before entering the test.</p></div></div>
+    <input class="search" id="termSearch" type="search" placeholder="Search: P680, Kranz, compensation point…" aria-label="Search glossary"><div class="grid glossary" id="glossaryGrid"></div>
+  </section>
+  <section id="quiz">
+    <div class="section-head"><span class="num">11</span><div><h2>NEET practice studio</h2><p>36 questions · MCQ, statement, assertion–reason, match and true/false · instant explanations.</p></div></div>
+    <div class="panel quiz-shell"><div class="quiz-top"><div><b id="quizTitle">All question models</b><div class="mini" id="bestScore">Best score: —</div></div><div class="score" id="score">Score 0 / 0</div></div><div class="filters" id="filters"></div><div id="questionArea"></div><div class="result" id="result"><div class="ring" id="ring"><strong id="resultPct">0%</strong></div><h3 id="resultText"></h3><p id="resultNote"></p><button class="primary" id="restart">Try again</button></div></div>
+  </section>
+  <section>
+    <div class="section-head"><span class="num">12</span><div><h2>Last-minute revision</h2><p>Open only the checkpoints you need.</p></div></div>
+    <details><summary>Where are major events located?</summary><p>Granal/stromal thylakoids: light reactions; lumen: proton accumulation; stromal side: ATP and NADPH formation; stroma: Calvin cycle; C₄ mesophyll: initial HCO₃⁻ fixation; C₄ bundle sheath: Calvin cycle.</p></details>
+    <details><summary>What does each named enzyme do?</summary><p>PEP carboxylase fixes HCO₃⁻ into OAA; RuBisCO carboxylates or oxygenates RuBP; NADP reductase forms NADPH; ATP synthase uses the proton gradient.</p></details>
+    <details><summary>What are the essential numerical facts?</summary><p>Per CO₂ in Calvin cycle: 3 ATP and 2 NADPH. Per glucose: 18 ATP and 12 NADPH. C₄ concentrating adds 2 ATP equivalents per CO₂.</p></details>
+  </section>
+</main>
+<button class="back" id="back" aria-label="Back to top" onclick="scrollTo({top:0,behavior:'smooth'})">↑</button>
+<footer><b>RHK‑BiOBiTES</b><br><span>Class 11 and NEET preparation · Works offline in a modern browser.<br>Chapter scope aligned to the <a href="https://ncert.nic.in/textbook/pdf/kebo111.pdf" target="_blank" rel="noopener">NCERT Biology Chapter 11 (Reprint 2026–27)</a>.</span></footer>
+<script>
+const glossary=[
+["Action spectrum","Relative effectiveness of different wavelengths in driving photosynthesis."],
+["Absorption spectrum","Pattern of wavelengths absorbed by a pigment."],
+["Antenna complex","Accessory pigment–protein molecules that funnel excitation to a reaction centre."],
+["P680","Reaction-centre chlorophyll a of photosystem II."],
+["P700","Reaction-centre chlorophyll a of photosystem I."],
+["Photolysis","Light-associated splitting of water that supplies electrons, H⁺ and O₂."],
+["Z scheme","Energy profile of non-cyclic electron flow through PS II and PS I."],
+["Photophosphorylation","Light-driven synthesis of ATP from ADP and inorganic phosphate."],
+["Chemiosmosis","ATP formation powered by movement of H⁺ down an electrochemical gradient."],
+["RuBP","Five-carbon CO₂ acceptor of the Calvin cycle."],
+["RuBisCO","Enzyme that can carboxylate or oxygenate RuBP."],
+["3-PGA","Three-carbon first stable product of the Calvin cycle."],
+["Triose phosphate","Three-carbon sugar phosphate produced during Calvin-cycle reduction."],
+["PEP","Three-carbon primary CO₂ acceptor in C₄ mesophyll."],
+["PEP carboxylase","C₄ mesophyll enzyme with high affinity for HCO₃⁻ and no oxygenase activity."],
+["OAA","Four-carbon first stable product of C₄ fixation."],
+["Kranz anatomy","Wreath-like arrangement of bundle sheath cells surrounded by mesophyll."],
+["Photorespiration","Light-associated O₂ uptake and CO₂ release initiated by RuBisCO oxygenase."],
+["CO₂ compensation point","CO₂ level at which photosynthetic uptake equals respiratory release."],
+["Limiting factor","The factor nearest its minimum that controls the rate of a multivariable process."],
+["Grana","Stacks of thylakoids; contain both photosystems in their membranes."],
+["Stroma lamellae","Unstacked thylakoid regions associated especially with PSI and cyclic flow."],
+["NADP reductase","Stromal-side enzyme that transfers electrons to NADP⁺."],
+["Bundle sheath","Cells around vascular bundles where the Calvin cycle operates in C₄ leaves."]
+];
+const glossaryGrid=document.getElementById("glossaryGrid");
+function drawGlossary(query=""){const x=query.toLowerCase();glossaryGrid.innerHTML=glossary.filter(([a,b])=>(a+" "+b).toLowerCase().includes(x)).map(([a,b])=>'<article class="card term"><strong>'+a+'</strong><span>'+b+'</span></article>').join("")||'<p>No matching term.</p>'}
+drawGlossary();document.getElementById("termSearch").addEventListener("input",e=>drawGlossary(e.target.value));
+
+const flows={
+ noncyclic:[
+  ["H₂O","Electron source; oxidation releases O₂ and adds H⁺ to the lumen."],
+  ["PS II · P680","Light excites P680. Its missing electron is replaced from water."],
+  ["Electron carriers","Electron transfer helps move protons into the lumen, strengthening the gradient."],
+  ["PS I · P700","A second photon raises the electron to a higher energy level."],
+  ["Ferredoxin","Transfers the high-energy electron toward NADP reductase."],
+  ["NADP⁺","Accepts electrons and H⁺ to form NADPH on the stromal side."],
+  ["Products","ATP + NADPH + O₂. The electrons do not return to the original chlorophyll."]
+ ],
+ cyclic:[
+  ["PS I · P700","Light excites PSI; PSII and water splitting are not involved."],
+  ["Primary acceptor","Receives the excited electron from P700."],
+  ["Ferredoxin","Redirects the electron toward the carrier chain rather than NADP⁺."],
+  ["Carrier chain","Electron transfer supports proton translocation and ATP formation."],
+  ["PS I · return","The same electron returns to P700; hence the flow is cyclic."],
+  ["Product","ATP only."],
+  ["Absent","No NADPH formation and no oxygen evolution."]
+ ]
+};
+let flowMode="noncyclic";
+function drawFlow(mode){flowMode=mode;const track=document.getElementById("flowTrack");track.innerHTML=flows[mode].map((n,i)=>'<button class="node" data-i="'+i+'">'+n[0]+'</button>').join('<span class="arrow">→</span>');track.querySelectorAll(".node").forEach(b=>b.addEventListener("click",()=>showFlow(+b.dataset.i)));showFlow(0)}
+function showFlow(i){document.querySelectorAll("#flowTrack .node").forEach((n,j)=>n.classList.toggle("active",i===j));const n=flows[flowMode][i];document.getElementById("flowReadout").innerHTML="<h3>"+n[0]+"</h3><div>"+n[1]+"</div>"}
+document.querySelectorAll(".flow-btn").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".flow-btn").forEach(x=>x.classList.remove("active"));b.classList.add("active");drawFlow(b.dataset.flow)}));drawFlow("noncyclic");
+document.querySelectorAll("[data-compare]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-compare]").forEach(x=>x.classList.remove("active"));b.classList.add("active");const v=b.dataset.compare;document.getElementById("c3Panel").classList.toggle("compare-highlight",v==="c3");document.getElementById("c4Panel").classList.toggle("compare-highlight",v==="c4");document.getElementById("c3Panel").style.opacity=v==="c4"?".45":"1";document.getElementById("c4Panel").style.opacity=v==="c3"?".45":"1"}));
+
+const AR=["Both A and R are true, and R correctly explains A","Both A and R are true, but R does not correctly explain A","A is true, but R is false","A is false, but R is true"];
+const questions=[
+ {t:"MCQ",q:"The oxygen released during photosynthesis is derived directly from:",o:["Carbon dioxide","Water","Glucose","RuBP"],a:1,e:"Oxidation of water at PS II releases molecular oxygen."},
+ {t:"MCQ",q:"Which pairing is correct?",o:["PS I—P680","PS II—P700","PS II—P680","PS I—water-splitting complex"],a:2,e:"PS II contains P680; PS I contains P700. Water splitting is associated with PS II."},
+ {t:"MCQ",q:"A pigment that acts as the reaction-centre pigment in both photosystems is:",o:["Chlorophyll a","Chlorophyll b","Xanthophyll","Carotene"],a:0,e:"A special chlorophyll a molecule forms P680 or P700."},
+ {t:"MCQ",q:"Which product is formed in cyclic but is also formed in non-cyclic photophosphorylation?",o:["O₂ only","NADPH only","ATP","O₂ and NADPH"],a:2,e:"Both modes form ATP; only non-cyclic flow also forms NADPH and O₂."},
+ {t:"MCQ",q:"For fixation of six CO₂ molecules by the Calvin cycle, the requirement is:",o:["12 ATP and 18 NADPH","18 ATP and 12 NADPH","6 ATP and 12 NADPH","30 ATP and 12 NADPH"],a:1,e:"One glucose equivalent requires 18 ATP and 12 NADPH."},
+ {t:"MCQ",q:"The first stable product of initial CO₂ fixation in a C₄ plant is:",o:["3-PGA","RuBP","Oxaloacetate","Pyruvate"],a:2,e:"PEP carboxylase produces the 4-C compound oxaloacetate."},
+ {t:"MCQ",q:"The Calvin cycle in a C₄ leaf occurs mainly in:",o:["Guard cells","Mesophyll cells","Bundle sheath cells","Epidermal cells"],a:2,e:"CO₂ is concentrated and refixed by RuBisCO in bundle sheath cells."},
+ {t:"MCQ",q:"Engelmann used aerobic bacteria chiefly to locate regions of:",o:["CO₂ absorption","O₂ evolution","Starch storage","Chlorophyll synthesis"],a:1,e:"Aerobic bacteria accumulated where the alga released most oxygen."},
+ {t:"MCQ",q:"Which event directly consumes H⁺ on the stromal side and helps build the proton gradient?",o:["Photolysis","Reduction of NADP⁺","Oxidation of P700","Carboxylation of RuBP"],a:1,e:"Formation of NADPH uses stromal electrons and protons, lowering stromal H⁺."},
+ {t:"MCQ",q:"RuBisCO oxygenase activity is favoured by:",o:["High CO₂ and low O₂","Low temperature only","Low CO₂ and high O₂","Kranz anatomy"],a:2,e:"Low CO₂ relative to O₂ increases oxygenation and photorespiration."},
+ {t:"MCQ",q:"Which C₄ feature directly limits photorespiration?",o:["Absence of RuBisCO","CO₂ concentration around RuBisCO","Absence of the Calvin cycle","Lower ATP use"],a:1,e:"C₄ acids release CO₂ in bundle sheath cells, favouring carboxylation."},
+ {t:"MCQ",q:"When light is abundant but CO₂ is scarce, adding more light usually:",o:["Strongly increases the rate","Has little effect because CO₂ limits the rate","Stops ATP synthesis","Converts C₃ plants to C₄"],a:1,e:"By Blackman's law, the scarcest effective factor limits the process."},
+
+ {t:"Statement",q:"Consider the statements: I. Stroma lamellae lack PS II. II. Stroma lamellae also lack NADP reductase in the NCERT model. Choose the correct option.",o:["Only I is correct","Only II is correct","Both I and II are correct","Neither I nor II is correct"],a:2,e:"Both features favour cyclic electron flow around PSI in stroma lamellae."},
+ {t:"Statement",q:"I. The biosynthetic phase directly requires light. II. It depends on ATP and NADPH generated in light reactions.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:1,e:"It has no direct photochemical step, but depends on light-reaction products."},
+ {t:"Statement",q:"I. Accessory pigments broaden the usable light spectrum. II. They can help protect chlorophyll a from photo-oxidation.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"Both are important roles of chlorophyll b, carotenoids and xanthophylls."},
+ {t:"Statement",q:"I. PEP carboxylase has high affinity for HCO₃⁻. II. It has oxygenase activity comparable to RuBisCO.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:0,e:"PEPcase efficiently fixes bicarbonate and lacks RuBisCO-like oxygenase activity."},
+ {t:"Statement",q:"I. Photorespiration involves chloroplasts, peroxisomes and mitochondria. II. It produces ATP as a useful output.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:0,e:"Three organelles participate, but ATP is not produced."},
+ {t:"Statement",q:"I. C₄ plants possess the Calvin cycle. II. Their first stable fixation product is a 4-C acid.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"Initial fixation and the Calvin cycle are linked but spatially separated."},
+ {t:"Statement",q:"I. Water stress commonly causes stomatal closure. II. This can lower internal CO₂ and reduce photosynthesis.",o:["Only I is correct","Only II is correct","Both are correct","Neither is correct"],a:2,e:"Water limitation often affects photosynthesis indirectly through stomata."},
+
+ {t:"Assertion–Reason",q:"Assertion (A): Cyclic photophosphorylation produces no oxygen. Reason (R): PS II and water splitting do not participate in cyclic electron flow.",o:AR,a:0,e:"Both are true, and absence of PS II-linked photolysis explains the lack of O₂."},
+ {t:"Assertion–Reason",q:"Assertion (A): C₄ plants show negligible photorespiration. Reason (R): Their bundle sheath mechanism raises CO₂ concentration around RuBisCO.",o:AR,a:0,e:"The CO₂-concentrating mechanism suppresses RuBisCO oxygenation."},
+ {t:"Assertion–Reason",q:"Assertion (A): Photosystem II acts before photosystem I in non-cyclic flow. Reason (R): Photosystems were numbered according to the order of their discovery.",o:AR,a:1,e:"Both are true, but discovery order explains the names, not the electron sequence."},
+ {t:"Assertion–Reason",q:"Assertion (A): The Calvin cycle cannot continue indefinitely without light reactions. Reason (R): It requires a continuing supply of ATP and NADPH.",o:AR,a:0,e:"ATP and NADPH are consumed in reduction and regeneration steps."},
+ {t:"Assertion–Reason",q:"Assertion (A): Photorespiration is considered wasteful. Reason (R): It releases CO₂ without producing ATP or NADPH.",o:AR,a:0,e:"The reason directly explains the loss in net carbon gain and energy efficiency."},
+ {t:"Assertion–Reason",q:"Assertion (A): Engelmann's experiment provided an action spectrum. Reason (R): Aerobic bacteria accumulated where oxygen evolution was greatest.",o:AR,a:0,e:"Bacterial distribution served as a biological indicator of photosynthetic effectiveness."},
+ {t:"Assertion–Reason",q:"Assertion (A): Chlorophyll b is the reaction-centre pigment of PS II. Reason (R): Chlorophyll b is an accessory pigment.",o:AR,a:3,e:"A is false—P680 is chlorophyll a. R is true."},
+
+ {t:"Match",q:"Match: A. Priestley; B. Ingenhousz; C. Sachs; D. Engelmann with 1. action spectrum; 2. starch in green parts; 3. plants restore air; 4. sunlight/green parts release O₂.",o:["A-3, B-4, C-2, D-1","A-4, B-3, C-1, D-2","A-3, B-2, C-4, D-1","A-1, B-4, C-2, D-3"],a:0,e:"Priestley—air; Ingenhousz—light/green parts; Sachs—starch; Engelmann—action spectrum."},
+ {t:"Match",q:"Match: A. P680; B. P700; C. RuBP; D. PEP with 1. C₄ acceptor; 2. C₃ acceptor; 3. PSI centre; 4. PSII centre.",o:["A-4, B-3, C-2, D-1","A-3, B-4, C-1, D-2","A-4, B-2, C-3, D-1","A-1, B-2, C-4, D-3"],a:0,e:"P680—PSII, P700—PSI, RuBP—Calvin acceptor, PEP—C₄ acceptor."},
+ {t:"Match",q:"Match Calvin phases: A. Carboxylation; B. Reduction; C. Regeneration with 1. ATP restores RuBP; 2. CO₂ joins RuBP; 3. ATP/NADPH form triose phosphate.",o:["A-2, B-3, C-1","A-1, B-2, C-3","A-3, B-1, C-2","A-2, B-1, C-3"],a:0,e:"The cycle fixes carbon, reduces 3-PGA, then regenerates the acceptor."},
+ {t:"Match",q:"Match location: A. Lumen; B. Stroma; C. C₄ mesophyll; D. C₄ bundle sheath with 1. Calvin cycle; 2. PEPcase fixation; 3. proton accumulation; 4. Calvin cycle in C₄.",o:["A-3, B-1, C-2, D-4","A-1, B-3, C-4, D-2","A-3, B-2, C-1, D-4","A-4, B-1, C-2, D-3"],a:0,e:"H⁺ builds in lumen; general Calvin cycle is stromal; C₄ initial fixation is mesophyll and refixation is bundle sheath."},
+ {t:"Match",q:"Match product: A. Non-cyclic flow; B. Cyclic flow; C. RuBisCO oxygenation; D. PEPcase carboxylation with 1. ATP only; 2. OAA; 3. ATP/NADPH/O₂; 4. 3-PGA + phosphoglycolate.",o:["A-3, B-1, C-4, D-2","A-1, B-3, C-2, D-4","A-3, B-2, C-4, D-1","A-4, B-1, C-3, D-2"],a:0,e:"These product sets distinguish the four processes."},
+
+ {t:"True/False",q:"The O₂ evolved during green-plant photosynthesis originates from CO₂.",o:["True","False"],a:1,e:"It originates from water."},
+ {t:"True/False",q:"Cyclic electron flow can operate when only wavelengths beyond 680 nm excite PSI.",o:["True","False"],a:0,e:"Far-red light preferentially drives PSI, supporting cyclic flow."},
+ {t:"True/False",q:"The first stable product of the Calvin cycle is a four-carbon compound.",o:["True","False"],a:1,e:"It is 3-PGA, a three-carbon compound."},
+ {t:"True/False",q:"C₄ plants generally show a lower CO₂ compensation point than C₃ plants.",o:["True","False"],a:0,e:"Their CO₂-concentrating mechanism keeps net fixation positive at lower external CO₂."},
+ {t:"True/False",q:"Increasing every non-limiting factor must increase photosynthetic rate.",o:["True","False"],a:1,e:"The rate changes mainly when the currently limiting factor is improved."}
+];
+
+const types=["All","MCQ","Statement","Assertion–Reason","Match","True/False"];
+let filter="All",pool=[],idx=0,correct=0,answered=0,locked=false,responses=[];
+const area=document.getElementById("questionArea"),result=document.getElementById("result");
+document.getElementById("filters").innerHTML=types.map((t,i)=>'<button class="filter-btn '+(i===0?"active":"")+'" data-type="'+t+'">'+t+'</button>').join("");
+document.querySelectorAll(".filter-btn").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".filter-btn").forEach(x=>x.classList.remove("active"));b.classList.add("active");filter=b.dataset.type;startQuiz()}));
+function startQuiz(){pool=filter==="All"?questions:questions.filter(q=>q.t===filter);idx=0;correct=0;answered=0;locked=false;responses=Array(pool.length).fill(null);result.classList.remove("show");area.style.display="block";document.getElementById("quizTitle").textContent=filter==="All"?"All question models":filter+" practice";try{const best=localStorage.getItem("rhkPhotoBest_"+filter);document.getElementById("bestScore").textContent=best?"Best "+filter+" score: "+best+"%":"Best score: —"}catch(e){}renderQuestion();updateScore()}
+function renderQuestion(){locked=responses[idx]!==null;const q=pool[idx];area.innerHTML='<div class="qbox"><div class="qmeta"><span>'+q.t+'</span><span>Question '+(idx+1)+' of '+pool.length+'</span></div><div class="qtext">'+q.q+'</div><div class="options">'+q.o.map((x,i)=>'<button class="option" data-a="'+i+'"><b>'+(i+1)+'.</b> '+x+'</button>').join("")+'</div><div class="feedback" id="feedback"></div></div><div class="quiz-nav"><button id="prev" '+(idx===0?"disabled":"")+'>← Previous</button><button id="next">'+(idx===pool.length-1?"Finish":"Next →")+'</button></div>';
+ area.querySelectorAll(".option").forEach(b=>b.addEventListener("click",()=>answer(+b.dataset.a)));if(locked)showAnswered(responses[idx]);document.getElementById("prev").onclick=()=>{if(idx>0){idx--;renderQuestion()}};document.getElementById("next").onclick=()=>{if(idx===pool.length-1)finish();else{idx++;renderQuestion()}}
+}
+function answer(choice){if(locked)return;responses[idx]=choice;locked=true;showAnswered(choice);updateScore()}
+function showAnswered(choice){const q=pool[idx],opts=[...area.querySelectorAll(".option")];opts[q.a].classList.add("correct");if(choice!==q.a)opts[choice].classList.add("wrong");opts.forEach(x=>x.disabled=true);const f=document.getElementById("feedback");f.innerHTML="<b>"+(choice===q.a?"Correct!":"Not quite.")+"</b> "+q.e;f.classList.add("show")}
+function updateScore(){answered=responses.filter(x=>x!==null).length;correct=responses.reduce((n,x,i)=>n+(x===pool[i].a?1:0),0);document.getElementById("score").textContent="Score "+correct+" / "+answered}
+function finish(){updateScore();area.style.display="none";result.classList.add("show");const pct=Math.round(correct/pool.length*100);document.getElementById("ring").style.setProperty("--pct",pct+"%");document.getElementById("resultPct").textContent=pct+"%";document.getElementById("resultText").textContent=pct>=85?"Excellent NEET readiness":pct>=65?"Strong—revise the traps":"Revisit the concept cards";document.getElementById("resultNote").textContent=correct+" correct out of "+pool.length+". Unanswered items count as incorrect.";try{const key="rhkPhotoBest_"+filter,best=Math.max(pct,+(localStorage.getItem(key)||0));localStorage.setItem(key,best);document.getElementById("bestScore").textContent="Best "+filter+" score: "+best+"%"}catch(e){}}
+document.getElementById("restart").onclick=startQuiz;startQuiz();
+
+const themeBtn=document.getElementById("themeBtn");themeBtn.onclick=()=>{document.body.classList.toggle("dark");try{localStorage.setItem("rhkPhotoTheme",document.body.classList.contains("dark")?"dark":"light")}catch(e){}};try{if(localStorage.getItem("rhkPhotoTheme")==="dark")document.body.classList.add("dark")}catch(e){}
+const progress=document.getElementById("progress"),back=document.getElementById("back");addEventListener("scroll",()=>{const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h?scrollY/h*100:0)+"%";back.style.display=scrollY>700?"block":"none"},{passive:true});
+</script>
+</body>
+</html>

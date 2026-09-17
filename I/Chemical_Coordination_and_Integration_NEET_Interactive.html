@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Class 11 CBSE and NEET interactive revision for Chemical Coordination and Integration, with NCERT-aligned notes, models and 36 practice questions.">
+  <title>Chemical Coordination & Integration | Class 11 NEET</title>
+  <style>
+    :root{--ink:#18352f;--muted:#58706b;--paper:#fffef8;--mint:#eaf8ef;--mint2:#d7f2e2;--leaf:#187b5b;--leaf2:#0e5c45;--rose:#f8e8ee;--gold:#f5bd57;--sky:#e8f5fa;--line:#cde5d7;--shadow:0 14px 35px rgba(29,87,66,.12);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}body{margin:0;color:var(--ink);background:linear-gradient(135deg,#effaf2 0%,#fffaf0 48%,#eef9f6 100%);font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body.dark{--ink:#edf8f2;--muted:#b8d1c7;--paper:#15332b;--mint:#102c25;--mint2:#1b4437;--leaf:#65d8ac;--leaf2:#9be7c8;--rose:#3b2932;--gold:#f7c86e;--sky:#17353f;--line:#35584a;background:#0f241f}
+    button,input{font:inherit}button{cursor:pointer}a{color:var(--leaf2)}.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;z-index:99;background:var(--paper);padding:10px;border-radius:10px}
+    .topbar{position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:14px;padding:11px clamp(14px,4vw,52px);background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .brand{font-weight:900;letter-spacing:.04em;white-space:nowrap}.brand span{color:var(--leaf)}.progress-track{height:5px;flex:1;background:var(--mint2);border-radius:9px;overflow:hidden}.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--leaf),var(--gold))}.icon-btn{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:12px;padding:7px 10px}
+    .hero{max-width:1180px;margin:34px auto 20px;padding:0 20px}.hero-card{position:relative;overflow:hidden;padding:clamp(28px,6vw,66px);background:linear-gradient(135deg,var(--mint2),var(--paper) 60%,var(--rose));border:1px solid var(--line);border-radius:32px;box-shadow:var(--shadow)}
+    .hero-card:before,.hero-card:after{content:"";position:absolute;border-radius:50%;filter:blur(1px);opacity:.55}.hero-card:before{width:260px;height:260px;right:-80px;top:-110px;background:#99dbbb}.hero-card:after{width:160px;height:160px;left:-65px;bottom:-90px;background:#f2c9d9}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.76rem;font-weight:900;color:var(--leaf2)}
+    h1{font-size:clamp(2.25rem,6vw,5rem);line-height:.98;letter-spacing:-.055em;margin:.2em 0}.hero p{max-width:760px;font-size:1.1rem}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}.chip,.type-chip{display:inline-flex;align-items:center;padding:7px 11px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-weight:750;font-size:.85rem}.cta{display:inline-block;border:0;border-radius:13px;padding:11px 17px;background:var(--leaf2);color:white;text-decoration:none;font-weight:850;box-shadow:0 7px 18px rgba(18,101,76,.22)}
+    .layout{max-width:1180px;margin:0 auto;padding:20px;display:grid;grid-template-columns:230px minmax(0,1fr);gap:26px}.toc{position:sticky;top:78px;align-self:start;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:15px;box-shadow:var(--shadow)}.toc strong{display:block;margin:0 8px 8px}.toc a{display:block;padding:7px 9px;color:var(--muted);text-decoration:none;border-radius:9px;font-size:.9rem}.toc a:hover,.toc a.active{background:var(--mint);color:var(--leaf2);font-weight:800}
+    main{min-width:0}.section{margin:0 0 28px;padding:clamp(21px,4vw,36px);background:color-mix(in srgb,var(--paper) 95%,transparent);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}h2{font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.15;margin:0 0 8px;letter-spacing:-.035em}h3{line-height:1.25;margin:.5em 0}.lead{color:var(--muted);margin-top:0}.grid{display:grid;gap:14px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:17px}.card p:last-child{margin-bottom:0}.card .tag{font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.09em;color:var(--leaf2)}.exam{border-left:4px solid var(--gold);background:color-mix(in srgb,var(--paper) 80%,#fff0be)}.trap{border-left:4px solid #d95370;background:color-mix(in srgb,var(--paper) 80%,var(--rose))}.formula{font-weight:900;text-align:center;padding:14px;background:var(--mint);border-radius:14px}
+    .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:8px;margin:20px 0}.node{min-height:98px;display:grid;place-items:center;text-align:center;border:1px solid var(--line);background:var(--paper);border-radius:15px;padding:12px;font-weight:850}.arrow{color:var(--leaf);font-size:1.5rem;font-weight:900}
+    .tab-row,.filter-row,.gland-buttons{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.tab,.filter,.gland-btn{border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:8px 12px;border-radius:999px;font-weight:800}.tab.active,.filter.active,.gland-btn.active{background:var(--leaf2);color:white;border-color:var(--leaf2)}
+    .explorer{display:grid;grid-template-columns:minmax(190px,.7fr) 1.3fr;gap:18px}.gland-buttons{align-content:start}.gland-btn{width:100%;text-align:left}.readout{min-height:250px;background:linear-gradient(145deg,var(--mint),var(--paper));border:1px solid var(--line);border-radius:18px;padding:22px}.readout h3{font-size:1.55rem}.fact-list{padding-left:19px}.fact-list li{margin:7px 0}.hormone-pill{display:inline-block;margin:3px;padding:4px 8px;border-radius:8px;background:var(--rose);font-weight:850;font-size:.82rem}
+    .sim{background:linear-gradient(145deg,var(--sky),var(--paper));border:1px solid var(--line);border-radius:18px;padding:20px}.sim input[type=range]{width:100%;accent-color:var(--leaf)}.meter{height:18px;border-radius:12px;background:linear-gradient(90deg,#7db8e8 0 33%,#7fd0a0 33% 66%,#ef9a70 66%);position:relative;margin:22px 5px 8px}.needle{position:absolute;width:4px;height:30px;background:var(--ink);top:-6px;left:50%;border-radius:3px;transition:left .25s}.status{font-size:1.1rem;font-weight:900}.signal{padding:15px;border-radius:14px;background:var(--paper);border:1px solid var(--line)}
+    table{width:100%;border-collapse:collapse;font-size:.93rem}th,td{text-align:left;vertical-align:top;padding:11px;border-bottom:1px solid var(--line)}th{background:var(--mint);color:var(--leaf2)}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:15px}
+    details{border:1px solid var(--line);border-radius:13px;padding:10px 14px;background:var(--paper);margin:8px 0}summary{font-weight:850;cursor:pointer}.glossary{columns:2;column-gap:16px}.glossary details{break-inside:avoid}
+    .quiz-head{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}.scorebox{font-weight:900;background:var(--mint);padding:9px 14px;border-radius:13px}.question{margin:15px 0;padding:19px;background:var(--paper);border:1px solid var(--line);border-radius:17px}.qtop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.qnum{font-weight:950;color:var(--leaf2)}.qtype{font-size:.72rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase;background:var(--mint);padding:4px 8px;border-radius:8px}.qtext{font-weight:800;margin:10px 0}.options{display:grid;gap:8px}.option{width:100%;text-align:left;border:1px solid var(--line);border-radius:11px;background:var(--paper);color:var(--ink);padding:10px 12px}.option:hover:not(:disabled){border-color:var(--leaf);background:var(--mint)}.option.correct{background:#d8f4df;border-color:#2c9955;color:#174e2c}.option.wrong{background:#fde1e4;border-color:#d54a61;color:#742333}.explain{display:none;margin-top:11px;padding:12px;border-radius:11px;background:var(--mint);border-left:4px solid var(--leaf)}.explain.show{display:block}.quiz-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.secondary{border:1px solid var(--leaf);color:var(--leaf2);background:var(--paper);border-radius:12px;padding:10px 15px;font-weight:850}
+    .footer{max-width:1180px;margin:18px auto 55px;padding:0 20px;color:var(--muted);text-align:center}.footer a{font-weight:800}.tiny{font-size:.83rem}.hide{display:none!important}
+    @media(max-width:850px){.layout{grid-template-columns:1fr}.toc{position:static;display:flex;overflow:auto;white-space:nowrap}.toc strong{display:none}.toc a{display:inline-block}.grid.three{grid-template-columns:1fr 1fr}.explorer{grid-template-columns:1fr}.gland-buttons{display:grid;grid-template-columns:repeat(2,1fr)}.gland-btn{width:auto}.flow{grid-template-columns:1fr}.arrow{transform:rotate(90deg);text-align:center}}
+    @media(max-width:560px){.grid.two,.grid.three{grid-template-columns:1fr}.hero{padding:0 12px}.layout{padding:12px}.section{padding:19px}.glossary{columns:1}.topbar{padding:10px 12px}.brand{font-size:.82rem}}
+    @media print{.topbar,.toc,.quiz-actions,.filter-row,.gland-buttons,.tab-row,.cta{display:none!important}.layout{display:block;max-width:none}.section{box-shadow:none;break-inside:avoid}body{background:white}.question{break-inside:avoid}.explain{display:block}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to lesson</a>
+  <header class="topbar">
+    <div class="brand">RHK · <span>BiOBiTES</span></div>
+    <div class="progress-track" aria-label="Reading progress"><div class="progress-bar" id="progressBar"></div></div>
+    <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">☾</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <div class="eyebrow">Class 11 · NCERT Chapter 19 · NEET Biology</div>
+      <h1>Chemical Coordination<br>&amp; Integration</h1>
+      <p>Master the endocrine system as one connected story: gland → hormone → target → response → feedback. Explore high-yield NCERT facts, test the control loops, then solve 36 mixed-pattern NEET questions.</p>
+      <div class="chips"><span class="chip">NCERT aligned</span><span class="chip">Interactive models</span><span class="chip">36 questions</span><span class="chip">LMS-ready</span></div>
+      <a class="cta" href="#map">Begin revision ↓</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Chapter contents">
+      <strong>Chapter route</strong>
+      <a href="#map">1. Big picture</a><a href="#system">2. Gland explorer</a><a href="#axis">3. Hypothalamus–pituitary</a><a href="#feedback">4. Feedback labs</a><a href="#adrenal">5. Adrenal &amp; pancreas</a><a href="#others">6. Other tissues</a><a href="#mechanism">7. Hormone action</a><a href="#traps">8. NEET traps</a><a href="#quiz">9. Practice zone</a><a href="#glossary">10. Quick glossary</a>
+    </nav>
+
+    <main id="main">
+      <section class="section" id="map">
+        <div class="eyebrow">01 · Big picture</div><h2>What makes a hormone a hormone?</h2>
+        <p class="lead">Hormones are non-nutrient chemical messengers produced in trace amounts. Endocrine glands release them into blood because they have no ducts; only cells carrying the matching receptor respond.</p>
+        <div class="grid three">
+          <article class="card"><div class="tag">Signal</div><h3>Source</h3><p>An endocrine gland or specialised endocrine cell secretes a messenger.</p></article>
+          <article class="card"><div class="tag">Delivery</div><h3>Circulation</h3><p>Blood distributes the hormone, often far beyond its source.</p></article>
+          <article class="card"><div class="tag">Specificity</div><h3>Receptor</h3><p>A target responds only if it carries a compatible receptor.</p></article>
+        </div>
+        <div class="flow" aria-label="Endocrine signalling sequence"><div class="node">Endocrine cell<br><small>secretion</small></div><div class="arrow">→</div><div class="node">Blood<br><small>transport</small></div><div class="arrow">→</div><div class="node">Target receptor<br><small>response</small></div></div>
+        <div class="grid two"><aside class="card exam"><strong>NCERT lens</strong><p>The human endocrine system includes hypothalamus, pituitary, pineal, thyroid, parathyroids, thymus, adrenals, endocrine pancreas and gonads.</p></aside><aside class="card trap"><strong>Do not mix up</strong><p><b>Endocrine</b> = ductless, blood-borne signal. <b>Exocrine</b> = product travels through a duct. Pancreas performs both roles.</p></aside></div>
+      </section>
+
+      <section class="section" id="system">
+        <div class="eyebrow">02 · Human endocrine system</div><h2>Tap a gland to build the map</h2><p class="lead">Learn each gland as a compact unit: location, principal hormone(s), action and a high-yield clinical link.</p>
+        <div class="explorer">
+          <div class="gland-buttons" id="glandButtons"></div>
+          <div class="readout" id="glandReadout" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section" id="axis">
+        <div class="eyebrow">03 · Master control axis</div><h2>Hypothalamus → pituitary → target</h2>
+        <p class="lead">The hypothalamus connects neural information to endocrine control. Releasing or inhibiting hormones reach the anterior pituitary through portal blood; hypothalamic axons regulate the posterior pituitary directly.</p>
+        <div class="flow"><div class="node">Hypothalamus<br><small>releasing / inhibiting factors</small></div><div class="arrow">→</div><div class="node">Anterior pituitary<br><small>tropic hormones</small></div><div class="arrow">→</div><div class="node">Peripheral gland<br><small>final hormone</small></div></div>
+        <div class="tab-row" id="pitTabs"><button class="tab active" data-pit="anterior">Anterior</button><button class="tab" data-pit="intermedia">Pars intermedia</button><button class="tab" data-pit="posterior">Posterior</button></div>
+        <div class="readout" id="pitReadout"></div>
+        <div class="grid two" style="margin-top:14px"><div class="card"><div class="tag">Releasing example</div><h3>GnRH</h3><p>Stimulates the pituitary to release gonadotropins (LH and FSH).</p></div><div class="card"><div class="tag">Inhibiting example</div><h3>Somatostatin</h3><p>Suppresses growth hormone release from the pituitary.</p></div></div>
+      </section>
+
+      <section class="section" id="feedback">
+        <div class="eyebrow">04 · Feedback labs</div><h2>See homeostasis in motion</h2>
+        <div class="grid two">
+          <div class="sim">
+            <h3>Blood-glucose regulator</h3><p>Move the slider to challenge the system.</p>
+            <label for="glucose"><b>Relative glucose level: <span id="glucoseValue">100</span> mg/dL</b></label><input id="glucose" type="range" min="55" max="180" value="100">
+            <div class="meter"><div class="needle" id="glucoseNeedle"></div></div><div class="status" id="glucoseStatus"></div><p id="glucoseText"></p>
+          </div>
+          <div class="sim">
+            <h3>Calcium balance</h3><p>Choose a disturbance and identify the corrective signal.</p>
+            <div class="tab-row"><button class="tab active ca-btn" data-ca="low">Low blood Ca²⁺</button><button class="tab ca-btn" data-ca="high">High blood Ca²⁺</button></div>
+            <div class="signal" id="calciumReadout"></div>
+          </div>
+        </div>
+        <aside class="card exam" style="margin-top:14px"><strong>Feedback principle</strong><p>Negative feedback opposes a deviation. High final-hormone level usually reduces upstream stimulation; low level removes that restraint.</p></aside>
+      </section>
+
+      <section class="section" id="adrenal">
+        <div class="eyebrow">05 · Stress, salts and sugar</div><h2>Adrenal gland and endocrine pancreas</h2>
+        <div class="table-wrap"><table><thead><tr><th>Source</th><th>Main secretion</th><th>High-yield actions</th></tr></thead><tbody>
+          <tr><td>Adrenal medulla</td><td>Adrenaline &amp; noradrenaline</td><td>Emergency response: alertness, heart and breathing rates rise; stored fuels are mobilised.</td></tr>
+          <tr><td>Cortex: zona glomerulosa</td><td>Aldosterone</td><td>Promotes Na⁺ and water retention and K⁺/phosphate loss; supports fluid volume and pressure.</td></tr>
+          <tr><td>Cortex: zona fasciculata / reticularis</td><td>Mainly glucocorticoids; some adrenal androgens</td><td>Cortisol supports gluconeogenesis and fuel mobilisation; also has anti-inflammatory and immunosuppressive effects.</td></tr>
+          <tr><td>Pancreatic α cells</td><td>Glucagon</td><td>Raises blood glucose through glycogen breakdown and glucose formation.</td></tr>
+          <tr><td>Pancreatic β cells</td><td>Insulin</td><td>Lowers blood glucose by cellular uptake/use and glycogen formation.</td></tr>
+        </tbody></table></div>
+        <div class="formula">α → glucAgon → glucose Adds &nbsp; | &nbsp; β → insulin → glucose enters cells</div>
+        <div class="grid two" style="margin-top:14px"><div class="card trap"><strong>Diabetes mellitus</strong><p>Prolonged hyperglycaemia can produce glucose and ketone bodies in urine. Insulin therapy is used when insulin deficiency is the cause.</p></div><div class="card trap"><strong>Addison’s disease</strong><p>Results from insufficient secretion by the adrenal cortex. Do not associate it with the adrenal medulla.</p></div></div>
+      </section>
+
+      <section class="section" id="others">
+        <div class="eyebrow">06 · Beyond classic glands</div><h2>Other organs with endocrine roles</h2>
+        <div class="grid three">
+          <article class="card"><div class="tag">Heart</div><h3>ANF</h3><p>Atrial natriuretic factor promotes vasodilation and helps lower blood pressure.</p></article>
+          <article class="card"><div class="tag">Kidney</div><h3>Erythropoietin</h3><p>Produced by juxtaglomerular cells; stimulates red blood cell formation.</p></article>
+          <article class="card"><div class="tag">Stomach</div><h3>Gastrin</h3><p>Promotes secretion of hydrochloric acid and pepsinogen.</p></article>
+          <article class="card"><div class="tag">Intestine</div><h3>Secretin</h3><p>Stimulates pancreatic secretion rich in water and bicarbonate.</p></article>
+          <article class="card"><div class="tag">Intestine</div><h3>CCK</h3><p>Stimulates pancreatic enzymes and gallbladder emptying.</p></article>
+          <article class="card"><div class="tag">Intestine</div><h3>GIP</h3><p>In NCERT, gastric inhibitory peptide reduces gastric secretion and motility.</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="mechanism">
+        <div class="eyebrow">07 · Cellular mechanism</div><h2>Where is the receptor?</h2><p class="lead">Chemical nature predicts receptor location and the usual signalling route.</p>
+        <div class="tab-row"><button class="tab active mech-btn" data-mech="surface">Membrane receptor</button><button class="tab mech-btn" data-mech="inside">Intracellular receptor</button></div><div class="readout" id="mechanismReadout"></div>
+        <div class="grid two" style="margin-top:14px"><div class="card"><div class="tag">Major groups</div><p>Peptide/protein hormones, steroids, iodothyronines and amino-acid derivatives.</p></div><div class="card exam"><div class="tag">NEET shortcut</div><p>Peptide/protein hormones generally use membrane receptors and second messengers; steroid and thyroid hormones generally regulate gene expression through intracellular receptors.</p></div></div>
+      </section>
+
+      <section class="section" id="traps">
+        <div class="eyebrow">08 · Precision revision</div><h2>Frequently tested contrasts</h2>
+        <div class="table-wrap"><table><thead><tr><th>Pair</th><th>Correct distinction</th></tr></thead><tbody>
+          <tr><td>Prolactin vs oxytocin</td><td>Prolactin supports milk formation; oxytocin supports milk ejection and uterine contraction.</td></tr>
+          <tr><td>Anterior vs posterior pituitary</td><td>Anterior pituitary synthesises several hormones. Posterior pituitary stores/releases hypothalamic ADH and oxytocin.</td></tr>
+          <tr><td>PTH vs calcitonin</td><td>PTH raises blood Ca²⁺; calcitonin lowers it.</td></tr>
+          <tr><td>Adrenal cortex vs medulla</td><td>Cortex produces steroid hormones; medulla produces catecholamines.</td></tr>
+          <tr><td>Insulin vs glucagon</td><td>Insulin is hypoglycaemic; glucagon is hyperglycaemic.</td></tr>
+          <tr><td>Thyroid follicle vs parathyroid</td><td>Thyroid follicles produce T₃/T₄; separate parathyroid glands produce PTH.</td></tr>
+        </tbody></table></div>
+        <div class="grid three" style="margin-top:14px"><div class="card trap"><strong>Gigantism</strong><p>Excess GH during childhood.</p></div><div class="card trap"><strong>Acromegaly</strong><p>Excess GH in adults.</p></div><div class="card trap"><strong>Pituitary dwarfism</strong><p>Low GH during childhood.</p></div><div class="card trap"><strong>Graves’ disease</strong><p>Hyperthyroidism with raised metabolism and characteristic eye signs.</p></div><div class="card trap"><strong>Goitre</strong><p>Can follow dietary iodine deficiency and low thyroid hormone output.</p></div><div class="card trap"><strong>Diabetes insipidus</strong><p>Linked to impaired ADH action; distinct from diabetes mellitus.</p></div></div>
+      </section>
+
+      <section class="section" id="quiz">
+        <div class="quiz-head"><div><div class="eyebrow">09 · Practice zone</div><h2>36-question NEET workout</h2></div><div class="scorebox">Score: <span id="score">0</span>/<span id="attempted">0</span> · Best: <span id="best">0</span></div></div>
+        <p class="lead">Choose an answer for instant feedback. Filter by question model without losing your progress.</p>
+        <div class="filter-row" id="filters"><button class="filter active" data-filter="all">All 36</button><button class="filter" data-filter="MCQ">MCQ 12</button><button class="filter" data-filter="Statement">Statement 7</button><button class="filter" data-filter="Assertion–Reason">A–R 7</button><button class="filter" data-filter="Match">Match 5</button><button class="filter" data-filter="True/False">T/F 5</button></div>
+        <div id="quizList"></div>
+        <div class="quiz-actions"><button class="cta" id="resetQuiz">Reset attempt</button><button class="secondary" onclick="window.print()">Print / Save PDF</button></div>
+      </section>
+
+      <section class="section" id="glossary">
+        <div class="eyebrow">10 · Last-minute recall</div><h2>Quick glossary</h2>
+        <div class="glossary">
+          <details><summary>Tropic hormone</summary><p>A hormone acting on another endocrine gland, such as TSH or ACTH.</p></details>
+          <details><summary>Hyperglycaemic</summary><p>Raises blood glucose; glucagon is the key pancreatic example.</p></details>
+          <details><summary>Hypoglycaemic</summary><p>Lowers blood glucose; insulin is the principal example.</p></details>
+          <details><summary>Portal circulation</summary><p>A vessel connection carrying hypothalamic regulatory hormones directly to the anterior pituitary.</p></details>
+          <details><summary>Catecholamines</summary><p>Adrenaline and noradrenaline secreted by the adrenal medulla.</p></details>
+          <details><summary>Second messenger</summary><p>An intracellular relay, such as cAMP, IP₃ or Ca²⁺, triggered after a surface receptor is activated.</p></details>
+          <details><summary>Iodothyronines</summary><p>Iodine-containing thyroid hormones T₃ and T₄.</p></details>
+          <details><summary>Islets of Langerhans</summary><p>Endocrine cell clusters of the pancreas containing α and β cells, among others.</p></details>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer"><p><b>RHK · BiOBiTES</b> — focused revision for Class 11 CBSE and NEET.</p><p class="tiny">Content is an original learning summary aligned to the current NCERT chapter; always cross-check diagrams, tables and wording with your prescribed textbook. <a href="https://ncert.nic.in/textbook/pdf/kebo119.pdf" target="_blank" rel="noopener">Open official NCERT Chapter 19 ↗</a></p></footer>
+
+  <script>
+    const glands={
+      hypothalamus:{title:'Hypothalamus',place:'Basal forebrain; linked to pituitary',h:['Releasing hormones','Inhibiting hormones'],facts:['Integrates neural and endocrine control.','GnRH stimulates gonadotropin release; somatostatin inhibits GH.','Synthesises ADH and oxytocin, later released by posterior pituitary.'],link:'Portal vessels serve the anterior pituitary; axons reach the posterior pituitary.'},
+      pituitary:{title:'Pituitary',place:'Sella turcica; connected by a stalk',h:['GH','PRL','TSH','ACTH','LH','FSH','MSH','ADH*','Oxytocin*'],facts:['Adenohypophysis includes pars distalis and pars intermedia.','Neurohypophysis stores and releases two hypothalamic hormones.','Coordinates growth, reproduction, lactation, water balance and other glands.'],link:'*ADH and oxytocin are synthesised in the hypothalamus.'},
+      pineal:{title:'Pineal',place:'Dorsal forebrain',h:['Melatonin'],facts:['Coordinates daily body rhythms and sleep–wake timing.','Also influences temperature, metabolism, pigmentation, menstrual rhythm and defence.'],link:'Think: melatonin → biological clock.'},
+      thyroid:{title:'Thyroid',place:'Two lobes beside the trachea',h:['T₄ (thyroxine)','T₃','Calcitonin'],facts:['Iodine is essential for T₃/T₄ synthesis.','Thyroid hormones support basal metabolism, RBC formation and nutrient metabolism.','Calcitonin helps lower blood Ca²⁺.'],link:'Iodine deficiency may cause hypothyroidism and goitre.'},
+      parathyroid:{title:'Parathyroids',place:'Usually four, on posterior thyroid',h:['PTH'],facts:['PTH is hypercalcaemic.','Promotes bone resorption, renal Ca²⁺ reabsorption and intestinal Ca²⁺ absorption.'],link:'PTH and calcitonin are functional opponents in Ca²⁺ balance.'},
+      thymus:{title:'Thymus',place:'Upper chest, behind sternum',h:['Thymosins'],facts:['Supports T-lymphocyte differentiation and cell-mediated immunity.','Also contributes to antibody production and humoral immunity.','Shrinks with age.'],link:'Most active in the young; immune output declines as it degenerates.'},
+      adrenal:{title:'Adrenals',place:'One above each kidney',h:['Adrenaline','Noradrenaline','Cortisol','Aldosterone','Adrenal androgens'],facts:['Medulla supplies catecholamines for emergency responses.','Cortex has glomerulosa, fasciculata and reticularis zones.','Cortical hormones regulate metabolism, salt-water balance and stress adaptation.'],link:'Cortical hyposecretion is linked with Addison’s disease.'},
+      pancreas:{title:'Endocrine pancreas',place:'Islets scattered within pancreas',h:['Glucagon (α)','Insulin (β)'],facts:['Islets form only about 1–2% of pancreatic tissue.','Glucagon raises blood glucose; insulin lowers it.','They act antagonistically to stabilise glucose.'],link:'Pancreas is composite: endocrine islets + exocrine tissue.'},
+      testis:{title:'Testis',place:'Leydig cells between seminiferous tubules',h:['Androgens (mainly testosterone)'],facts:['Support male accessory organs and secondary sexual characteristics.','Promote spermatogenesis and anabolic effects.','Influence behaviour through the nervous system.'],link:'LH stimulates Leydig cells; FSH mainly supports spermatogenic function.'},
+      ovary:{title:'Ovary',place:'Pelvic cavity',h:['Estrogens','Progesterone'],facts:['Growing follicles mainly secrete estrogens.','Corpus luteum mainly secretes progesterone.','Regulate reproductive tissues, cycle, pregnancy and mammary development.'],link:'Remember: follicle → estrogen; corpus luteum → progesterone.'}
+    };
+    const pit={
+      anterior:{title:'Anterior pituitary · Pars distalis',html:'<p><span class="hormone-pill">GH</span><span class="hormone-pill">PRL</span><span class="hormone-pill">TSH</span><span class="hormone-pill">ACTH</span><span class="hormone-pill">LH</span><span class="hormone-pill">FSH</span></p><ul class="fact-list"><li><b>GH:</b> body growth and metabolism; imbalance causes characteristic growth disorders.</li><li><b>PRL:</b> mammary development and milk formation.</li><li><b>TSH / ACTH:</b> stimulate thyroid / adrenal cortex.</li><li><b>LH / FSH:</b> regulate gonadal functions.</li></ul>'},
+      intermedia:{title:'Pars intermedia',html:'<p><span class="hormone-pill">MSH</span></p><p>Melanocyte-stimulating hormone acts on melanocytes and influences pigmentation. In humans, pars intermedia is almost merged with pars distalis.</p>'},
+      posterior:{title:'Posterior pituitary · Pars nervosa',html:'<p><span class="hormone-pill">ADH / vasopressin</span><span class="hormone-pill">Oxytocin</span></p><ul class="fact-list"><li>These hormones are <b>made in the hypothalamus</b>, then stored and released here.</li><li><b>ADH:</b> promotes renal water/electrolyte reabsorption; impaired action may cause diabetes insipidus.</li><li><b>Oxytocin:</b> supports uterine contraction and milk ejection.</li></ul>'}
+    };
+    const questions=[
+      {id:1,type:'MCQ',q:'Which feature best defines an endocrine gland?',o:['It releases enzymes into a duct','It is ductless and releases hormones into blood','It stores bile before release','It acts only on adjacent cells'],a:1,e:'Endocrine glands lack ducts and release chemical messengers into circulation.'},
+      {id:2,type:'MCQ',q:'Hypothalamic releasing hormones reach the anterior pituitary mainly through the:',o:['Coronary circulation','Hepatic portal vein','Hypophyseal portal circulation','Lymphatic duct'],a:2,e:'The hypophyseal portal system delivers hypothalamic factors directly to the anterior pituitary.'},
+      {id:3,type:'MCQ',q:'Excess growth hormone in an adult is most closely associated with:',o:['Gigantism','Acromegaly','Cretinism','Addison’s disease'],a:1,e:'Adult GH excess produces acromegaly; childhood excess produces gigantism.'},
+      {id:4,type:'MCQ',q:'The hormone most directly associated with biological rhythms is:',o:['Aldosterone','Melatonin','Calcitonin','Glucagon'],a:1,e:'Pineal melatonin helps coordinate diurnal and sleep–wake rhythms.'},
+      {id:5,type:'MCQ',q:'Dietary iodine is specifically required for synthesis of:',o:['Cortisol','T₃ and T₄','PTH','Insulin'],a:1,e:'Thyroid iodothyronines T₃ and T₄ contain iodine.'},
+      {id:6,type:'MCQ',q:'Which hormone is hypercalcaemic?',o:['Calcitonin','PTH','Insulin','Thymosin'],a:1,e:'PTH raises blood Ca²⁺ through actions on bone, kidney and intestine.'},
+      {id:7,type:'MCQ',q:'Thymosins are chiefly associated with:',o:['T-lymphocyte differentiation','Glycogen breakdown','Milk ejection','Renal water reabsorption'],a:0,e:'Thymic hormones support T-cell differentiation and immune function.'},
+      {id:8,type:'MCQ',q:'The adrenal medulla secretes:',o:['Cortisol and aldosterone','Adrenaline and noradrenaline','Insulin and glucagon','T₃ and T₄'],a:1,e:'Adrenal medullary cells release the catecholamines adrenaline and noradrenaline.'},
+      {id:9,type:'MCQ',q:'Which is a glucocorticoid?',o:['Cortisol','Aldosterone','Adrenaline','Thyroxine'],a:0,e:'Cortisol is the principal glucocorticoid discussed in NCERT.'},
+      {id:10,type:'MCQ',q:'Correct pairing of pancreatic islet cell and hormone is:',o:['α cell—insulin','β cell—glucagon','α cell—glucagon','β cell—adrenaline'],a:2,e:'α cells secrete glucagon; β cells secrete insulin.'},
+      {id:11,type:'MCQ',q:'The corpus luteum primarily secretes:',o:['Estrogen only','Progesterone','FSH','Oxytocin'],a:1,e:'The corpus luteum is a major ovarian source of progesterone.'},
+      {id:12,type:'MCQ',q:'A peptide hormone most commonly initiates its effect by binding to:',o:['A membrane receptor','Nuclear DNA directly','A ribosome','A lysosomal enzyme'],a:0,e:'Peptide/protein hormones generally bind surface receptors and activate second messengers.'},
+
+      {id:13,type:'Statement',q:'Statement I: The posterior pituitary stores and releases ADH and oxytocin. Statement II: Both hormones are synthesised in the posterior pituitary.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:2,e:'They are synthesised in the hypothalamus, then transported to the posterior pituitary.'},
+      {id:14,type:'Statement',q:'Statement I: Prolactin supports milk formation. Statement II: Oxytocin supports milk ejection.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:0,e:'This formation-versus-ejection distinction is a common exam test.'},
+      {id:15,type:'Statement',q:'Statement I: PTH raises blood Ca²⁺. Statement II: Calcitonin also raises blood Ca²⁺.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:2,e:'PTH is hypercalcaemic, whereas calcitonin lowers blood Ca²⁺.'},
+      {id:16,type:'Statement',q:'Statement I: Thymus is relatively large in children. Statement II: Thymus progressively degenerates with age.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:0,e:'Age-related thymic involution contributes to reduced thymosin output.'},
+      {id:17,type:'Statement',q:'Statement I: Insulin promotes glycogenesis. Statement II: Glucagon promotes glycogenolysis.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:0,e:'Their opposing actions help stabilise blood glucose.'},
+      {id:18,type:'Statement',q:'Statement I: Aldosterone is a mineralocorticoid. Statement II: Cortisol is produced by the adrenal medulla.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:2,e:'Both aldosterone and cortisol are cortical hormones; medulla makes catecholamines.'},
+      {id:19,type:'Statement',q:'Statement I: Secretin promotes pancreatic bicarbonate-rich secretion. Statement II: CCK stimulates pancreatic enzymes and gallbladder emptying.',o:['Both statements are true','Both statements are false','I is true, II is false','I is false, II is true'],a:0,e:'These are complementary intestinal hormonal controls of digestion.'},
+
+      {id:20,type:'Assertion–Reason',q:'Assertion (A): Pituitary is called the master endocrine gland. Reason (R): Several pituitary hormones regulate other endocrine glands.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'TSH, ACTH and gonadotropins are examples of pituitary control over other glands.'},
+      {id:21,type:'Assertion–Reason',q:'A: Excess GH causes different named disorders in a child and an adult. R: Long-bone growth plates are no longer active in the same way after maturity.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'Timing changes the growth response: gigantism in childhood, acromegaly in adults.'},
+      {id:22,type:'Assertion–Reason',q:'A: Iodine deficiency may cause goitre. R: Iodine is needed to synthesise thyroid hormones.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'Reduced thyroid hormone production increases stimulation of the gland, which may enlarge.'},
+      {id:23,type:'Assertion–Reason',q:'A: PTH is called hypercalcaemic. R: It promotes processes that raise Ca²⁺ concentration in blood.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'PTH raises blood Ca²⁺ through bone, renal and intestinal effects.'},
+      {id:24,type:'Assertion–Reason',q:'A: Adrenaline is termed an emergency hormone. R: It prepares multiple organ systems for rapid action during stress.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'Catecholamines rapidly increase alertness, circulation, breathing and fuel availability.'},
+      {id:25,type:'Assertion–Reason',q:'A: Insulin is hypoglycaemic. R: It promotes cellular glucose uptake and glycogen synthesis.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'Both actions reduce blood glucose concentration.'},
+      {id:26,type:'Assertion–Reason',q:'A: Steroid hormones usually act through intracellular receptors. R: Their hormone–receptor complexes can influence gene expression.',o:['A and R are true; R explains A','A and R are true; R does not explain A','A is true; R is false','A is false; R is true'],a:0,e:'Lipid-soluble steroids cross membranes and regulate transcription via intracellular receptors.'},
+
+      {id:27,type:'Match',q:'Match: A. TSH, B. ACTH, C. FSH, D. GH with 1. General body growth, 2. Adrenal cortex, 3. Thyroid, 4. Gonadal function.',o:['A-3, B-2, C-4, D-1','A-2, B-3, C-1, D-4','A-3, B-4, C-2, D-1','A-1, B-2, C-3, D-4'],a:0,e:'TSH→thyroid; ACTH→adrenal cortex; FSH→gonads; GH→body growth.'},
+      {id:28,type:'Match',q:'Match: A. Pineal, B. Parathyroid, C. Thymus, D. Pancreatic β cell with 1. PTH, 2. Insulin, 3. Melatonin, 4. Thymosin.',o:['A-3, B-1, C-4, D-2','A-1, B-3, C-2, D-4','A-4, B-2, C-1, D-3','A-3, B-4, C-1, D-2'],a:0,e:'Each gland/cell maps to its characteristic secretion.'},
+      {id:29,type:'Match',q:'Match: A. GH excess in child, B. GH excess in adult, C. Adrenal cortex hyposecretion, D. ADH impairment with 1. Acromegaly, 2. Diabetes insipidus, 3. Gigantism, 4. Addison’s disease.',o:['A-3, B-1, C-4, D-2','A-1, B-3, C-2, D-4','A-3, B-4, C-1, D-2','A-2, B-1, C-4, D-3'],a:0,e:'Timing distinguishes GH disorders; source/function distinguishes the other two.'},
+      {id:30,type:'Match',q:'Match: A. Gastrin, B. Secretin, C. CCK, D. GIP with 1. Pancreatic bicarbonate, 2. HCl and pepsinogen, 3. Reduced gastric secretion/motility, 4. Pancreatic enzymes and bile release.',o:['A-2, B-1, C-4, D-3','A-1, B-2, C-3, D-4','A-2, B-4, C-1, D-3','A-3, B-1, C-4, D-2'],a:0,e:'These four GI messengers have distinct digestive targets.'},
+      {id:31,type:'Match',q:'Match chemical group with example: A. Peptide/protein, B. Steroid, C. Iodothyronine, D. Amino-acid derivative with 1. Thyroxine, 2. Insulin, 3. Adrenaline, 4. Cortisol.',o:['A-2, B-4, C-1, D-3','A-4, B-2, C-3, D-1','A-2, B-1, C-4, D-3','A-3, B-4, C-1, D-2'],a:0,e:'Insulin is protein; cortisol steroid; thyroxine iodothyronine; adrenaline an amino-acid derivative.'},
+
+      {id:32,type:'True/False',q:'Endocrine glands are ductless.',o:['True','False'],a:0,e:'Their secretions enter body fluids, especially blood, rather than a duct.'},
+      {id:33,type:'True/False',q:'The posterior pituitary synthesises ADH.',o:['True','False'],a:1,e:'ADH is synthesised in the hypothalamus and stored/released by the posterior pituitary.'},
+      {id:34,type:'True/False',q:'Calcitonin raises blood calcium concentration.',o:['True','False'],a:1,e:'Calcitonin lowers blood Ca²⁺; PTH raises it.'},
+      {id:35,type:'True/False',q:'Pancreatic β cells secrete insulin.',o:['True','False'],a:0,e:'β cells produce insulin, the major hypoglycaemic hormone.'},
+      {id:36,type:'True/False',q:'Peptide hormones generally act through intracellular nuclear receptors.',o:['True','False'],a:1,e:'They usually bind membrane receptors and signal through intracellular second messengers.'}
+    ];
+
+    const glandButtons=document.getElementById('glandButtons'),glandReadout=document.getElementById('glandReadout');
+    function showGland(key){const g=glands[key];glandReadout.innerHTML=`<div class="tag">${g.place}</div><h3>${g.title}</h3><p>${g.h.map(x=>`<span class="hormone-pill">${x}</span>`).join('')}</p><ul class="fact-list">${g.facts.map(x=>`<li>${x}</li>`).join('')}</ul><p><b>Exam link:</b> ${g.link}</p>`;document.querySelectorAll('.gland-btn').forEach(b=>b.classList.toggle('active',b.dataset.gland===key));}
+    Object.entries(glands).forEach(([k,g])=>{const b=document.createElement('button');b.className='gland-btn';b.dataset.gland=k;b.textContent=g.title;b.onclick=()=>showGland(k);glandButtons.appendChild(b)});showGland('hypothalamus');
+
+    function showPit(k){document.getElementById('pitReadout').innerHTML=`<h3>${pit[k].title}</h3>${pit[k].html}`;document.querySelectorAll('[data-pit]').forEach(b=>b.classList.toggle('active',b.dataset.pit===k));}document.getElementById('pitTabs').addEventListener('click',e=>{if(e.target.dataset.pit)showPit(e.target.dataset.pit)});showPit('anterior');
+
+    const glucose=document.getElementById('glucose');function updateGlucose(){const v=+glucose.value;document.getElementById('glucoseValue').textContent=v;document.getElementById('glucoseNeedle').style.left=((v-55)/(180-55)*100)+'%';let s,t;if(v<75){s='Glucagon response ↑';t='Pancreatic α cells release glucagon. Glycogenolysis and gluconeogenesis help restore blood glucose.'}else if(v>125){s='Insulin response ↑';t='Pancreatic β cells release insulin. Cellular uptake, use and glycogenesis help lower blood glucose.'}else{s='Balanced range';t='Opposing insulin and glucagon signals keep glucose near its working range.'}document.getElementById('glucoseStatus').textContent=s;document.getElementById('glucoseText').textContent=t}glucose.addEventListener('input',updateGlucose);updateGlucose();
+    function showCalcium(mode){document.getElementById('calciumReadout').innerHTML=mode==='low'?'<b>PTH rises</b><p>Parathyroids respond. Bone resorption, renal Ca²⁺ reabsorption and intestinal absorption increase, pushing blood Ca²⁺ upward.</p>':'<b>Calcitonin favoured</b><p>Thyroid calcitonin helps lower blood Ca²⁺, opposing the direction of PTH action.</p>';document.querySelectorAll('.ca-btn').forEach(b=>b.classList.toggle('active',b.dataset.ca===mode))}document.querySelectorAll('.ca-btn').forEach(b=>b.onclick=()=>showCalcium(b.dataset.ca));showCalcium('low');
+
+    function showMechanism(mode){document.getElementById('mechanismReadout').innerHTML=mode==='surface'?'<div class="tag">Water-soluble signal route</div><h3>Membrane receptor → second messenger → response</h3><p>Peptide/protein hormones usually cannot pass freely through the lipid bilayer. Binding at the cell surface activates relays such as cAMP, IP₃ or Ca²⁺, which alter cellular activity.</p>':'<div class="tag">Lipid-soluble signal route</div><h3>Intracellular receptor → gene regulation → response</h3><p>Steroid hormones and iodothyronines generally enter target cells and bind cytoplasmic or nuclear receptors. The complex modifies gene expression and protein production.</p>';document.querySelectorAll('.mech-btn').forEach(b=>b.classList.toggle('active',b.dataset.mech===mode))}document.querySelectorAll('.mech-btn').forEach(b=>b.onclick=()=>showMechanism(b.dataset.mech));showMechanism('surface');
+
+    let answers={};try{answers=JSON.parse(localStorage.getItem('cci_answers')||'{}')}catch(e){answers={}};const quizList=document.getElementById('quizList');
+    function renderQuiz(filter='all'){quizList.innerHTML='';questions.filter(q=>filter==='all'||q.type===filter).forEach(q=>{const box=document.createElement('article');box.className='question';box.dataset.type=q.type;const answered=answers[q.id];box.innerHTML=`<div class="qtop"><span class="qnum">Q${q.id}</span><span class="qtype">${q.type}</span></div><div class="qtext">${q.q}</div><div class="options">${q.o.map((x,i)=>`<button class="option" data-i="${i}" ${answered!==undefined?'disabled':''}>${i+1}. ${x}</button>`).join('')}</div><div class="explain ${answered!==undefined?'show':''}"><b>${answered===q.a?'Correct.':'Answer: '+(q.a+1)+'.'}</b> ${q.e}</div>`;if(answered!==undefined){const opts=box.querySelectorAll('.option');opts[q.a].classList.add('correct');if(answered!==q.a)opts[answered].classList.add('wrong')}box.querySelectorAll('.option').forEach(btn=>btn.onclick=()=>answer(q,+btn.dataset.i,box));quizList.appendChild(box)});updateScore()}
+    function answer(q,i,box){if(answers[q.id]!==undefined)return;answers[q.id]=i;localStorage.setItem('cci_answers',JSON.stringify(answers));const opts=box.querySelectorAll('.option');opts.forEach(b=>b.disabled=true);opts[q.a].classList.add('correct');if(i!==q.a)opts[i].classList.add('wrong');const ex=box.querySelector('.explain');ex.innerHTML=`<b>${i===q.a?'Correct.':'Answer: '+(q.a+1)+'.'}</b> ${q.e}`;ex.classList.add('show');updateScore()}
+    function updateScore(){const attempted=Object.keys(answers).length,score=questions.filter(q=>answers[q.id]===q.a).length;document.getElementById('score').textContent=score;document.getElementById('attempted').textContent=attempted;let best=+(localStorage.getItem('cci_best')||0);if(attempted===questions.length&&score>best){best=score;localStorage.setItem('cci_best',best)}document.getElementById('best').textContent=best}
+    document.getElementById('filters').addEventListener('click',e=>{if(!e.target.dataset.filter)return;document.querySelectorAll('.filter').forEach(b=>b.classList.toggle('active',b===e.target));renderQuiz(e.target.dataset.filter)});document.getElementById('resetQuiz').onclick=()=>{if(confirm('Reset all quiz answers?')){answers={};localStorage.removeItem('cci_answers');renderQuiz(document.querySelector('.filter.active').dataset.filter)}};renderQuiz();
+
+    document.getElementById('themeBtn').onclick=()=>{document.body.classList.toggle('dark');localStorage.setItem('cci_theme',document.body.classList.contains('dark')?'dark':'light')};if(localStorage.getItem('cci_theme')==='dark')document.body.classList.add('dark');
+    const progress=document.getElementById('progressBar');function onScroll(){const h=document.documentElement.scrollHeight-innerHeight;progress.style.width=(h?scrollY/h*100:0)+'%';const sections=[...document.querySelectorAll('main .section')];let current=sections[0]?.id;sections.forEach(s=>{if(s.getBoundingClientRect().top<150)current=s.id});document.querySelectorAll('.toc a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))}addEventListener('scroll',onScroll,{passive:true});onScroll();
+  </script>
+</body>
+</html>

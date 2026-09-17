@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Interactive NCERT-aligned Class 11 Plant Growth and Development page for NEET aspirants.">
+<title>Plant Growth and Development | RHK-BiOBiTES</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23475d24'/%3E%3Cpath d='M31 51V27' stroke='white' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M31 34C17 33 13 24 14 15c12 0 20 7 17 19Z' fill='%23d9f28e'/%3E%3Cpath d='M32 28c2-12 10-17 19-16 1 10-4 17-19 16Z' fill='%238fd6a5'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#f5fbe9;--paper:#fffefa;--ink:#283721;--muted:#66725d;--green:#526d28;--green2:#789337;--lime:#e5f4b7;--aqua:#dcf3e8;--gold:#ffe19a;--rose:#ffe5df;--line:#d7e2bf;--purple:#7861a8;--shadow:0 12px 30px rgba(68,86,39,.11);--rad:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(135deg,#f8ffe9,#f2fbef 55%,#fff9e8);color:var(--ink);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}body.dark{--bg:#1b2818;--paper:#263821;--ink:#f4ffe9;--muted:#c3d0b8;--green:#b6df6e;--green2:#9fc45d;--lime:#3c502c;--aqua:#24493c;--gold:#705d27;--rose:#4d312d;--line:#4a603c;--purple:#c7b1f2;--shadow:0 12px 30px rgba(0,0,0,.3);background:#172316}
+button,input{font:inherit}button{cursor:pointer}.progress{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,#ffc34d,#7ea83a);z-index:60}
+header{background:linear-gradient(120deg,#3e5520,#66812b 55%,#879e3a);color:white;padding:22px 4vw 24px;position:relative;overflow:hidden}header:after{content:"";position:absolute;right:-90px;top:-120px;width:300px;height:300px;border:44px solid rgba(255,255,255,.08);border-radius:50%}.top,.hero{max-width:1180px;margin:auto;position:relative;z-index:1}.top{display:flex;justify-content:space-between;align-items:center;gap:18px}.brand{font-weight:900;letter-spacing:.08em}.tools{display:flex;gap:8px}.icon{border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.13);color:white;padding:8px 12px;border-radius:999px}.hero{display:grid;grid-template-columns:1.4fr .7fr;gap:28px;align-items:center;margin-top:28px}.eyebrow{font-size:.8rem;font-weight:900;letter-spacing:.13em;color:#e8ffba}.hero h1{font-size:clamp(2.25rem,5vw,4.7rem);line-height:.96;margin:.3rem 0 1rem}.hero p{font-size:1.08rem;color:#f1ffe4;max-width:720px}.hero-card{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:24px;padding:22px;text-align:center;box-shadow:var(--shadow)}.hero-card .sprout{font-size:3.3rem}.hero-card strong{display:block;font-size:1.2rem;margin:8px 0}
+nav{position:sticky;top:0;z-index:40;background:rgba(255,254,250,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);overflow:auto;white-space:nowrap}.dark nav{background:rgba(38,56,33,.94)}nav div{max-width:1180px;margin:auto;display:flex}nav a{padding:13px 14px;text-decoration:none;color:var(--ink);font-weight:750;font-size:.9rem}nav a:hover{background:var(--lime);color:var(--green)}
+main{max-width:1180px;margin:auto;padding:28px 20px 70px}section{margin:36px 0 58px;scroll-margin-top:65px}.head{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}.num{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:var(--green);color:white;font-weight:900;flex:none}.head h2{font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.15;margin:0}.head p{margin:5px 0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card,.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--rad);box-shadow:var(--shadow)}.card{padding:20px}.card h3{color:var(--green);margin:.25rem 0 .45rem;line-height:1.25}.card p{margin:.45rem 0}.tag{display:inline-block;background:var(--lime);padding:3px 9px;border-radius:999px;font-size:.76rem;font-weight:850}.note{border-left:5px solid var(--green2);background:linear-gradient(90deg,var(--lime),var(--paper) 33%)}.trap{border-left:5px solid #e4a12d;background:linear-gradient(90deg,var(--gold),var(--paper) 30%)}.mini{font-size:.9rem;color:var(--muted)}
+.zones{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.zone{border:2px solid var(--line);background:var(--paper);color:var(--ink);padding:18px;border-radius:16px;text-align:left}.zone.active{border-color:var(--green);background:var(--lime);transform:translateY(-3px)}.zone-read{margin-top:14px;padding:17px;border-radius:15px;background:var(--aqua)}.zone-read h3{margin:0;color:var(--green)}
+.lab{padding:22px}.lab-top{display:grid;grid-template-columns:.8fr 1.4fr;gap:20px}.controls{display:grid;gap:12px}.controls label{font-weight:850}.controls input{width:100%;accent-color:var(--green)}.mode{display:flex;gap:8px;flex-wrap:wrap}.mode button,.pgr-btn,.filter{border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:8px 13px;border-radius:999px;font-weight:800}.mode button.active,.pgr-btn.active,.filter.active{background:var(--green);border-color:var(--green);color:white}.graph{height:250px;position:relative;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);background:repeating-linear-gradient(0deg,transparent,transparent 48px,var(--line) 49px),repeating-linear-gradient(90deg,transparent,transparent 70px,var(--line) 71px);border-radius:0 12px 0 0;overflow:hidden}.bars{display:flex;align-items:flex-end;gap:9px;height:100%;padding:12px}.gbar{flex:1;background:linear-gradient(#a8d14e,#5e7e28);border-radius:8px 8px 0 0;min-height:4px;position:relative}.gbar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:.72rem;font-weight:800}.formula{margin-top:14px;background:var(--aqua);padding:13px;border-radius:13px}
+.calc{padding:20px;display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:12px;align-items:end}.calc label{font-weight:800}.calc input{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}.calc-result{padding:13px;background:var(--lime);border-radius:12px;font-weight:900;min-width:150px;text-align:center}
+.table-wrap{overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px}table{border-collapse:collapse;width:100%;min-width:720px}th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}th{background:var(--green);color:white}tbody tr:nth-child(even){background:color-mix(in srgb,var(--bg),transparent 18%)}tr:last-child td{border:0}
+.pgr-panel{padding:22px}.pgr-controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.pgr-read{display:grid;grid-template-columns:.65fr 1.5fr;gap:16px}.pgr-id{background:var(--lime);border-radius:17px;padding:20px}.pgr-id .chem{font-size:.85rem;font-weight:900;color:var(--purple)}.pgr-id h3{font-size:2rem;margin:.3rem 0;color:var(--green)}.pgr-detail{background:var(--aqua);border-radius:17px;padding:20px}.pgr-detail ul{margin:.3rem 0;padding-left:20px}
+.timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.discover{text-align:center;padding:17px}.discover strong{color:var(--green);display:block}.discover h3{margin:.3rem 0}
+.search{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:14px;background:var(--paper);color:var(--ink);margin-bottom:15px}.glossary{grid-template-columns:repeat(4,1fr)}.term{padding:16px}.term strong{display:block;color:var(--green)}
+.quiz{padding:22px}.quiz-top{display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:17px 0}.score{font-size:1.1rem;font-weight:900;color:var(--green)}.qbox{padding:22px;background:var(--bg);border:1px solid var(--line);border-radius:18px}.qmeta{display:flex;justify-content:space-between;color:var(--muted);font-size:.88rem;font-weight:800}.qtext{font-size:1.15rem;font-weight:800;line-height:1.45;margin:15px 0}.options{display:grid;gap:10px}.option{width:100%;text-align:left;padding:13px 15px;border:2px solid var(--line);border-radius:13px;background:var(--paper);color:var(--ink)}.option:hover{border-color:var(--green)}.option.correct{background:#ddf6e4;border-color:#20995d;color:#123b28}.option.wrong{background:#ffe5df;border-color:#d34d41;color:#591812}.feedback{display:none;margin-top:14px;padding:14px;border-radius:13px;background:var(--aqua)}.feedback.show{display:block}.quiz-nav{display:flex;justify-content:space-between;gap:10px;margin-top:15px}.quiz-nav button,.primary{border:0;background:var(--green);color:white;padding:10px 16px;border-radius:12px;font-weight:800}.quiz-nav button:disabled{opacity:.45}.result{display:none;text-align:center;padding:24px}.result.show{display:block}.ring{width:125px;height:125px;margin:10px auto;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--green2) var(--pct),var(--line) 0);position:relative}.ring:after{content:"";position:absolute;inset:13px;background:var(--paper);border-radius:50%}.ring strong{z-index:1}
+details{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:12px 15px;margin:8px 0}summary{cursor:pointer;font-weight:800;color:var(--green)}.back{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border:0;border-radius:50%;background:var(--green);color:white;box-shadow:var(--shadow);display:none}.back.show{display:block}footer{text-align:center;background:#344719;color:#f2ffe0;padding:30px 20px}footer a{color:#e3ff93}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.glossary{grid-template-columns:repeat(3,1fr)}.timeline{grid-template-columns:repeat(2,1fr)}.lab-top,.pgr-read{grid-template-columns:1fr}.calc{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){header{padding-inline:20px}.hero h1{font-size:2.35rem}.grid,.glossary,.timeline,.zones,.calc{grid-template-columns:1fr}main{padding-inline:14px}.quiz,.qbox,.lab,.pgr-panel{padding:15px}.tools .lbl{display:none}}
+@media print{nav,.tools,.progress,.back,.quiz-nav,.filters{display:none!important}body{background:white;color:#111}.card,.panel{box-shadow:none;break-inside:avoid}header{background:#526d28!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head>
+<body><div class="progress" id="progress"></div>
+<header id="top"><div class="top"><div class="brand">RHK‑BiOBiTES · NEET BIOLOGY</div><div class="tools"><button class="icon" id="theme">◐ <span class="lbl">Theme</span></button><button class="icon" onclick="print()">⎙ <span class="lbl">Print</span></button></div></div>
+<div class="hero"><div><div class="eyebrow">Class 11 · Chapter 13 · Plant Physiology</div><h1>Plant Growth and Development</h1><p>Connect meristems, growth curves, cellular differentiation and plant growth regulators into one NEET-ready framework.</p></div><div class="hero-card"><div class="sprout">🌱 → 🌿 → 🌼</div><strong>Development = growth + differentiation</strong><small>Controlled by intrinsic and extrinsic factors</small></div></div></header>
+<nav><div><a href="#map">Chapter map</a><a href="#growth">Growth</a><a href="#zones">Zones</a><a href="#lab">Curve lab</a><a href="#diff">Differentiation</a><a href="#pgr">PGR explorer</a><a href="#discover">Discoveries</a><a href="#traps">NEET traps</a><a href="#glossary">Glossary</a><a href="#quiz">Practice</a></div></nav>
+<main>
+<section id="map"><div class="head"><span class="num">01</span><div><h2>Chapter map</h2><p>Growth changes quantity; differentiation changes structure and function; development includes both.</p></div></div><div class="grid">
+<article class="card note"><span class="tag">GROWTH</span><h3>Permanent increase</h3><p>An irreversible increase in size of an organ, part or cell, usually accompanied by metabolism and increased protoplasm.</p></article>
+<article class="card"><span class="tag">DIFFERENTIATION</span><h3>Specialisation</h3><p>Cells mature with structural and biochemical changes suited to particular functions.</p></article>
+<article class="card trap"><span class="tag">DEVELOPMENT</span><h3>Life-cycle change</h3><p>Includes all changes from germination to senescence. Broadly: growth + differentiation, influenced by genes, PGRs and environment.</p></article>
+</div></section>
+
+<section id="growth"><div class="head"><span class="num">02</span><div><h2>Features and measurement of growth</h2><p>Plants retain meristems, giving them an open and often indeterminate growth pattern.</p></div></div><div class="grid">
+<article class="card"><h3>Primary growth</h3><p>Root and shoot apical meristems add length along the plant axis.</p></article>
+<article class="card"><h3>Secondary growth</h3><p>Vascular cambium and cork cambium increase girth, especially in dicots and gymnosperms.</p></article>
+<article class="card"><h3>Measured indirectly</h3><p>Use fresh/dry mass, length, area, volume or cell number because protoplasmic increase is difficult to measure directly.</p></article>
+<article class="card"><h3>Conditions</h3><p>Water enables enlargement and enzyme activity; oxygen supplies respiratory energy; nutrients build protoplasm. Temperature, light and gravity also matter.</p></article>
+<article class="card"><h3>Open growth</h3><p>Meristems self-perpetuate while their derivatives usually lose division capacity and form the plant body.</p></article>
+<article class="card trap"><h3>Growth ≠ imbibition</h3><p>Swelling of dry wood in water is reversible physical uptake, not permanent biological growth.</p></article>
+</div></section>
+
+<section id="zones"><div class="head"><span class="num">03</span><div><h2>Root-tip growth zones</h2><p>Select a zone to revise its cellular features.</p></div></div><div class="panel" style="padding:20px"><div class="zones"><button class="zone active" data-zone="meristematic"><b>1. Meristematic</b><br><span class="mini">Cell division</span></button><button class="zone" data-zone="elongation"><b>2. Elongation</b><br><span class="mini">Cell expansion</span></button><button class="zone" data-zone="maturation"><b>3. Maturation</b><br><span class="mini">Specialisation</span></button></div><div class="zone-read" id="zoneRead"></div></div></section>
+
+<section id="lab"><div class="head"><span class="num">04</span><div><h2>Interactive growth-curve laboratory</h2><p>Compare arithmetic, exponential and natural sigmoid growth.</p></div></div>
+<div class="panel lab"><div class="lab-top"><div class="controls"><div class="mode"><button class="active" data-mode="arithmetic">Arithmetic</button><button data-mode="geometric">Geometric</button><button data-mode="sigmoid">Sigmoid</button></div><label>Time point: <span id="timeValue">6</span><input id="time" type="range" min="2" max="10" value="6"></label><label>Initial size W₀: <span id="initialValue">2</span><input id="initial" type="range" min="1" max="8" value="2"></label><label>Rate r: <span id="rateValue">0.30</span><input id="rate" type="range" min="0.1" max="0.7" step="0.05" value="0.3"></label></div><div class="graph"><div class="bars" id="curveBars"></div></div></div><div class="formula" id="formula"></div></div>
+<div class="panel calc" style="margin-top:16px"><label>Initial size<input id="rInitial" type="number" value="5" min="0.1" step="0.1"></label><label>Final size<input id="rFinal" type="number" value="10" min="0.1" step="0.1"></label><label>Time<input id="rTime" type="number" value="2" min="0.1" step="0.1"></label><div class="calc-result" id="growthCalc">AGR 2.50<br>RGR 0.50</div></div>
+</section>
+
+<section id="diff"><div class="head"><span class="num">05</span><div><h2>Differentiation and plasticity</h2><p>Plant cell fate remains unusually flexible and strongly depends on position and environment.</p></div></div><div class="grid">
+<article class="card"><span class="tag">DIFFERENTIATION</span><h3>Mature for function</h3><p>A tracheary element loses protoplasm and develops strong lignocellulosic secondary walls for water conduction under tension.</p></article>
+<article class="card"><span class="tag">DEDIFFERENTIATION</span><h3>Regain division</h3><p>Living mature cells become meristematic again—for example, parenchyma forming interfascicular cambium or cork cambium.</p></article>
+<article class="card"><span class="tag">REDIFFERENTIATION</span><h3>Specialise again</h3><p>Cells produced by a dedifferentiated meristem later lose division capacity and mature into new functional tissues.</p></article>
+<article class="card"><span class="tag">PLASTICITY</span><h3>Different developmental routes</h3><p>Plants form different structures in response to age or environment. Heterophylly is a classic example.</p></article>
+<article class="card"><h3>Developmental heterophylly</h3><p>Juvenile and adult leaves differ in cotton, coriander and larkspur.</p></article>
+<article class="card"><h3>Environmental heterophylly</h3><p>Buttercup produces different leaf forms in air and water.</p></article>
+</div></section>
+
+<section id="pgr"><div class="head"><span class="num">06</span><div><h2>Plant growth regulator explorer</h2><p>Select a PGR to compare chemistry, major effects and applications.</p></div></div><div class="panel pgr-panel"><div class="pgr-controls" id="pgrControls"></div><div class="pgr-read"><div class="pgr-id" id="pgrId"></div><div class="pgr-detail" id="pgrDetail"></div></div></div>
+<div class="table-wrap" style="margin-top:16px"><table><thead><tr><th>PGR</th><th>High-yield identity</th><th>Signature effects</th></tr></thead><tbody>
+<tr><td>Auxin</td><td>IAA/IBA natural; NAA/2,4-D synthetic</td><td>Cell elongation, apical dominance, rooting, parthenocarpy</td></tr><tr><td>Gibberellin</td><td>Terpenoid acids; GA₃ prominent</td><td>Axis elongation, bolting, malting, delay of senescence</td></tr><tr><td>Cytokinin</td><td>Adenine derivatives; zeatin natural</td><td>Cytokinesis, lateral buds, nutrient mobilisation, delayed senescence</td></tr><tr><td>Ethylene</td><td>Gaseous PGR; ethephon releases it</td><td>Ripening, abscission, triple response, root hairs</td></tr><tr><td>ABA</td><td>Carotenoid derivative; stress hormone</td><td>Stomatal closure, dormancy, stress tolerance, germination inhibition</td></tr>
+</tbody></table></div></section>
+
+<section id="discover"><div class="head"><span class="num">07</span><div><h2>How the five PGR groups were discovered</h2><p>Match the observation with the regulator.</p></div></div><div class="timeline">
+<article class="card discover"><strong>Darwin & Went</strong><h3>Auxin</h3><p>Coleoptile tip sends a transmissible influence controlling phototropic bending.</p></article>
+<article class="card discover"><strong>Kurosawa</strong><h3>Gibberellin</h3><p>Fungal filtrate reproduced bakanae or “foolish seedling” elongation in rice.</p></article>
+<article class="card discover"><strong>Skoog & Miller</strong><h3>Cytokinin</h3><p>Cell division in tobacco callus led to isolation of kinetin.</p></article>
+<article class="card discover"><strong>H.H. Cousins</strong><h3>Ethylene</h3><p>A volatile substance from ripe oranges accelerated banana ripening.</p></article>
+<article class="card discover"><strong>Three inhibitors</strong><h3>ABA</h3><p>Inhibitor-B, abscission II and dormin proved chemically identical.</p></article>
+</div></section>
+
+<section id="traps"><div class="head"><span class="num">08</span><div><h2>High-yield NEET traps</h2><p>Small distinctions that frequently decide the answer.</p></div></div><div class="grid">
+<article class="card trap"><h3>Arithmetic versus geometric</h3><p>Arithmetic: one daughter keeps dividing and the other differentiates. Geometric: both daughters retain division capacity.</p></article>
+<article class="card trap"><h3>AGR versus RGR</h3><p>AGR is total increase per time; RGR expresses increase per time relative to initial size.</p></article>
+<article class="card trap"><h3>Sigmoid is natural</h3><p>Exponential growth cannot continue indefinitely under limited resources; lag, log and stationary phases give an S-curve.</p></article>
+<article class="card trap"><h3>Kinetin is not natural</h3><p>It was isolated from autoclaved herring sperm DNA; zeatin is a natural cytokinin.</p></article>
+<article class="card trap"><h3>Ethylene can promote</h3><p>Although largely inhibitory, it breaks dormancy, promotes deep-water-rice elongation, root hairs and some flowering responses.</p></article>
+<article class="card trap"><h3>Auxin and abscission</h3><p>Auxin prevents premature drop but may promote abscission of older mature organs.</p></article>
+<article class="card trap"><h3>ABA versus GA</h3><p>They commonly act antagonistically in seed dormancy and germination.</p></article>
+<article class="card trap"><h3>Development is broader</h3><p>Development includes germination through senescence—not merely increase in size.</p></article>
+<article class="card trap"><h3>PGR action is contextual</h3><p>Regulators may act individually, synergistically or antagonistically; no one has only a single effect.</p></article>
+</div></section>
+
+<section id="glossary"><div class="head"><span class="num">09</span><div><h2>Rapid glossary</h2><p>Search essential terminology.</p></div></div><input class="search" id="termSearch" placeholder="Search: plasticity, bolting, apical dominance…" aria-label="Search glossary"><div class="grid glossary" id="glossaryGrid"></div></section>
+
+<section id="quiz"><div class="head"><span class="num">10</span><div><h2>NEET practice studio</h2><p>36 questions · MCQ, statement, assertion–reason, match and true/false · instant explanations.</p></div></div><div class="panel quiz"><div class="quiz-top"><div><b id="quizTitle">All question models</b><div class="mini" id="best">Best score: —</div></div><div class="score" id="score">Score 0 / 0</div></div><div class="filters" id="filters"></div><div id="questionArea"></div><div class="result" id="result"><div class="ring" id="ring"><strong id="pct">0%</strong></div><h3 id="resultText"></h3><p id="resultNote"></p><button class="primary" id="restart">Try again</button></div></div></section>
+
+<section><div class="head"><span class="num">11</span><div><h2>Last-minute revision</h2><p>Open a checkpoint for rapid recall.</p></div></div>
+<details><summary>What are the three phases near a root tip?</summary><p>Meristematic: division, dense protoplasm, prominent nuclei. Elongation: vacuolation, enlargement and new wall deposition. Maturation: maximal size, wall thickening and specialised protoplasm.</p></details>
+<details><summary>What are the key growth equations?</summary><p>Arithmetic: Lₜ = L₀ + rt. Exponential: W₁ = W₀eʳᵗ. AGR = change/time. RGR = change/(initial size × time), in the simple NCERT comparison sense.</p></details>
+<details><summary>Which PGR should a student associate first with each effect?</summary><p>Auxin—apical dominance/rooting; GA—bolting; cytokinin—cell division/delayed senescence; ethylene—fruit ripening; ABA—stomatal closure/dormancy.</p></details>
+</section></main>
+<button class="back" id="back" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+<footer><b>RHK‑BiOBiTES</b><br>Class 11 and NEET preparation · Works offline in a modern browser.<br>Scope aligned to <a href="https://ncert.nic.in/textbook/pdf/kebo113.pdf" target="_blank" rel="noopener">NCERT Biology Chapter 13 (Reprint 2026–27)</a>.</footer>
+<script>
+(() => {
+  'use strict';
+
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+
+  // Reading progress, back-to-top and theme.
+  const themeButton = $('#theme');
+  const savedTheme = localStorage.getItem('pgd-theme');
+  if (savedTheme === 'dark') document.body.classList.add('dark');
+  themeButton.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    themeButton.textContent = isDark ? '☀️' : '🌙';
+    localStorage.setItem('pgd-theme', isDark ? 'dark' : 'light');
+  });
+  addEventListener('scroll', () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    $('#progress').style.width = `${max > 0 ? (scrollY / max) * 100 : 0}%`;
+    $('#back').classList.toggle('show', scrollY > 500);
+  }, { passive: true });
+
+  // Root-tip zone explorer.
+  const zones = {
+    meristematic: {
+      title: 'Meristematic phase · active division',
+      text: 'Cells near the root and shoot apices divide continuously. They possess dense protoplasm, large prominent nuclei, thin primary walls and abundant plasmodesmatal connections.',
+      cue: 'NEET cue: division adds new cells.'
+    },
+    elongation: {
+      title: 'Elongation phase · rapid enlargement',
+      text: 'Cells just behind the meristem enlarge because of vacuolation, increased protoplasm and deposition of new cell-wall material. This phase produces a conspicuous increase in length.',
+      cue: 'NEET cue: vacuolation and wall deposition.'
+    },
+    maturation: {
+      title: 'Maturation phase · differentiation',
+      text: 'Cells farther from the apex reach maximum size and acquire specialised wall and protoplasmic features. Root hairs arise from differentiated epidermal cells in this region.',
+      cue: 'NEET cue: maximum size plus specialisation.'
+    }
+  };
+  function showZone(key) {
+    const z = zones[key];
+    $('#zoneRead').innerHTML = `<h3>${z.title}</h3><p>${z.text}</p><span class="tag">${z.cue}</span>`;
+    $$('.zone').forEach(button => button.classList.toggle('active', button.dataset.zone === key));
+  }
+  $$('.zone').forEach(button => button.addEventListener('click', () => showZone(button.dataset.zone)));
+  showZone('meristematic');
+
+  // Growth-curve laboratory.
+  let curveMode = 'arithmetic';
+  function series(mode, w0, r, n) {
+    return Array.from({ length: n }, (_, i) => {
+      const t = i + 1;
+      if (mode === 'arithmetic') return w0 + r * t * 4;
+      if (mode === 'geometric') return w0 * Math.exp(r * t);
+      const k = 100;
+      return k / (1 + ((k - w0) / w0) * Math.exp(-r * 1.65 * t));
+    });
+  }
+  function renderCurve() {
+    const n = +$('#time').value;
+    const w0 = +$('#initial').value;
+    const r = +$('#rate').value;
+    $('#timeValue').textContent = n;
+    $('#initialValue').textContent = w0;
+    $('#rateValue').textContent = r.toFixed(2);
+    const values = series(curveMode, w0, r, n);
+    const highest = Math.max(...values, 1);
+    $('#curveBars').innerHTML = values.map((value, index) =>
+      `<div class="gbar" style="height:${Math.max(8, value / highest * 100)}%" title="t=${index + 1}, size=${value.toFixed(1)}"><span>${index + 1}</span></div>`
+    ).join('');
+    const descriptions = {
+      arithmetic: `<b>Lₜ = L₀ + rt</b> · constant increase per unit time. The plotted bars form a straight-line trend.`,
+      geometric: `<b>W₁ = W₀eʳᵗ</b> · both daughter cells can continue dividing, so increase is exponential under ideal conditions.`,
+      sigmoid: `<b>S-shaped curve</b> · lag → exponential/log → stationary phase as resources become limiting. This is typical under natural conditions.`
+    };
+    $('#formula').innerHTML = descriptions[curveMode];
+  }
+  $$('.mode button').forEach(button => button.addEventListener('click', () => {
+    curveMode = button.dataset.mode;
+    $$('.mode button').forEach(b => b.classList.toggle('active', b === button));
+    renderCurve();
+  }));
+  ['time', 'initial', 'rate'].forEach(id => $(`#${id}`).addEventListener('input', renderCurve));
+  renderCurve();
+
+  function calculateRates() {
+    const initial = +$('#rInitial').value;
+    const final = +$('#rFinal').value;
+    const time = +$('#rTime').value;
+    if (!(initial > 0) || !(final >= initial) || !(time > 0)) {
+      $('#growthCalc').innerHTML = '<b>Enter valid values:</b> initial size must be positive, final size cannot be smaller, and time must be greater than zero.';
+      return;
+    }
+    const agr = (final - initial) / time;
+    const rgr = agr / initial;
+    $('#growthCalc').innerHTML = `<b>AGR = ${agr.toFixed(2)} units/time</b><br><b>RGR = ${rgr.toFixed(3)} per time</b><br><span class="mini">RGR compares growth relative to the starting size.</span>`;
+  }
+  ['rInitial', 'rFinal', 'rTime'].forEach(id => $(`#${id}`).addEventListener('input', calculateRates));
+  calculateRates();
+
+  // Plant growth regulator explorer.
+  const pgrs = {
+    auxin: {
+      name: 'Auxins', icon: 'AUX', chemistry: 'Mostly indole compounds; IAA is the principal natural auxin.',
+      roles: ['Cell elongation in shoots', 'Apical dominance', 'Root initiation in cuttings', 'Xylem differentiation'],
+      uses: ['Parthenocarpic fruit formation', '2,4-D as a dicot weedicide', 'Prevention of premature fruit and leaf drop'],
+      clue: 'Think: apex, adventitious roots and 2,4-D.'
+    },
+    gibberellin: {
+      name: 'Gibberellins', icon: 'GA', chemistry: 'Terpenoid compounds; more than 100 forms are known, with GA₃ widely studied.',
+      roles: ['Internode and axis elongation', 'Bolting in rosette plants', 'Seed germination responses', 'Delay of senescence in some organs'],
+      uses: ['Increase grape-stalk length', 'Improve apple shape', 'Increase sugarcane stem yield', 'Speed malting in brewing'],
+      clue: 'Think: height, bolting and malting.'
+    },
+    cytokinin: {
+      name: 'Cytokinins', icon: 'CK', chemistry: 'Adenine derivatives; kinetin is synthetic/non-natural, whereas zeatin occurs naturally.',
+      roles: ['Cytokinesis and cell division', 'Lateral and adventitious shoot formation', 'Nutrient mobilisation', 'Delay of leaf senescence'],
+      uses: ['Tissue-culture shoot induction', 'Promotion of lateral bud growth', 'Keeping leaves functional for longer'],
+      clue: 'Think: cell division, lateral shoots and zeatin.'
+    },
+    ethylene: {
+      name: 'Ethylene', icon: 'C₂H₄', chemistry: 'A simple gaseous plant growth regulator.',
+      roles: ['Fruit ripening', 'Horizontal seedling growth and swelling', 'Senescence and abscission', 'Root-hair and root growth'],
+      uses: ['Ethephon releases ethylene', 'Synchronous fruit ripening', 'Flowering in pineapple', 'Female flowers in cucumber'],
+      clue: 'Think: gaseous regulator and ripening.'
+    },
+    aba: {
+      name: 'Abscisic acid', icon: 'ABA', chemistry: 'A carotenoid-derived compound that acts mainly as a growth inhibitor.',
+      roles: ['Stomatal closure during water stress', 'Seed and bud dormancy', 'General growth inhibition', 'Stress tolerance'],
+      uses: ['Helps plants withstand adverse conditions', 'Promotes desiccation tolerance in seeds'],
+      clue: 'Think: stress, stomata and dormancy; often antagonistic to GA.'
+    }
+  };
+  function showPgr(key) {
+    const p = pgrs[key];
+    $$('#pgrControls button').forEach(button => button.classList.toggle('active', button.dataset.pgr === key));
+    $('#pgrId').innerHTML = `<div class="pgr-icon">${p.icon}</div><h3>${p.name}</h3><p>${p.chemistry}</p><span class="tag">${p.clue}</span>`;
+    $('#pgrDetail').innerHTML = `<div><h4>Major roles</h4><ul>${p.roles.map(x => `<li>${x}</li>`).join('')}</ul></div><div><h4>Applications / associations</h4><ul>${p.uses.map(x => `<li>${x}</li>`).join('')}</ul></div>`;
+  }
+  $('#pgrControls').innerHTML = Object.entries(pgrs).map(([key, p]) => `<button class="pgr-btn" data-pgr="${key}">${p.name}</button>`).join('');
+  $$('#pgrControls button').forEach(button => button.addEventListener('click', () => showPgr(button.dataset.pgr)));
+  showPgr('auxin');
+
+  // Searchable glossary.
+  const glossary = [
+    ['Growth', 'Irreversible, permanent increase in size of an organ, part or cell.'],
+    ['Open growth', 'Plant growth that can continue throughout life because meristems retain division capacity.'],
+    ['Primary growth', 'Increase in length caused mainly by apical meristems.'],
+    ['Secondary growth', 'Increase in girth caused by lateral meristems.'],
+    ['Meristematic phase', 'Phase of active cell division near root and shoot apices.'],
+    ['Elongation phase', 'Phase marked by vacuolation, enlargement and new wall deposition.'],
+    ['Maturation phase', 'Phase in which cells reach maximum size and become specialised.'],
+    ['Arithmetic growth', 'Linear growth in which only one daughter cell generally keeps dividing.'],
+    ['Geometric growth', 'Exponential growth in which both daughter cells retain division ability.'],
+    ['Sigmoid curve', 'S-shaped growth pattern with lag, log and stationary phases.'],
+    ['AGR', 'Absolute growth rate: total increase per unit time.'],
+    ['RGR', 'Relative growth rate: increase per unit time relative to the initial size.'],
+    ['Differentiation', 'Structural and functional maturation of cells for specialised roles.'],
+    ['Dedifferentiation', 'Regaining division capacity by mature living cells.'],
+    ['Redifferentiation', 'Specialisation of cells produced by dedifferentiated tissue.'],
+    ['Development', 'The sum of growth and differentiation across the life cycle.'],
+    ['Plasticity', 'Ability to follow different developmental pathways in response to environment or life stage.'],
+    ['Heterophylly', 'Occurrence of differently shaped leaves on the same plant.'],
+    ['Apical dominance', 'Suppression of lateral buds by the shoot apex, chiefly through auxin influence.'],
+    ['Bolting', 'Rapid internode elongation before flowering, promoted by gibberellins in rosette plants.'],
+    ['Parthenocarpy', 'Fruit formation without fertilisation; it can be induced by auxins.'],
+    ['Kinetin', 'A cytokinin first obtained from autoclaved herring sperm DNA; not naturally occurring in plants.'],
+    ['Ethephon', 'A compound that releases ethylene and is readily absorbed and transported in plants.'],
+    ['Stress hormone', 'Common description of ABA because it increases tolerance to stresses such as water shortage.']
+  ];
+  function renderGlossary(query = '') {
+    const needle = query.trim().toLowerCase();
+    const shown = glossary.filter(([term, meaning]) => `${term} ${meaning}`.toLowerCase().includes(needle));
+    $('#glossaryGrid').innerHTML = shown.length ? shown.map(([term, meaning]) => `<article class="card"><h3>${term}</h3><p>${meaning}</p></article>`).join('') : '<p>No matching term found.</p>';
+  }
+  $('#termSearch').addEventListener('input', event => renderGlossary(event.target.value));
+  renderGlossary();
+
+  // Mixed-format NEET question bank.
+  const questions = [
+    {type:'MCQ',q:'Which option best defines plant growth?',o:['A reversible increase in water content','An irreversible, permanent increase in size','Any change in shape caused by the environment','Only an increase in dry mass'],a:1,e:'Growth is an irreversible, permanent increase in size of an organ, its part or an individual cell.'},
+    {type:'MCQ',q:'Primary growth of a plant mainly results from activity of:',o:['Lateral meristems','Apical meristems','Cork cells','Mature xylem vessels'],a:1,e:'Apical meristems increase length; lateral meristems mainly increase girth.'},
+    {type:'MCQ',q:'Cells with dense protoplasm and prominent nuclei occur chiefly in the:',o:['Maturation phase','Stationary phase','Meristematic phase','Senescent phase'],a:2,e:'Actively dividing meristematic cells possess dense protoplasm and conspicuous nuclei.'},
+    {type:'MCQ',q:'Which equation describes arithmetic growth?',o:['W₁ = W₀eʳᵗ','Lₜ = L₀ + rt','RGR = initial size/time','K = W₀/r'],a:1,e:'Arithmetic growth adds a constant amount per unit time: Lₜ = L₀ + rt.'},
+    {type:'MCQ',q:'A natural S-shaped growth curve is called:',o:['Linear curve','Parabolic curve','Sigmoid curve','Rectangular curve'],a:2,e:'Natural growth commonly shows lag, exponential and stationary phases, producing a sigmoid curve.'},
+    {type:'MCQ',q:'Which is an example of dedifferentiation?',o:['Formation of tracheary elements','Formation of interfascicular cambium from mature cells','Maturation of root hairs','Conversion of meristem into permanent tissue'],a:1,e:'Interfascicular cambium and cork cambium can arise when mature living cells regain division capacity.'},
+    {type:'MCQ',q:'Environmentally induced heterophylly is classically seen in:',o:['Cotton','Coriander','Larkspur','Buttercup'],a:3,e:'Buttercup produces different leaf forms in aquatic and aerial environments.'},
+    {type:'MCQ',q:'Removal of the shoot apex commonly promotes lateral buds because it reduces:',o:['Bolting','Apical dominance','Seed dormancy','Fruit ripening'],a:1,e:'Auxin from the shoot apex helps maintain apical dominance; decapitation releases lateral buds.'},
+    {type:'MCQ',q:'Which PGR is most closely associated with bolting in rosette plants?',o:['ABA','Ethylene','Gibberellin','Auxin'],a:2,e:'Gibberellins promote rapid internode elongation called bolting.'},
+    {type:'MCQ',q:'The naturally occurring cytokinin isolated from maize kernels is:',o:['Kinetin','Zeatin','IAA','Ethephon'],a:1,e:'Zeatin is a natural cytokinin; kinetin was obtained from autoclaved DNA and is not natural.'},
+    {type:'MCQ',q:'Which plant growth regulator is gaseous?',o:['Ethylene','ABA','GA₃','IAA'],a:0,e:'Ethylene is a simple gaseous regulator strongly associated with ripening and senescence.'},
+    {type:'MCQ',q:'Stomatal closure during water stress is promoted mainly by:',o:['Cytokinin','Gibberellin','Auxin','ABA'],a:3,e:'ABA promotes stomatal closure and increases plant tolerance to water stress.'},
+
+    {type:'Statement',q:'Consider the statements: I. Plants retain meristems at certain locations. II. Therefore, plant growth can remain open or indeterminate. Choose the correct option.',o:['Both I and II are correct, and II follows from I','Both are correct, but II does not follow from I','I is correct, II is incorrect','I is incorrect, II is correct'],a:0,e:'Persistent meristematic activity is the basis of open, indeterminate growth.'},
+    {type:'Statement',q:'I. Cells in the meristematic phase have dense protoplasm. II. Cells in the elongation phase show increased vacuolation. Choose correctly.',o:['Only I is correct','Only II is correct','Both I and II are correct','Both I and II are incorrect'],a:2,e:'Both statements accurately distinguish these two growth phases.'},
+    {type:'Statement',q:'I. In arithmetic growth, both daughter cells continue to divide. II. In geometric growth, both daughter cells retain division capacity.',o:['Only I is correct','Only II is correct','Both are correct','Both are incorrect'],a:1,e:'In arithmetic growth, one daughter commonly differentiates; both retain division ability in geometric growth.'},
+    {type:'Statement',q:'I. Plasticity allows different structures in response to environment or life phase. II. Heterophylly is one expression of plasticity.',o:['Both are correct','Only I is correct','Only II is correct','Both are incorrect'],a:0,e:'Different leaf forms illustrate developmental plasticity.'},
+    {type:'Statement',q:'I. Auxins may prevent premature leaf and fruit drop. II. Auxins may promote abscission of older mature organs.',o:['Only I is correct','Only II is correct','Both are correct','Both are incorrect'],a:2,e:'Auxin effects depend on developmental context; both effects are recognised.'},
+    {type:'Statement',q:'I. Kinetin is a naturally occurring plant cytokinin. II. Zeatin occurs naturally in plants.',o:['Only I is correct','Only II is correct','Both are correct','Both are incorrect'],a:1,e:'Kinetin is not known to occur naturally in plants, whereas zeatin is natural.'},
+    {type:'Statement',q:'I. ABA generally promotes seed dormancy. II. Gibberellins commonly oppose ABA during germination.',o:['Both are correct','Only I is correct','Only II is correct','Both are incorrect'],a:0,e:'ABA and gibberellins often act antagonistically in dormancy and germination.'},
+
+    {type:'Assertion–Reason',q:'Assertion (A): Plant growth is generally indeterminate. Reason (R): Plants retain meristematic cells capable of repeated division.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Continuing meristem activity explains indeterminate growth.'},
+    {type:'Assertion–Reason',q:'Assertion (A): Natural growth often follows a sigmoid curve. Reason (R): Resources eventually become limiting after a period of rapid growth.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Resource limitation slows exponential growth and contributes to the stationary phase.'},
+    {type:'Assertion–Reason',q:'Assertion (A): RGR is useful for comparing plants of different initial sizes. Reason (R): RGR expresses growth per unit initial size per unit time.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Normalising increase to starting size makes such comparisons meaningful.'},
+    {type:'Assertion–Reason',q:'Assertion (A): Decapitation may cause lateral buds to grow. Reason (R): Removing the apex reduces auxin-linked apical dominance.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Loss of the auxin-producing apex releases lateral buds from apical dominance.'},
+    {type:'Assertion–Reason',q:'Assertion (A): Cytokinins can delay leaf senescence. Reason (R): Cytokinins promote nutrient mobilisation.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Nutrient mobilisation is associated with cytokinin-mediated delay of senescence.'},
+    {type:'Assertion–Reason',q:'Assertion (A): Ethylene is used to hasten fruit ripening. Reason (R): Ethylene enhances respiration during fruit ripening.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Ethylene promotes ripening and enhances the respiratory climacteric.'},
+    {type:'Assertion–Reason',q:'Assertion (A): ABA is called a stress hormone. Reason (R): ABA promotes stomatal closure and improves stress tolerance.',o:['Both A and R are true, and R correctly explains A','Both A and R are true, but R does not explain A','A is true, R is false','A is false, R is true'],a:0,e:'Its role in stomatal closure and tolerance of adverse conditions supports this name.'},
+
+    {type:'Match',q:'Match the growth phase with its feature: A. Meristematic; B. Elongation; C. Maturation. 1. Specialisation; 2. Active mitosis; 3. Vacuolation and enlargement.',o:['A–2, B–3, C–1','A–1, B–2, C–3','A–3, B–1, C–2','A–2, B–1, C–3'],a:0,e:'Meristematic—mitosis; elongation—vacuolation/enlargement; maturation—specialisation.'},
+    {type:'Match',q:'Match the PGR with the most characteristic association: A. Auxin; B. GA; C. Cytokinin; D. Ethylene. 1. Ripening; 2. Apical dominance; 3. Cell division; 4. Bolting.',o:['A–2, B–4, C–3, D–1','A–4, B–2, C–1, D–3','A–3, B–1, C–4, D–2','A–1, B–3, C–2, D–4'],a:0,e:'Auxin—apical dominance; GA—bolting; cytokinin—cell division; ethylene—ripening.'},
+    {type:'Match',q:'Match discovery clue with regulator: A. Avena curvature; B. Bakanae disease; C. Tobacco callus division; D. Ripe-orange vapour. 1. Ethylene; 2. Cytokinin; 3. Auxin; 4. Gibberellin.',o:['A–3, B–4, C–2, D–1','A–4, B–3, C–1, D–2','A–2, B–1, C–4, D–3','A–1, B–2, C–3, D–4'],a:0,e:'Avena work—auxin; bakanae—GA; callus division—cytokinin; volatile ripening signal—ethylene.'},
+    {type:'Match',q:'Match regulator with chemical nature: A. Auxin; B. Gibberellin; C. Cytokinin; D. Ethylene. 1. Gas; 2. Adenine derivative; 3. Indole compound; 4. Terpenoid.',o:['A–3, B–4, C–2, D–1','A–2, B–3, C–1, D–4','A–4, B–1, C–3, D–2','A–1, B–2, C–4, D–3'],a:0,e:'IAA is indolic, GAs are terpenoids, cytokinins are adenine derivatives, and ethylene is gaseous.'},
+    {type:'Match',q:'Match term with example: A. Dedifferentiation; B. Redifferentiation; C. Plasticity; D. Parthenocarpy. 1. Seedless fruit induction; 2. Interfascicular cambium formation; 3. Secondary tissue specialisation; 4. Heterophylly.',o:['A–2, B–3, C–4, D–1','A–3, B–2, C–1, D–4','A–4, B–1, C–2, D–3','A–1, B–4, C–3, D–2'],a:0,e:'The four examples map to regained division, subsequent specialisation, flexible development and fruit without fertilisation.'},
+
+    {type:'True/False',q:'Swelling of a dry piece of wood after absorbing water is true biological growth.',o:['True','False'],a:1,e:'The swelling is reversible physical enlargement, not irreversible biological growth.'},
+    {type:'True/False',q:'In geometric growth, both daughter cells retain the capacity to divide.',o:['True','False'],a:0,e:'This produces exponential growth under ideal conditions.'},
+    {type:'True/False',q:'Kinetin is a naturally occurring cytokinin in plants.',o:['True','False'],a:1,e:'Kinetin was obtained from autoclaved herring sperm DNA; zeatin is a natural cytokinin.'},
+    {type:'True/False',q:'Ethylene acts only as a growth inhibitor and has no promotory effects.',o:['True','False'],a:1,e:'Ethylene also promotes responses such as fruit ripening, dormancy breaking, root-hair formation and deep-water-rice elongation.'},
+    {type:'True/False',q:'Plant development can be viewed as the sum of growth and differentiation.',o:['True','False'],a:0,e:'Development encompasses both quantitative growth and qualitative differentiation.'}
+  ];
+
+  const typeOrder = ['All', 'MCQ', 'Statement', 'Assertion–Reason', 'Match', 'True/False'];
+  let activeType = 'All';
+  let activeQuestions = questions.map((_, index) => index);
+  let position = 0;
+  let responses = Array(questions.length).fill(null);
+
+  function bestScore() {
+    const best = localStorage.getItem('pgd-best');
+    $('#best').textContent = best === null ? 'Best score: —' : `Best score: ${best} / ${questions.length}`;
+  }
+  function filteredIndices() {
+    return questions.map((q, i) => q.type === activeType || activeType === 'All' ? i : -1).filter(i => i >= 0);
+  }
+  function updateScore() {
+    const answered = responses.filter(value => value !== null).length;
+    const correct = responses.reduce((sum, value, index) => sum + (value === questions[index].a ? 1 : 0), 0);
+    $('#score').textContent = `Score ${correct} / ${answered}`;
+  }
+  function renderFilters() {
+    $('#filters').innerHTML = typeOrder.map(type => `<button class="filter ${type === activeType ? 'active' : ''}" data-filter="${type}">${type}</button>`).join('');
+    $$('#filters button').forEach(button => button.addEventListener('click', () => {
+      activeType = button.dataset.filter;
+      activeQuestions = filteredIndices();
+      position = 0;
+      $('#result').classList.remove('show');
+      $('#questionArea').style.display = '';
+      renderFilters();
+      renderQuestion();
+    }));
+  }
+  function chooseAnswer(questionIndex, choice) {
+    if (responses[questionIndex] !== null) return;
+    responses[questionIndex] = choice;
+    updateScore();
+    renderQuestion();
+  }
+  function renderQuestion() {
+    if (!activeQuestions.length) return;
+    const questionIndex = activeQuestions[position];
+    const q = questions[questionIndex];
+    const response = responses[questionIndex];
+    $('#quizTitle').textContent = activeType === 'All' ? 'All question models' : `${activeType} practice`;
+    $('#questionArea').innerHTML = `<div class="qbox">
+      <div class="qmeta"><span>${q.type}</span><span>Question ${position + 1} of ${activeQuestions.length}</span></div>
+      <div class="qtext">${q.q}</div>
+      <div class="options">${q.o.map((option, i) => {
+        const state = response === null ? '' : i === q.a ? 'correct' : i === response ? 'wrong' : '';
+        return `<button class="option ${state}" data-choice="${i}" ${response !== null ? 'disabled' : ''}><b>${i + 1}.</b> ${option}</button>`;
+      }).join('')}</div>
+      <div class="feedback ${response !== null ? 'show' : ''}"><b>${response === q.a ? 'Correct.' : 'Review this.'}</b> ${q.e}</div>
+      <div class="quiz-nav"><button id="prevQ" ${position === 0 ? 'disabled' : ''}>← Previous</button><button id="nextQ">${position === activeQuestions.length - 1 ? 'Finish' : 'Next →'}</button></div>
+    </div>`;
+    $$('.option', $('#questionArea')).forEach(button => button.addEventListener('click', () => chooseAnswer(questionIndex, +button.dataset.choice)));
+    $('#prevQ').addEventListener('click', () => { position--; renderQuestion(); });
+    $('#nextQ').addEventListener('click', () => {
+      if (position < activeQuestions.length - 1) { position++; renderQuestion(); }
+      else showResult();
+    });
+  }
+  function showResult() {
+    const answeredIndices = activeQuestions.filter(index => responses[index] !== null);
+    const correct = answeredIndices.filter(index => responses[index] === questions[index].a).length;
+    const percent = answeredIndices.length ? Math.round(correct / answeredIndices.length * 100) : 0;
+    $('#questionArea').style.display = 'none';
+    $('#result').classList.add('show');
+    $('#pct').textContent = `${percent}%`;
+    $('#ring').style.setProperty('--pct', `${percent}%`);
+    $('#resultText').textContent = `${correct} correct out of ${answeredIndices.length} attempted`;
+    $('#resultNote').textContent = answeredIndices.length < activeQuestions.length ? `${activeQuestions.length - answeredIndices.length} question(s) were not attempted. Revisit them for the best revision value.` : percent >= 80 ? 'Strong performance. Review any explanation you missed.' : 'Use the chapter cards and try the set again.';
+    if (activeType === 'All' && answeredIndices.length === questions.length) {
+      const previous = +(localStorage.getItem('pgd-best') || -1);
+      if (correct > previous) localStorage.setItem('pgd-best', correct);
+      bestScore();
+    }
+  }
+  $('#restart').addEventListener('click', () => {
+    responses = Array(questions.length).fill(null);
+    activeType = 'All';
+    activeQuestions = filteredIndices();
+    position = 0;
+    $('#result').classList.remove('show');
+    $('#questionArea').style.display = '';
+    renderFilters();
+    renderQuestion();
+    updateScore();
+  });
+  renderFilters();
+  renderQuestion();
+  updateScore();
+  bestScore();
+})();
+</script>
+</body>
+</html>
